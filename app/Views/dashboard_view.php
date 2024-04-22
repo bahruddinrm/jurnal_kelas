@@ -1,0 +1,1 @@
+<h1>hello <?php echo($nama_lengkap) ?></h1>

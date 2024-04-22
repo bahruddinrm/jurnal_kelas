@@ -1,0 +1,1167 @@
+CRITICAL - 2024-04-14 13:12:10 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\Login.php on line 13.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('login', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('login')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('login')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 13:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 13:29:21 --> Undefined variable $error
+in APPPATH\Controllers\Login.php on line 23.
+ 1 APPPATH\Controllers\Login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Login.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 13:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 13:32:32 --> Invalid file: "login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\Login.php(28): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 13:32:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:32:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:32:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 13:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 14:22:44 --> The route for "login" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 489.
+ 1 SYSTEMPATH\Helpers\url_helper.php(489): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('login')
+ 2 VENDORPATH\myth\auth\src\Views\login.php(14): url_to('login')
+ 3 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Views\\login.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+ 6 VENDORPATH\myth\auth\src\Controllers\AuthController.php(412): view('Myth\\Auth\\Views\\login', [...])
+ 7 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): Myth\Auth\Controllers\AuthController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 14:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 14:23:00 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Config\Routes.php on line 17.
+ 1 VENDORPATH\myth\auth\src\Config\Routes.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Config\\Routes.php', 17)
+ 2 SYSTEMPATH\Router\RouteCollection.php(777): CodeIgniter\Router\RouteCollection::Myth\Auth\Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 VENDORPATH\myth\auth\src\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(377): include('D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Config\\Routes.php')
+ 5 SYSTEMPATH\Router\RouteCollection.php(347): CodeIgniter\Router\RouteCollection->discoverRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 7 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 14:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 14:23:23 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Controllers\AuthController.php on line 58.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Controllers\\AuthController.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): Myth\Auth\Controllers\AuthController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 14:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 14:23:29 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Controllers\AuthController.php on line 58.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Controllers\\AuthController.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): Myth\Auth\Controllers\AuthController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 14:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 14:23:37 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Controllers\AuthController.php on line 58.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Controllers\\AuthController.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): Myth\Auth\Controllers\AuthController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 14:23:41 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Config\Routes.php on line 17.
+ 1 VENDORPATH\myth\auth\src\Config\Routes.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Config\\Routes.php', 17)
+ 2 SYSTEMPATH\Router\RouteCollection.php(777): CodeIgniter\Router\RouteCollection::Myth\Auth\Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 VENDORPATH\myth\auth\src\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(377): include('D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Config\\Routes.php')
+ 5 SYSTEMPATH\Router\RouteCollection.php(347): CodeIgniter\Router\RouteCollection->discoverRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 7 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 14:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 14:24:29 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Config\Routes.php on line 17.
+ 1 VENDORPATH\myth\auth\src\Config\Routes.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Config\\Routes.php', 17)
+ 2 SYSTEMPATH\Router\RouteCollection.php(777): CodeIgniter\Router\RouteCollection::Myth\Auth\Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 VENDORPATH\myth\auth\src\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(377): include('D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Config\\Routes.php')
+ 5 SYSTEMPATH\Router\RouteCollection.php(347): CodeIgniter\Router\RouteCollection->discoverRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 7 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 14:24:32 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Config\Routes.php on line 17.
+ 1 VENDORPATH\myth\auth\src\Config\Routes.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Config\\Routes.php', 17)
+ 2 SYSTEMPATH\Router\RouteCollection.php(777): CodeIgniter\Router\RouteCollection::Myth\Auth\Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 VENDORPATH\myth\auth\src\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(377): include('D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Config\\Routes.php')
+ 5 SYSTEMPATH\Router\RouteCollection.php(347): CodeIgniter\Router\RouteCollection->discoverRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 7 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 14:24:33 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Config\Routes.php on line 17.
+ 1 VENDORPATH\myth\auth\src\Config\Routes.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Config\\Routes.php', 17)
+ 2 SYSTEMPATH\Router\RouteCollection.php(777): CodeIgniter\Router\RouteCollection::Myth\Auth\Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 VENDORPATH\myth\auth\src\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(377): include('D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Config\\Routes.php')
+ 5 SYSTEMPATH\Router\RouteCollection.php(347): CodeIgniter\Router\RouteCollection->discoverRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 7 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 14:24:36 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Config\Routes.php on line 17.
+ 1 VENDORPATH\myth\auth\src\Config\Routes.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Config\\Routes.php', 17)
+ 2 SYSTEMPATH\Router\RouteCollection.php(777): CodeIgniter\Router\RouteCollection::Myth\Auth\Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 VENDORPATH\myth\auth\src\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(377): include('D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Config\\Routes.php')
+ 5 SYSTEMPATH\Router\RouteCollection.php(347): CodeIgniter\Router\RouteCollection->discoverRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 7 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 14:24:37 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Config\Routes.php on line 17.
+ 1 VENDORPATH\myth\auth\src\Config\Routes.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Config\\Routes.php', 17)
+ 2 SYSTEMPATH\Router\RouteCollection.php(777): CodeIgniter\Router\RouteCollection::Myth\Auth\Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 VENDORPATH\myth\auth\src\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(377): include('D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Config\\Routes.php')
+ 5 SYSTEMPATH\Router\RouteCollection.php(347): CodeIgniter\Router\RouteCollection->discoverRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 7 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 14:24:37 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Config\Routes.php on line 17.
+ 1 VENDORPATH\myth\auth\src\Config\Routes.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Config\\Routes.php', 17)
+ 2 SYSTEMPATH\Router\RouteCollection.php(777): CodeIgniter\Router\RouteCollection::Myth\Auth\Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 VENDORPATH\myth\auth\src\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(377): include('D:\\Udin\\SMP 1\\web\\administrasi\\vendor\\myth\\auth\\src\\Config\\Routes.php')
+ 5 SYSTEMPATH\Router\RouteCollection.php(347): CodeIgniter\Router\RouteCollection->discoverRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 7 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 14:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 14:50:29 --> Undefined variable $error
+in APPPATH\Controllers\Login.php on line 70.
+ 1 APPPATH\Controllers\Login.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Login.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 14:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 14:51:53 --> Invalid file: "dashboard_admin_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard_admin_view.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard_admin_view', [], true)
+ 3 APPPATH\Controllers\Login.php(67): view('dashboard_admin_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 14:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 14:54:20 --> Undefined variable $error
+in APPPATH\Controllers\Login.php on line 70.
+ 1 APPPATH\Controllers\Login.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Login.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 14:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 14:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 15:04:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Login.php on line 28.
+ 1 APPPATH\Controllers\Login.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Login.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 15:04:58 --> Undefined variable $error
+in APPPATH\Controllers\Login.php on line 66.
+ 1 APPPATH\Controllers\Login.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Login.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 15:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 15:05:03 --> Undefined variable $error
+in APPPATH\Controllers\Login.php on line 66.
+ 1 APPPATH\Controllers\Login.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Login.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 15:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 15:06:00 --> Undefined variable $error
+in APPPATH\Controllers\Login.php on line 66.
+ 1 APPPATH\Controllers\Login.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Login.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 15:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 15:06:13 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Login.php on line 28.
+ 1 APPPATH\Controllers\Login.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Login.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 15:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 15:20:18 --> Undefined variable $err
+in APPPATH\Controllers\Login.php on line 41.
+ 1 APPPATH\Controllers\Login.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $err', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Login.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 15:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 15:20:55 --> Undefined variable $err
+in APPPATH\Controllers\Login.php on line 41.
+ 1 APPPATH\Controllers\Login.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $err', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Login.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 15:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 15:31:13 --> preg_match(): Compilation failed: quantifier does not follow a repeatable item at offset 1
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: quantifier does not follow a repeatable item at offset 1', 'D:\\Udin\\SMP 1\\web\\administrasi\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^*$#u', '/', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('/')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('/')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 15:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:38:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 15:40:00 --> Array to string conversion
+in APPPATH\Views\login_view.php on line 21.
+ 1 APPPATH\Views\login_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\login_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\login_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('login_view', [], true)
+ 5 APPPATH\Controllers\Login.php(110): view('login_view')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 15:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 15:43:42 --> Undefined variable $err
+in APPPATH\Controllers\Login.php on line 55.
+ 1 APPPATH\Controllers\Login.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $err', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Login.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 15:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 15:48:03 --> Invalid file: "/guru/dashboard_guru_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/guru/dashboard_guru_view.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/dashboard_guru_view', [], true)
+ 3 APPPATH\Controllers\Login.php(55): view('/guru/dashboard_guru_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 15:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 15:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 16:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 16:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 16:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 16:19:41 --> Invalid file: "dashboard_admin_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard_admin_view.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard_admin_view', [], true)
+ 3 APPPATH\Controllers\Admin.php(14): view('dashboard_admin_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 16:19:50 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 1.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 1)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(14): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 16:22:33 --> Undefined variable $data
+in APPPATH\Controllers\Admin.php on line 13.
+ 1 APPPATH\Controllers\Admin.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 16:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 16:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 16:35:47 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 1.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 1)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(23): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 16:35:47 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 1.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 1)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(23): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 16:35:48 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 1.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 1)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(23): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 16:35:48 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 1.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 1)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(23): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 16:35:49 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 1.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 1)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(23): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 16:38:28 --> Undefined variable $data
+in APPPATH\Views\admin\dashboard_admin_view.php on line 1.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 1)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(22): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 16:38:29 --> Undefined variable $data
+in APPPATH\Views\admin\dashboard_admin_view.php on line 1.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 1)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(22): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 16:43:18 --> Undefined array key "nik"
+in APPPATH\Controllers\Admin.php on line 14.
+ 1 APPPATH\Controllers\Admin.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nik"', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 16:43:33 --> Undefined array key "nik"
+in APPPATH\Controllers\Admin.php on line 14.
+ 1 APPPATH\Controllers\Admin.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nik"', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 16:43:34 --> Undefined array key "nip"
+in APPPATH\Controllers\Admin.php on line 15.
+ 1 APPPATH\Controllers\Admin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nip"', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 16:43:35 --> Undefined array key "nip"
+in APPPATH\Controllers\Admin.php on line 15.
+ 1 APPPATH\Controllers\Admin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nip"', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 16:46:19 --> Undefined array key "nik"
+in APPPATH\Controllers\Admin.php on line 14.
+ 1 APPPATH\Controllers\Admin.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nik"', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 16:46:21 --> Undefined array key "nik"
+in APPPATH\Controllers\Admin.php on line 14.
+ 1 APPPATH\Controllers\Admin.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nik"', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 16:46:22 --> Undefined array key "nik"
+in APPPATH\Controllers\Admin.php on line 14.
+ 1 APPPATH\Controllers\Admin.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nik"', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 16:46:29 --> Undefined variable $datasesi
+in APPPATH\Controllers\Admin.php on line 32.
+ 1 APPPATH\Controllers\Admin.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datasesi', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 16:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 16:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 16:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 16:51:29 --> Undefined array key "nik"
+in APPPATH\Controllers\Admin.php on line 14.
+ 1 APPPATH\Controllers\Admin.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nik"', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 16:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 17:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 18:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 18:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 18:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 18:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 18:10:51 --> Call to undefined method CodeIgniter\View\View::extends()
+in APPPATH\Views\admin\dashboard_admin_view.php on line 1.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 4 APPPATH\Controllers\Login.php(56): view('/admin/dashboard_admin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 18:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 18:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 18:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 18:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 18:23:07 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(11): view('/admin/dashboard_admin_view')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 18:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 18:23:18 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(11): view('/admin/dashboard_admin_view')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 18:26:30 --> Undefined array key "nik"
+in APPPATH\Controllers\Admin.php on line 15.
+ 1 APPPATH\Controllers\Admin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nik"', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 18:26:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin.php on line 15.
+ 1 APPPATH\Controllers\Admin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 18:27:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin.php on line 15.
+ 1 APPPATH\Controllers\Admin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 18:43:08 --> Call to undefined method App\Models\Login::getData
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Admin.php(12): CodeIgniter\Model->__call('getData', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 18:46:11 --> view(): Argument #2 ($data) must be of type array, App\Models\Login given, called in D:\Udin\SMP 1\web\administrasi\app\Controllers\Admin.php on line 24
+in SYSTEMPATH\Common.php on line 1178.
+ 1 APPPATH\Controllers\Admin.php(24): view('/admin/dashboard_admin_view', Object(App\Models\Login))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 18:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 18:48:47 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(24): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 18:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 19:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 19:05:23 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(24): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 19:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 19:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 19:12:00 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(24): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 19:14:21 --> Undefined variable $nama_lengkap
+in APPPATH\Views\layout\template_admin.php on line 62.
+ 1 APPPATH\Views\layout\template_admin.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\layout\\template_admin.php', 62)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\layout\\template_admin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/template_admin', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 6 APPPATH\Controllers\Admin.php(24): view('/admin/dashboard_admin_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 19:14:41 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(24): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 19:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 19:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 19:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 19:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 19:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 19:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 19:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 19:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 19:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 19:28:27 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(14): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 19:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 19:29:08 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(14): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 19:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 19:29:15 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(14): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 19:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 19:29:39 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(14): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 19:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 19:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 19:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 19:34:16 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(11): view('/admin/dashboard_admin_view')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 19:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 19:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 19:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 19:36:25 --> Undefined variable $nama_lengkap
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Login.php(75): view('/admin/dashboard_admin_view')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 19:38:18 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Login.php on line 81.
+ 1 APPPATH\Controllers\Login.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Login.php', 81)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 19:43:10 --> syntax error, unexpected token ";"
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 3 APPPATH\Controllers\Login.php(88): view('/admin/dashboard_admin_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 19:43:48 --> Call to undefined method CodeIgniter\View\View::getVar()
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 4 APPPATH\Controllers\Login.php(88): view('/admin/dashboard_admin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 19:44:04 --> Call to undefined method CodeIgniter\View\View::getVar()
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 4 APPPATH\Controllers\Login.php(88): view('/admin/dashboard_admin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 19:44:07 --> Call to undefined method CodeIgniter\View\View::getVar()
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 4 APPPATH\Controllers\Login.php(88): view('/admin/dashboard_admin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 19:44:08 --> Call to undefined method CodeIgniter\View\View::getVar()
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 4 APPPATH\Controllers\Login.php(88): view('/admin/dashboard_admin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 19:44:08 --> Call to undefined method CodeIgniter\View\View::getVar()
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 4 APPPATH\Controllers\Login.php(88): view('/admin/dashboard_admin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 19:44:09 --> Call to undefined method CodeIgniter\View\View::getVar()
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 4 APPPATH\Controllers\Login.php(88): view('/admin/dashboard_admin_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 19:44:24 --> syntax error, unexpected token ";", expecting variable or "{" or "$"
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 3 APPPATH\Controllers\Login.php(88): view('/admin/dashboard_admin_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 19:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 19:52:21 --> Undefined array key "nik"
+in APPPATH\Controllers\Admin.php on line 15.
+ 1 APPPATH\Controllers\Admin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nik"', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 19:55:50 --> Undefined variable $datasesi
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datasesi', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(23): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 20:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-14 20:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 20:10:36 --> Too few arguments to function App\Controllers\Login::dashboard(), 0 passed in D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\Login.php on line 74.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 20:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 20:10:44 --> Too few arguments to function App\Controllers\Login::dashboard(), 0 passed in D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\Login.php on line 74.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 20:14:17 --> Too few arguments to function App\Controllers\Login::dashboard(), 0 passed in D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\Login.php on line 74.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-04-14 20:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-14 20:16:07 --> Object of type App\Models\Login is not callable
+in APPPATH\Controllers\Admin.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 20:17:37 --> Object of type App\Models\Login is not callable
+in APPPATH\Controllers\Admin.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 20:21:12 --> Object of type App\Models\Login is not callable
+in APPPATH\Controllers\Admin.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 20:21:19 --> Object of type App\Models\Login is not callable
+in APPPATH\Controllers\Admin.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 20:21:32 --> Object of type App\Models\Login is not callable
+in APPPATH\Controllers\Admin.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 20:21:46 --> Array to string conversion
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(23): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 20:22:09 --> Array to string conversion
+in APPPATH\Views\admin\dashboard_admin_view.php on line 4.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(23): view('/admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-04-14 20:23:44 --> view(): Argument #2 ($data) must be of type array, string given, called in D:\Udin\SMP 1\web\administrasi\app\Controllers\Admin.php on line 24
+in SYSTEMPATH\Common.php on line 1178.
+ 1 APPPATH\Controllers\Admin.php(24): view('/admin/dashboard_admin_view', 'select * from user')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
