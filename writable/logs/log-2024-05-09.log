@@ -1,0 +1,1112 @@
+INFO - 2024-05-09 11:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 11:50:48 --> Call to a member function move() on null
+in APPPATH\Controllers\Admin.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 11:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 11:51:21 --> Call to a member function move() on null
+in APPPATH\Controllers\Admin.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 11:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 11:51:24 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin.php on line 17.
+ 1 APPPATH\Controllers\Admin.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 11:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 11:51:24 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin.php on line 17.
+ 1 APPPATH\Controllers\Admin.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 11:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 11:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 11:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 11:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 11:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 12:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 12:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 12:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-09 12:56:46 --> mysqli_sql_exception: Column 'ttd' cannot be null in D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\Udin\SMP 1\web\administrasi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\Udin\SMP 1\web\administrasi\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\administrasi\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\administrasi\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\administrasi\app\Controllers\Admin.php(90): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+#9 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\administrasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\administrasi\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-05-09 12:56:46 --> Column 'ttd' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`nik`, `nip`, `username`, `password`, `nama_lengkap`, `mapel`, `status`, `ttd`) VALUES (:nik:, :nip:, :username:, :password:, :nama_lengkap:, :mapel:, :status:, :ttd:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(90): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 12:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-09 12:57:24 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH\Controllers\Admin.php on line 94.
+ 1 APPPATH\Controllers\Admin.php(94): explode(';base64,', null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 12:57:24 --> Undefined array key 1
+in APPPATH\Controllers\Admin.php on line 95.
+ 1 APPPATH\Controllers\Admin.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 13:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 13:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-09 13:01:57 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\Udin\SMP 1\web\administrasi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\Udin\SMP 1\web\administrasi\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\administrasi\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\administrasi\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\administrasi\app\Controllers\Admin.php(90): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+#9 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\administrasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\administrasi\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-05-09 13:01:57 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`nik`, `nip`, `username`, `password`, `nama_lengkap`, `mapel`, `status`, `ttd`) VALUES (:nik:, :nip:, :username:, :password:, :nama_lengkap:, :mapel:, :status:, :ttd:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(90): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 13:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 13:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-09 13:02:25 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH\Controllers\Admin.php on line 94.
+ 1 APPPATH\Controllers\Admin.php(94): explode(';base64,', null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 13:02:25 --> Undefined array key 1
+in APPPATH\Controllers\Admin.php on line 95.
+ 1 APPPATH\Controllers\Admin.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 13:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 13:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-09 13:03:05 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH\Controllers\Admin.php on line 94.
+ 1 APPPATH\Controllers\Admin.php(94): explode(';base64,', null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 13:03:05 --> Undefined array key 1
+in APPPATH\Controllers\Admin.php on line 95.
+ 1 APPPATH\Controllers\Admin.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 13:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 13:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-09 13:03:45 --> mysqli_sql_exception: Column 'ttd' cannot be null in D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\Udin\SMP 1\web\administrasi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\Udin\SMP 1\web\administrasi\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\administrasi\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\administrasi\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\administrasi\app\Controllers\Admin.php(90): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+#9 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\administrasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\administrasi\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-05-09 13:03:45 --> Column 'ttd' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`nik`, `nip`, `username`, `password`, `nama_lengkap`, `mapel`, `status`, `ttd`) VALUES (:nik:, :nip:, :username:, :password:, :nama_lengkap:, :mapel:, :status:, :ttd:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(90): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 13:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 13:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-09 13:08:16 --> mysqli_sql_exception: Column 'ttd' cannot be null in D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\Udin\SMP 1\web\administrasi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\Udin\SMP 1\web\administrasi\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\administrasi\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\administrasi\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\administrasi\app\Controllers\Admin.php(90): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+#9 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\administrasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\administrasi\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-05-09 13:08:16 --> Column 'ttd' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`nik`, `nip`, `username`, `password`, `nama_lengkap`, `mapel`, `status`, `ttd`) VALUES (:nik:, :nip:, :username:, :password:, :nama_lengkap:, :mapel:, :status:, :ttd:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(90): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 13:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 13:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-09 13:10:33 --> mysqli_sql_exception: Column 'ttd' cannot be null in D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\Udin\SMP 1\web\administrasi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\Udin\SMP 1\web\administrasi\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\administrasi\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\administrasi\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\administrasi\app\Controllers\Admin.php(90): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+#9 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\administrasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\administrasi\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-05-09 13:10:33 --> Column 'ttd' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`nik`, `nip`, `username`, `password`, `nama_lengkap`, `mapel`, `status`, `ttd`) VALUES (:nik:, :nip:, :username:, :password:, :nama_lengkap:, :mapel:, :status:, :ttd:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(90): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 13:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 13:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-09 13:10:50 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH\Controllers\Admin.php on line 94.
+ 1 APPPATH\Controllers\Admin.php(94): explode(';base64,', null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 13:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 13:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 13:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 13:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 15:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 15:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 15:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 15:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-09 15:32:11 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH\Controllers\Admin.php on line 94.
+ 1 APPPATH\Controllers\Admin.php(94): explode(';base64,', null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 15:32:11 --> Undefined array key 1
+in APPPATH\Controllers\Admin.php on line 95.
+ 1 APPPATH\Controllers\Admin.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 15:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 15:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 15:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 15:39:02 --> Undefined array key "nama"
+in APPPATH\Controllers\Admin.php on line 87.
+ 1 APPPATH\Controllers\Admin.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 87)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 15:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-09 15:39:22 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\Udin\SMP 1\web\administrasi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\Udin\SMP 1\web\administrasi\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\administrasi\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\administrasi\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\administrasi\app\Controllers\Admin.php(85): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+#9 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\administrasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\administrasi\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-05-09 15:39:22 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`nik`, `nip`, `username`, `password`, `nama_lengkap`, `mapel`, `status`, `ttd`) VALUES (:nik:, :nip:, :username:, :password:, :nama_lengkap:, :mapel:, :status:, :ttd:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(85): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 15:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 15:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-09 15:39:46 --> [DEPRECATED] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\Admin.php on line 89.
+ 1 APPPATH\Controllers\Admin.php(89): str_replace('data:image/png;base64,', '', null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 15:39:46 --> file_put_contents(public/ttd/ttd_1png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Admin.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(public/ttd/ttd_1png): Failed to open stream: No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 92)
+ 2 APPPATH\Controllers\Admin.php(92): file_put_contents('public/ttd/ttd_1png', '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 15:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 15:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-09 15:40:22 --> mysqli_sql_exception: Column 'ttd' cannot be null in D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\Udin\SMP 1\web\administrasi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\Udin\SMP 1\web\administrasi\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\administrasi\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\administrasi\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\administrasi\app\Controllers\Admin.php(85): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+#9 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\administrasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\administrasi\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-05-09 15:40:22 --> Column 'ttd' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`nik`, `nip`, `username`, `password`, `nama_lengkap`, `mapel`, `status`, `ttd`) VALUES (:nik:, :nip:, :username:, :password:, :nama_lengkap:, :mapel:, :status:, :ttd:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(85): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 15:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 15:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-09 15:45:27 --> mysqli_sql_exception: Column 'ttd' cannot be null in D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\Udin\SMP 1\web\administrasi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\Udin\SMP 1\web\administrasi\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\administrasi\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\administrasi\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\administrasi\app\Controllers\Admin.php(85): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+#9 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\administrasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\administrasi\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-05-09 15:45:27 --> Column 'ttd' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`nik`, `nip`, `username`, `password`, `nama_lengkap`, `mapel`, `status`, `ttd`) VALUES (:nik:, :nip:, :username:, :password:, :nama_lengkap:, :mapel:, :status:, :ttd:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(85): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 15:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 15:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 15:45:40 --> file_put_contents(public/ttd/ttd_1png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Admin.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(public/ttd/ttd_1png): Failed to open stream: No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 92)
+ 2 APPPATH\Controllers\Admin.php(92): file_put_contents('public/ttd/ttd_1png', '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 15:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 15:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-09 15:46:03 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\Udin\SMP 1\web\administrasi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\Udin\SMP 1\web\administrasi\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\administrasi\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\administrasi\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\administrasi\app\Controllers\Admin.php(85): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+#9 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\administrasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\administrasi\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-05-09 15:46:03 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`nik`, `nip`, `username`, `password`, `nama_lengkap`, `mapel`, `status`, `ttd`) VALUES (:nik:, :nip:, :username:, :password:, :nama_lengkap:, :mapel:, :status:, :ttd:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(85): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 15:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 15:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 15:46:20 --> file_put_contents(public/ttd/ttd_1png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Admin.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(public/ttd/ttd_1png): Failed to open stream: No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 92)
+ 2 APPPATH\Controllers\Admin.php(92): file_put_contents('public/ttd/ttd_1png', '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 15:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 15:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 15:48:36 --> file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Admin.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 92)
+ 2 APPPATH\Controllers\Admin.php(92): file_put_contents('public/ttd/ttd_1.png', '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 15:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 15:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 15:52:20 --> file_put_contents(public/ttdttd_1.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Admin.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(public/ttdttd_1.png): Failed to open stream: No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 92)
+ 2 APPPATH\Controllers\Admin.php(92): file_put_contents('public/ttdttd_1.png', '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 15:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 15:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 15:58:38 --> file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Admin.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 92)
+ 2 APPPATH\Controllers\Admin.php(92): file_put_contents('public/ttd/ttd_1.png', '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 16:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 16:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 16:14:24 --> file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Admin.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 92)
+ 2 APPPATH\Controllers\Admin.php(92): file_put_contents('public/ttd/ttd_1.png', '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 16:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 16:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 16:23:54 --> file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Admin.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 92)
+ 2 APPPATH\Controllers\Admin.php(92): file_put_contents('public/ttd/ttd_1.png', '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 16:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 16:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 16:28:42 --> file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Admin.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 92)
+ 2 APPPATH\Controllers\Admin.php(92): file_put_contents('public/ttd/ttd_1.png', '‰PNG
+
+' . "\0" . '' . "\0" . '' . "\0" . 'IHDR' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'È' . "\0" . '' . "\0" . '' . "\0" . 'Æ·â' . "\0" . '' . "\0" . '' . "\0" . 'sRGB' . "\0" . '®Îé' . "\0" . '' . "\0" . 'ıIDATx^í?È.G‡OĞâS¤Hˆ‚BÊØ¥P¢`‘.µ(Ø«…XI´³PˆEI‚…ˆi$ZˆíL‘2…`-FH‘B‰ßìIÆÍ¾ï·;;³;sæY¸Üï~wşçÌ»¿wæÌŸ»Œ€' . "\0" . ' Aà®Œ<d' . "\0" . ' ' . "\0" . 'B\'€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B(EàcföêTXús©ò)hŒ' . "\0" . 'Ò˜CNh^özôò÷Ÿõoıì¼Y$‘¦¹­Ù.,š¾–ˆşÏÿßÿ¾­<şh€' . "\0" . 'Ò€
+4Á_üŸMDÀ_öş¢_ú;WÌìÁmYzÙûï$^¯~Ö3o‡·5«—Íì¡IHTÖ‹7v<›ËŠf‘8š' . "\0" . 'r4ñüúôÂMâ‘…ÂšÒçßò}ğûI@ÒL¼ÜÒ#‘ûÍì“=O$"ø¹›}Ô²Æ6Ò@' . "\0" . '@@„½PU:EäqƒûÌìÎôİ*şò×ß>M41”¿ffON‘„)   ^(ÂÅA£ŸÊYŠ+Ì³¿=	È¥–éù’@Dû¦şıIDd«D¤á«×›(@@ö;Å§aô­YF.9¥¿afoMS7G8Dˆ5lşef÷˜ÙnKPx ' . "\0" . '†  Ûœ‘*ö
+…×ìÓN
+*—¼ğÌÍÈÃ…ùãŒB¶uVRC 6ä:áO›ÙçŒ*ÒZ$ÏM¿`¥ÑuşÉıqJÂ(¤öÛ€ò!°‘' . "\0" . 'òA`éj\'rK<.ÆvšŸ‚é)Â4B' . "\0" . 'y×š_×òQ=éş„71%•Círt‹şZ–-¥A`>ïâ{gÅtJŠÆ²új,ı7ıµ<_J„@6>ï¢K¿åúj\'D´ã^3ûğl—´2F\\•İÙ23*â«Úè¯™Éø@Ö J™¥HÄÑC¤UÊ@!H!S…ÀóföØT2«°ª ¦Pä@@òÙ‘³.tô¡•©[¥C' . "\0" . '[	  [‰‘ş(iìCËŸ¿~TÅÔ¬#€€¬ãDªc	h÷¹6øC?=–?µA`>˜«0‘è`¾yPÕrïÁğ©k	  kI‘î(ó%Õì>?Š<õ@`#d#0’W\'nêdôQ7@ Ÿ' . "\0" . '’Ïœå	8/Ï”!P' . "\0" . 'R-o$@à|#0’CàlÈÙ ~\'ÎµdWKwy ' . "\0" . '†	  ;g ¦¥SWY2ã1µoHßş‹ĞúôÒ(ÙÃÍƒ¼ŠC@@†psÓF2uÕ´{h.@@èg`êêLúÔ' . "\0" . 'ÉM ½(Š©«lŒd„ÀyóØ\\szÒ®8°apäŞ€íİ@@ºu]×OãÜóÑµ+iüÈ‘½íÄ=ÎáN­(N' . "\0" . ')”¯Hãì÷ «@ sHçì¨ùì÷èÈY4k  k(‘f/‚æ{	’@@tJÀ&¥qÎ¹
+è`L“' . "\0" . '2¦ß´ñ8’6uAà@È°¬*=¢åºv' . "\0" . 'LM' . "\0" . '‰íß3­Kã¬¸:ÓÔJJ`/Vâ¡©+ıxŞ0?.$®oÏ´ÌãˆÇ™^ nT&€€T<`ñÏ˜™b­¸zu@˜!  C¸ù0#Ó¸C†Š päîkMãœ®ÑÃØ„.QŠÀ¯Íì‹Í^
+\'å@ }Hû>ê¡…¾ßã;fö£L!' . "\0" . 'ııG/ÁI|v
+šÎû!0dWW3ôözTcKÁhš' . "\0" . 'Ò´{šoœß,HĞ¼yWÑ@”\'€€”g:J‰¾YñÅãØ	„.‘CÀoä€Äzä@HGh†Í[<¦D{QôGmÔóÈôoıüŠ™İ13‰vÇ³CşÀNCU1	  1ıZË*ßi®—¯všı¸@¨^‰ÄSô³şïŸfvßŠF½nf_‚ÿ+’“X"€€Ğ/Ö8j§¹êÑ£½%ÿı¥öJÔ¾Ù‡r÷4ºĞIHHF#úıY"¸–7é Ğ<¤y5ÓÀZAs½à%zæ/ùÔxŸr’0¼6ı‡~Ş2õ”™}3)”óºšé^4¤GH^;¾Í.%î3OGO.˜"Ap‘pqğÑÄ^ËµgÅF {i’xÈğ]àV' . "\0" . '%îöği$µ}´‘¾ÈŸK¦j·}å˜×Ë
+²[]O\\\'€€ĞC®HïöĞ~-OMI4L‚Û>ªxñ&&¡ãOj	Æ¼­Œ>¶x´XA' . "\0" . 'YiĞ$9âá¢1ehuÔÏŒÔmŒ>íÄ˜]—' . "\0" . 'R—o¯¥oK¢¡‘…OMi¤qÖ“^r¥6û8ËÔ' . "\0" . 'Î¥»Z+.ó@¸ŞšÒ·şF-x6„$€€„tk¶Q0¿ö-]Â!ÑHƒá>ÚhE4' . "\0" . '£ì®@FÜN' . "\0" . '¹Ñ()^0³G§8…–ëÎŸ¥‡„C«™Îœ¢ºæDOÃÁ£ôfì<„' . "\0" . 'rææ+ñi«Ÿ˜Ù·Z;Ÿj]8dÂ¼Í-İÕ|Ç ¸F' . "\0" . '¡\\‹y,	‡ã­MU-–tW‰?Îéç¨@' . "\0" . '©' . "\0" . 'µ“"5%%ñĞA„óoçé¹WnNOï˜ºª×	õåá»ÉÉÆ­™¨G‚’³¤â‘Şe¾ ïí®s?n¾Gák±7^ÚêmåÒ¢×jÎ?tCÕ¤/XÇÍì©­•(˜~ÔNñˆæ«®ˆ{äQMEÃïVQIºSåm3{h*–©Á<¾ar! a\\¹Ê-½Õ´•‰ƒ^°>åô|WÆ<fÃi»«ºÅ{‰$:EÀ—hûÁ–Ú×ã\'+¶äbö4­¹©W@@Va
+‘(}¹~e:Ÿj¾	°çÂ|ôQâäà_a„ú†?ã{z–Î)›3fYô
+¸‘“  ‘½û¾méA}›ÔË"}ôÒĞË §éª¹ç|5™~ß[Üæè^è§#ëË/M~_s¸eú%„é«£½Ö`}HƒN)Ø$MIèÅªÆËÉÜuZEÏ£·#ıfÌ‹ízr§—Ìì·6‚" ?œŠB@"xqÙ†ôÃ¾$zx¤w
+é²]¦Uşß›é•¾úB±çØ™ôHü_<zï÷§·9İU¾Pu”ú}§¬Ü¤/›Ù/§÷xßÑó£g×K?÷vÇyüƒwG•n_…Ò	úò×m­M§¬ŞL–ä¦ù¢Å|UĞ_Ìì3·
+şÿsÑ¸ßŠ‚é«­ÄH€Äqr*Z«gÁ´hÓ;é|~ï‹' . "\0" . 'öôD-»ÕÂß³Qz+Üöx\'p^$†sÓHKEŠw¸}éq+#ÎÇ_mÔ8Z„ÑGŒ÷Dq+âH-P/‘§Ìì±+µFİ>´ap”g>Úğ¸Fnlc7‚çk(˜é×é¾`BÄQG:úğÓvG}9Ú˜w\'Fı¾#ª·©¸Jó#;æ•D”Ïí[ssbğº$G^à5?•9Zí`wÆ«éÏ§ó€fjA=í%õ¬+MSé˜ùºäJª­ì8İ®|Ñ¿”leCú›uáHİà’€Œ0•#où²İˆ±¥3©jÅ×öz}üÍÌ>¹6éÆ!€€ôék‰ˆ®õ#J–¾ëÓ²ë­N§î¢Œ>–6üµpŒ~º²š?MlB@
+@¤ˆC¤#¯£­¹pxl£…-9[ì.İ%Hÿ>Å‚HËvıÛı™ñkı&]¶Ë;b”OX†thd9œ@„Ñ‡‚ÿNAiÅoÛp
+î‘ÀÓ©«#½#ÙW2œË»48ıÆŞÛ¦A­¨zdºåï7O?ÚYé•‹4ıëC@:tÚ`MNG=íCHş-8¼;¥Ë£#\\06ØÇäss¸Sëz¾i°—e»sáØs„úzJûRÎ7²êjÏar# Ã¸ºKC{Ù4Xúî£•ŞCÜãhú×‡€tì¼šî›[}©-5ÒÛ-©x°Û|€UI’4)«$–—íFù*^¦Kö1ÊÚI' . "\0" . 'Ù	ìU¤sò­ÍÇÏO§ímÄáK—ë"UºqüBø>îÑB_NÚÒ‹-Šp¨?ÌW\\õ¶4ºÇ>²ÍHH·voÔ?Ìì¾›Ív-œw•^ì;ÇÏ<àp¯sSñhI ÷ÚEş  \'@§Ê«|jåçföYiMmÑ7‚p¥lú«™İ{câqbçŠR5Å“1ìğMƒgî‚N…CT[]¶Õãi\\ée3ûÂ$Œ[Ë!=Ş#€€ĞZ"à«‚ÎœÏWVEZÒ:Mõøo©¯Ò.”¢4DÀçG>\\8˜¦x4µÓÂ}%]“^Œx”$;xYŒ@ï' . "\0" . '˜ŸN¯8Ÿ_«³¶Z¸£¤[Òåº=%V’eU"€€TK±›øKî¨xƒVQé„\\ûeN›İAât£àÓ‚ ¢‰{  {è‘·ô´İÚı1ôpBî¾éÈ#R<gò&Pû[¸¹Àç]iªêq3{lZ¾ÚêeN¥ÜË.óR$)ç*„r&Úóô‚¤×ÍL{KzŞ¸ÆWˆÇJ¤)B' . "\0" . ')‚‘B2	øİÛ%çççËqÕ´ˆ+«–§‚Yk£ øêQüH??0ıûµYƒî¹õi¿‰Ò,-Lğßéïh2?ıeC@úóY”—>mwI8ôbeÙj*{c.›ÙdÁÿ¾Ft!ñ]ÿKÊ…ËD@
+¥¸UÒÀùŞe»—„CqèÓU;gä!né(ÂNøö$ KNõ¼ÊÑhg..èÏÒ³VˆTÇ+fö«©F*«>^Ç%B@cMMïğå¥{–í.	ÇHÓUNsíÉºÎKSNœ5ÏföÖôò~qšj*12HD?ë–Uëqa[jß(S‘k|ÓD¤	7Õáåî8¿$#MW¥âñS3{pápÄt„ñä†¦—´ÄBëÏY·_«ç>:–¼-¾o‡ÉYŞ™êE@NvÀ€Õû²İ­óKÂ!„{F2=»ÀY¾df?„D#Œ¥é¨KvzÌálÁ¸Íé±úJ«ÑÑÓİmíıÿHh÷6gœÎ·¬º&#Oiø)ÿ5³môt/¢17K"ò3»öošÙ§XÍµ±H€€H«lœ_(÷s¬·(š¯)Ã§z",,P¿øó‚ˆ(Vó½›ÀıSk€¦¤GJ¹À–ó®Òëcç%:]•rHŸ\\"ïîb·÷Œí)d¿úˆNP?n»ÄR#Tâ$Ûù®Î€¬FEÂÖÎ¯	‡^OËÍÅª—¨‚ã
+ ÿÇÌş0X<@ö¿0Ùa¯Óu¹ıâĞ|È¡¸‡­Ì—í^Úóáß&—öŒ>]5l§Yaøm#±¥Ñ‰¢yæ
+³¦õ‘éÃO=·Òçë—çGÏm£í¿»~K‹x×FÉßM™4İ§‡i¯°HšEÀW¥}íšp¨âY¨‡ÎäÙ²Œù´¥³º\\dÒcW††€íşêÆ{àüÛÓê˜5Â¡sœ|VwMø
+|#¢v¸/ín¿vLËV8s±ñƒ%õ{õç°Öµ§æSWú' . "\0" . 'éåw/5ŒÅ§»k¨x¬ÍG-2>=NE#˜Oîi%ê>¤äÌÃUòüty“Öæß}Åz„c¸®Ñ•Á.$éâ?³ËG~œ½óß)ÄCS^Œ@ºr9m€ßóq©-G^¢ØI€ÈN€dÿ' . "\0" . 'k«bÓa ˆ' . "\0" . 'È™™’şo3Ó’ÉQîæhÈ4u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°ş-Ï6öîïhX' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'IEND®B`‚')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 16:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-09 16:38:22 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\administrasi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\Udin\SMP 1\web\administrasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\Udin\SMP 1\web\administrasi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\Udin\SMP 1\web\administrasi\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\administrasi\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\administrasi\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\administrasi\app\Controllers\Admin.php(85): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+#9 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\Udin\SMP 1\web\administrasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\administrasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\administrasi\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-05-09 16:38:22 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`nik`, `nip`, `username`, `password`, `nama_lengkap`, `mapel`, `status`, `ttd`) VALUES (:nik:, :nip:, :username:, :password:, :nama_lengkap:, :mapel:, :status:, :ttd:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(85): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 16:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 16:38:27 --> file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Admin.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 92)
+ 2 APPPATH\Controllers\Admin.php(92): file_put_contents('public/ttd/ttd_1.png', '‰PNG
+
+' . "\0" . '' . "\0" . '' . "\0" . 'IHDR' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'È' . "\0" . '' . "\0" . '' . "\0" . 'Æ·â' . "\0" . '' . "\0" . '' . "\0" . 'sRGB' . "\0" . '®Îé' . "\0" . '' . "\0" . 'ıIDATx^í?È.G‡OĞâS¤Hˆ‚BÊØ¥P¢`‘.µ(Ø«…XI´³PˆEI‚…ˆi$ZˆíL‘2…`-FH‘B‰ßìIÆÍ¾ï·;;³;sæY¸Üï~wşçÌ»¿wæÌŸ»Œ€' . "\0" . ' Aà®Œ<d' . "\0" . ' ' . "\0" . 'B\'€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B€' . "\0" . ' ' . "\0" . ',H62A' . "\0" . '€' . "\0" . 'B(EàcföêTXús©ò)hŒ' . "\0" . 'Ò˜CNh^özôò÷Ÿõoıì¼Y$‘¦¹­Ù.,š¾–ˆşÏÿßÿ¾­<şh€' . "\0" . 'Ò€
+4Á_üŸMDÀ_öş¢_ú;WÌìÁmYzÙûï$^¯~Ö3o‡·5«—Íì¡IHTÖ‹7v<›ËŠf‘8š' . "\0" . 'r4ñüúôÂMâ‘…ÂšÒçßò}ğûI@ÒL¼ÜÒ#‘ûÍì“=O$"ø¹›}Ô²Æ6Ò@' . "\0" . '@@„½PU:EäqƒûÌìÎôİ*şò×ß>M41”¿ffON‘„)   ^(ÂÅA£ŸÊYŠ+Ì³¿=	È¥–éù’@Dû¦şıIDd«D¤á«×›(@@ö;Å§aô­YF.9¥¿afoMS7G8Dˆ5lşef÷˜ÙnKPx ' . "\0" . '†  Ûœ‘*ö
+…×ìÓN
+*—¼ğÌÍÈÃ…ùãŒB¶uVRC 6ä:áO›ÙçŒ*ÒZ$ÏM¿`¥ÑuşÉıqJÂ(¤öÛ€ò!°‘' . "\0" . 'òA`éj\'rK<.ÆvšŸ‚é)Â4B' . "\0" . 'y×š_×òQ=éş„71%•Círt‹şZ–-¥A`>ïâ{gÅtJŠÆ²új,ı7ıµ<_J„@6>ï¢K¿åúj\'D´ã^3ûğl—´2F\\•İÙ23*â«Úè¯™Éø@Ö J™¥HÄÑC¤UÊ@!H!S…ÀóföØT2«°ª ¦Pä@@òÙ‘³.tô¡•©[¥C' . "\0" . '[	  [‰‘ş(iìCËŸ¿~TÅÔ¬#€€¬ãDªc	h÷¹6øC?=–?µA`>˜«0‘è`¾yPÕrïÁğ©k	  kI‘î(ó%Õì>?Š<õ@`#d#0’W\'nêdôQ7@ Ÿ' . "\0" . '’Ïœå	8/Ï”!P' . "\0" . 'R-o$@à|#0’CàlÈÙ ~\'ÎµdWKwy ' . "\0" . '†	  ;g ¦¥SWY2ã1µoHßş‹ĞúôÒ(ÙÃÍƒ¼ŠC@@†psÓF2uÕ´{h.@@èg`êêLúÔ' . "\0" . 'ÉM ½(Š©«lŒd„ÀyóØ\\szÒ®8°apäŞ€íİ@@ºu]×OãÜóÑµ+iüÈ‘½íÄ=ÎáN­(N' . "\0" . ')”¯Hãì÷ «@ sHçì¨ùì÷èÈY4k  k(‘f/‚æ{	’@@tJÀ&¥qÎ¹
+è`L“' . "\0" . '2¦ß´ñ8’6uAà@È°¬*=¢åºv' . "\0" . 'LM' . "\0" . '‰íß3­Kã¬¸:ÓÔJJ`/Vâ¡©+ıxŞ0?.$®oÏ´ÌãˆÇ™^ nT&€€T<`ñÏ˜™b­¸zu@˜!  C¸ù0#Ó¸C†Š päîkMãœ®ÑÃØ„.QŠÀ¯Íì‹Í^
+\'å@ }Hû>ê¡…¾ßã;fö£L!' . "\0" . 'ııG/ÁI|v
+šÎû!0dWW3ôözTcKÁhš' . "\0" . 'Ò´{šoœß,HĞ¼yWÑ@”\'€€”g:J‰¾YñÅãØ	„.‘CÀoä€Äzä@HGh†Í[<¦D{QôGmÔóÈôoıüŠ™İ13‰vÇ³CşÀNCU1	  1ıZË*ßi®—¯všı¸@¨^‰ÄSô³şïŸfvßŠF½nf_‚ÿ+’“X"€€Ğ/Ö8j§¹êÑ£½%ÿı¥öJÔ¾Ù‡r÷4ºĞIHHF#úıY"¸–7é Ğ<¤y5ÓÀZAs½à%zæ/ùÔxŸr’0¼6ı‡~Ş2õ”™}3)”óºšé^4¤GH^;¾Í.%î3OGO.˜"Ap‘pqğÑÄ^ËµgÅF {i’xÈğ]àV' . "\0" . '%îöği$µ}´‘¾ÈŸK¦j·}å˜×Ë
+²[]O\\\'€€ĞC®HïöĞ~-OMI4L‚Û>ªxñ&&¡ãOj	Æ¼­Œ>¶x´XA' . "\0" . 'YiĞ$9âá¢1ehuÔÏŒÔmŒ>íÄ˜]—' . "\0" . 'R—o¯¥oK¢¡‘…OMi¤qÖ“^r¥6û8ËÔ' . "\0" . 'Î¥»Z+.ó@¸ŞšÒ·şF-x6„$€€„tk¶Q0¿ö-]Â!ÑHƒá>ÚhE4' . "\0" . '£ì®@FÜN' . "\0" . '¹Ñ()^0³G§8…–ëÎŸ¥‡„C«™Îœ¢ºæDOÃÁ£ôfì<„' . "\0" . 'rææ+ñi«Ÿ˜Ù·Z;Ÿj]8dÂ¼Í-İÕ|Ç ¸F' . "\0" . '¡\\‹y,	‡ã­MU-–tW‰?Îéç¨@' . "\0" . '©' . "\0" . 'µ“"5%%ñĞA„óoçé¹WnNOï˜ºª×	õåá»ÉÉÆ­™¨G‚’³¤â‘Şe¾ ïí®s?n¾Gák±7^ÚêmåÒ¢×jÎ?tCÕ¤/XÇÍì©­•(˜~ÔNñˆæ«®ˆ{äQMEÃïVQIºSåm3{h*–©Á<¾ar! a\\¹Ê-½Õ´•‰ƒ^°>åô|WÆ<fÃi»«ºÅ{‰$:EÀ—hûÁ–Ú×ã\'+¶äbö4­¹©W@@Va
+‘(}¹~e:Ÿj¾	°çÂ|ôQâäà_a„ú†?ã{z–Î)›3fYô
+¸‘“  ‘½û¾méA}›ÔË"}ôÒĞË §éª¹ç|5™~ß[Üæè^è§#ëË/M~_s¸eú%„é«£½Ö`}HƒN)Ø$MIèÅªÆËÉÜuZEÏ£·#ıfÌ‹ízr§—Ìì·6‚" ?œŠB@"xqÙ†ôÃ¾$zx¤w
+é²]¦Uşß›é•¾úB±çØ™ôHü_<zï÷§·9İU¾Pu”ú}§¬Ü¤/›Ù/§÷xßÑó£g×K?÷vÇyüƒwG•n_…Ò	úò×m­M§¬ŞL–ä¦ù¢Å|UĞ_Ìì3·
+şÿsÑ¸ßŠ‚é«­ÄH€Äqr*Z«gÁ´hÓ;é|~ï‹' . "\0" . 'öôD-»ÕÂß³Qz+Üöx\'p^$†sÓHKEŠw¸}éq+#ÎÇ_mÔ8Z„ÑGŒ÷Dq+âH-P/‘§Ìì±+µFİ>´ap”g>Úğ¸Fnlc7‚çk(˜é×é¾`BÄQG:úğÓvG}9Ú˜w\'Fı¾#ª·©¸Jó#;æ•D”Ïí[ssbğº$G^à5?•9Zí`wÆ«éÏ§ó€fjA=í%õ¬+MSé˜ùºäJª­ì8İ®|Ñ¿”leCú›uáHİà’€Œ0•#où²İˆ±¥3©jÅ×öz}üÍÌ>¹6éÆ!€€ôék‰ˆ®õ#J–¾ëÓ²ë­N§î¢Œ>–6üµpŒ~º²š?MlB@
+@¤ˆC¤#¯£­¹pxl£…-9[ì.İ%Hÿ>Å‚HËvıÛı™ñkı&]¶Ë;b”OX†thd9œ@„Ñ‡‚ÿNAiÅoÛp
+î‘ÀÓ©«#½#ÙW2œË»48ıÆŞÛ¦A­¨zdºåï7O?ÚYé•‹4ıëC@:tÚ`MNG=íCHş-8¼;¥Ë£#\\06ØÇäss¸Sëz¾i°—e»sáØs„úzJûRÎ7²êjÏar# Ã¸ºKC{Ù4Xúî£•ŞCÜãhú×‡€tì¼šî›[}©-5ÒÛ-©x°Û|€UI’4)«$–—íFù*^¦Kö1ÊÚI' . "\0" . 'Ù	ìU¤sò­ÍÇÏO§ímÄáK—ë"UºqüBø>îÑB_NÚÒ‹-Šp¨?ÌW\\õ¶4ºÇ>²ÍHH·voÔ?Ìì¾›Ív-œw•^ì;ÇÏ<àp¯sSñhI ÷ÚEş  \'@§Ê«|jåçföYiMmÑ7‚p¥lú«™İ{câqbçŠR5Å“1ìğMƒgî‚N…CT[]¶Õãi\\ée3ûÂ$Œ[Ë!=Ş#€€ĞZ"à«‚ÎœÏWVEZÒ:Mõøo©¯Ò.”¢4DÀçG>\\8˜¦x4µÓÂ}%]“^Œx”$;xYŒ@ï' . "\0" . '˜ŸN¯8Ÿ_«³¶Z¸£¤[Òåº=%V’eU"€€TK±›øKî¨xƒVQé„\\ûeN›İAât£àÓ‚ ¢‰{  {è‘·ô´İÚı1ôpBî¾éÈ#R<gò&Pû[¸¹Àç]iªêq3{lZ¾ÚêeN¥ÜË.óR$)ç*„r&Úóô‚¤×ÍL{KzŞ¸ÆWˆÇJ¤)B' . "\0" . ')‚‘B2	øİÛ%çççËqÕ´ˆ+«–§‚Yk£ øêQüH??0ıûµYƒî¹õi¿‰Ò,-Lğßéïh2?ıeC@úóY”—>mwI8ôbeÙj*{c.›ÙdÁÿ¾Ft!ñ]ÿKÊ…ËD@
+¥¸UÒÀùŞe»—„CqèÓU;gä!né(ÂNøö$ KNõ¼ÊÑhg..èÏÒ³VˆTÇ+fö«©F*«>^Ç%B@cMMïğå¥{–í.	ÇHÓUNsíÉºÎKSNœ5ÏföÖôò~qšj*12HD?ë–Uëqa[jß(S‘k|ÓD¤	7Õáåî8¿$#MW¥âñS3{pápÄt„ñä†¦—´ÄBëÏY·_«ç>:–¼-¾o‡ÉYŞ™êE@NvÀ€Õû²İ­óKÂ!„{F2=»ÀY¾df?„D#Œ¥é¨KvzÌálÁ¸Íé±úJ«ÑÑÓİmíıÿHh÷6gœÎ·¬º&#Oiø)ÿ5³môt/¢17K"ò3»öošÙ§XÍµ±H€€H«lœ_(÷s¬·(š¯)Ã§z",,P¿øó‚ˆ(Vó½›ÀıSk€¦¤GJ¹À–ó®Òëcç%:]•rHŸ\\"ïîb·÷Œí)d¿úˆNP?n»ÄR#Tâ$Ûù®Î€¬FEÂÖÎ¯	‡^OËÍÅª—¨‚ã
+ ÿÇÌş0X<@ö¿0Ùa¯Óu¹ıâĞ|È¡¸‡­Ì—í^Úóáß&—öŒ>]5l§Yaøm#±¥Ñ‰¢yæ
+³¦õ‘éÃO=·Òçë—çGÏm£í¿»~K‹x×FÉßM™4İ§‡i¯°HšEÀW¥}íšp¨âY¨‡ÎäÙ²Œù´¥³º\\dÒcW††€íşêÆ{àüÛÓê˜5Â¡sœ|VwMø
+|#¢v¸/ín¿vLËV8s±ñƒ%õ{õç°Öµ§æSWú' . "\0" . 'éåw/5ŒÅ§»k¨x¬ÍG-2>=NE#˜Oîi%ê>¤äÌÃUòüty“Öæß}Åz„c¸®Ñ•Á.$éâ?³ËG~œ½óß)ÄCS^Œ@ºr9m€ßóq©-G^¢ØI€ÈN€dÿ' . "\0" . 'k«bÓa ˆ' . "\0" . 'È™™’şo3Ó’ÉQîæhÈ4u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°°®Å0@' . "\0" . 'u	  uùR: ' . "\0" . '°ş-Ï6öîïhX' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'IEND®B`‚')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 16:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 16:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 16:38:40 --> file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Admin.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 92)
+ 2 APPPATH\Controllers\Admin.php(92): file_put_contents('public/ttd/ttd_1.png', '‰PNG
+
+' . "\0" . '' . "\0" . '' . "\0" . 'IHDR' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'È' . "\0" . '' . "\0" . '' . "\0" . 'Æ·â' . "\0" . '' . "\0" . '' . "\0" . 'sRGB' . "\0" . '®Îé' . "\0" . '' . "\0" . 'ÊIDATx^íİ?«-Wà°HˆEJ%æ[¤‘hg*¿€äØYI´ÓN°ĞFLzAìR&ÎFÄBPĞ`„6B;=/Î‹ëî»ÏÙ{¿{şÏ³árÎ½g¯™µµÎüîš53û…æE€' . "\0" . '
+/Ê(B€' . "\0" . 'š' . "\0" . '1 @ $ @Jl
+ @€€' . "\0" . '1 @ $ @Jl
+ @€€' . "\0" . '1 @ $ @Jl
+ @€€' . "\0" . '1 @ $ @Jl
+ @€€' . "\0" . '1 @ $ @Jl
+ @€€' . "\0" . '1 @ $ @Jl
+ @€€' . "\0" . '1 @ $ @Jl
+ @€€' . "\0" . '1 @ $ @Jl
+ @€€' . "\0" . '1 @ $ @Jl
+ @€€' . "\0" . '1 @ $ @Jl
+ @€€' . "\0" . '1 @ $ @Jl
+ @€€' . "\0" . '1 @ $ @Jl
+ @€€' . "\0" . '1 @ $ @Jl
+ @€€' . "\0" . '1 @ $ @Jl
+ @€€' . "\0" . '1 @ $ @Jl
+ @€€' . "\0" . '1 @ $ @Jl
+ @€€' . "\0" . '1 @ $ @Jl
+­TàkC½¾Ò}}µµ–ÿëÉ÷ñ¶OZkñïùúğäï+mªjX^@€,ßjğ<Ğç¿D Ä¿ÅA=¾¾1ğãïyğïC"ËÇÏâ}}@äÏâı.}àÄÏ?n­}iØg_6¾?:ñ}ÔÅ‹À!È!»}¶FÇ¹?8ç÷qàîC¢?¨÷ÿø>Ğ?ÈBlë\\0ÜÛ¸¬c†WÖõ\\;b_Q‡÷¾ùŞ½;VÀÖÈÖzlùúöÒœD­úÿÍŸÎ$Nkşƒøß|ˆ30¦†1å2£ıïvõÿşC`¾7æl‹ÀšÈš{g™ºõÇ[ƒ!k|:kÈS?ùu™–M³×ğz»’¶Ö~:ÑìhšØ*¢€' . "\0" . ')Âm¸Ø¹S4ı¿=Õ´œÄ×<¥”³†şë†yÊUùqkí¥ÖZÌDœÒ*S*¸²•º­ıI÷œ^ÊYƒÅâË}3‘ğ"—½¼cãd›x:‹ˆVÄJı¢õ¥™D?‹È«‰Ö¾ö°…ŞŠùùPÑ×œÊÚB—©cU@€TåÆ+×/8÷ÿã½µöbw%Ó[Ãn¯Y¤Î0ˆSMıå¦Bb¼¾{lK $Ñ‡_Ÿ~wö@`2¯{.¸æŒ¡¿Šé\\M>Î©ŸşìôÆ·¸’)O19Õ4oŸÛ[ôëoÌB–ï5˜V@€Lç›ëyÜ¥°8W“´Öş0Ì r&±Ç+™¦ë…å¶ü—aæøK{—ë{V@€ŒçAñíÖÚËÃö¥ÓLí9fñÕlb¼ş™{Kdnqû›]@€ÜG§¤â*§8ç]yåÌ£¢·Ş2d½}£f#	Û!34âª§Êi©Ø£Ğ¸İ}k%ş3T8ÑÍ$·Ö{ê{•€' . "\0" . 'yš)OCÅìâŞÀÈÇv¸Áìª¡¹é7YDßt÷©üµä¼Täã’ÙÊ:F.|ç¢·g#];÷ó¾èó?Ÿ¶Ö¾¼Ÿfi	gÈù‘§Îı4ï©È‡' . "\0" . 'öŸá¿a!ğ·áqğ´ÖŞDB`¯ä|Ïæ`¹Vï²È½×ß‚qÛ³ÖX@—Ç™Œkkk+ +ëÕÙ¼@œşÌG¼ûıÚ|wjÀS¸ñA`\\<ı³×x–İ
+İv­†- àôÕèv¹œ€' . "\0" . 'YÎŞ÷\'kgÑ2¿[ûë_-:0È	ã˜}Œãh+ ê,U]µ@¿xîs@VİU*7–€' . "\0" . 'KÒv,ĞÏ>|È‘GÂÁÚ.@Öáš;‰@|öG>Íìcb]£€' . "\0" . 'Yc¯¨Ó–úSWnÜRÏ©ëİänB8°@êÊ}Gmº' . "\0" . '9jÏk÷ù™±-mCÔ66% @6Õ]*»"ş[»¢Q•ùÈ|Öö´şó>âÑí ^\' @×å|§€KvïT|?d?}©%óä%»±hë>fw{Y¡€' . "\0" . 'Ya§¨ÒjúSWÍWÛM*6—€' . "\0" . '™KÚ~¶.§®~ÛZ{åá£­{l½7Õ2
+£@ ¯ºú¸µöÕ´W	\\ ‰¼@Ë»Í­{:b8xZÀº‡BàbhxZ ï6·îa¤8 †Ç|Â ÑAà	bx8/àÔ•‘Aà‚€' . "\0" . '1DœpêÊÈ  @Œ7ôw›ÇDy pFÀÄ° ğ¬ÀÛ­µXûˆ—»ÍÖ@ŒW	ôJôé‚W‘yÓ‘Ì@ÜûÚ~*§®>f„01\\è/ÙuOÙ½HæG09úĞşpÉ®q@   @
+hŠìN /Ùuêjw]«AS
+)um{.ÙİB/©ã*È*»E¥fÈ§ìÆî\\²;ºİìG@€ì§/µä6ë·yy7çˆAqT—ìµçµ{42¥mH@xl¨³Tu½d½}£fÓøtÁi\\mõ€ä€~à&[÷8pçkúød|S[\\§@„GÜmÏ»rÅÕ:ûH­6& @6Öaª[ÈuI,*HàYbDAÀ¢ùzYg ³“ÛáÌùùñpD53¾İí[@€ì»Şº\\4÷Œ«£íŸD@€LÂj£+È‡Š™G,š{<û
+:Eö% @öÕŸZó?X÷ˆ¯>ÛÃ¨ 0‘€' . "\0" . '™ÖfÈEs—ë.Úv¾w²÷>^ûòNsáq¼¾×â™ÈÌàv7©€ğ˜”×Æ	<+ @Œˆ½äWnÜKjÇêÈê»H¯p¹îHŞB`l2¶¨íÍ- <æ·?ƒ€' . "\0" . '1¶,áá.ó-÷¢ºoV@€l¶ë_q3Ã' . "\0" . 'K¥{Àş+ñXöxÆ•G”Tô”!0’€' . "\0" . '	ÒffÈ›ßk­½3Û^íˆ' . "\0" . 'çˆA±şñ$.ÕİJ¯©ç®È®»w7óQ´»éJÙ“€' . "\0" . 'ÙSoî³-ywy\\i§¬bİãH¯˜yEÛãëc¯×[k/ïycøúJkíÏ­µ_fGs;ÒY¬­d1z;¾B Ë÷øHö>b†•upéÿíÕç­µ—.¼)ÖŒ~ÖZûøÒÆüœÀµäZ)ï›S ¦?j­}sãWZõ!mŠpˆ‹WÆ5ÿSûül“üúÏÖÚËÃ›>öó­ÖÚÎtZI¬!ù|”9GôN÷%@vÚ±nVXcæÚZkon -Q÷<…ôÔ)§lRœVúd8àÇ=¾¯}@Üs z½Û…VO™§ïÙşºF§ SêÚö­}x¬í2İ„~VñÖky`ÎÈ`èâVŸêûĞZûÎ™ÂQ·ï:­UeUN€kè/Ó]:<¢.ñ\'Â"O;ÅßÏnÊ x€Œƒò¬£-1³;73rZk-¿«‡' . "\0" . 'ÙX‡í´ºıeºsß]A‘§ŸrâÜºÃ[kŸ=|Æz¬3Dp¬1(.‘¸ªí±™“ÓZ—ôüüb@,-Ğ‡Ç3Ø_ü‰µŠÇÂ"L" bV‘A±§µ‚ËŸ´Ö¾ñÈi­’=µwé1¾Ûıİví&6õÌ#×+2,ZØÎÀXë)¨):ô©EöóĞ-Î²¦°²Í3Ä°XJ §!ëÿn¦ËÓ3—Â"#NE)0ëë§NkylÌR¿!Ø¯' . "\0" . 'Ù@\'í°Š¿|¸×ã‹Ã©’×†ÓIy3]ş=®¹,ö1ª‰~İÂé™ç¥ú+àúŸÎ½&µÃá¾ß&	ıöíZ[Ö_mõ¯ÖÚïî÷ˆGqŒñú´µöëî~Š8ø	‹Ûd#Üc—ëCG||Ìmb~·' . "\0" . '9pç/Ğô?=r‡t¥:9³pª¢§;È€Šß$F¼¦P?sÈ›ñ¢\\Î*Ì,®Qô
+	qmú9~á¼ÿá/Zko­ı®|¬\\@€¬¼ƒvX½şQ [½o‡İ¢In ·›)A€' . "\0" . 'u †”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”H‰M! Æ' . "\0" . '”şô‰Ø¿R‚' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'IEND®B`‚')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 16:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 17:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 17:45:16 --> file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Admin.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 92)
+ 2 APPPATH\Controllers\Admin.php(92): file_put_contents('public/ttd/ttd_1.png', '‰PNG
+
+' . "\0" . '' . "\0" . '' . "\0" . 'IHDR' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'È' . "\0" . '' . "\0" . '' . "\0" . 'Æ·â' . "\0" . '' . "\0" . '' . "\0" . 'sRGB' . "\0" . '®Îé' . "\0" . '' . "\0" . 'çIDATx^íİÏ$·`*e )9ß½waïÑQX
+ÂwûîtĞŞƒ¼oÑ4J­™Q7§^Yïk`0³‹&‹üêÿWÍ‡' . "\0" . '|5ĞF ĞˆE@€' . "\0" . 'CdˆM# Ö' . "\0" . '	!6 @@€X 0$ @†Ø4"@€' . "\0" . 'b @€À€' . "\0" . 'bÓˆ' . "\0" . 'ˆ5@€' . "\0" . 'CdˆM# Ö' . "\0" . '	!6 @@€X 0$ @†Ø4"@€' . "\0" . 'b @€À€' . "\0" . 'bÓˆ' . "\0" . 'ˆ5@€' . "\0" . 'CdˆM# Ö' . "\0" . '	!6 @@€X 0$ @†Ø4"@€' . "\0" . 'b @€À€' . "\0" . 'bÓˆ' . "\0" . 'ˆ5@€' . "\0" . 'CdˆM# Ö' . "\0" . '	!6 @@€X 0$ @†Ø4"@€' . "\0" . 'b @€À€' . "\0" . 'bÓˆ' . "\0" . 'ˆ5@€' . "\0" . 'CdˆM# Ö' . "\0" . '	!6 @@€X 0$ @†Ø4"@€' . "\0" . 'b @€À€' . "\0" . 'bÓˆ' . "\0" . 'ˆ5@€' . "\0" . 'CdˆM# Ö' . "\0" . '	!6 @@€X 0$ @†Ø4"@€' . "\0" . 'b @€À€' . "\0" . 'bÓˆ' . "\0" . 'ˆ5@€' . "\0" . 'CdˆM# Ö' . "\0" . '	!6 @@€X 0$ @†Ø^mô·ÖÚ_Zk?µÖşuûÙwz#@€À$dßBüúBw¿Ü‚äß­µø»ÿì»e½ @à`²/ø?>Ä‡ºÜ†È×­µŸ[kÿ¼…Kì¹ø @`z²‰¾ı¼Çñ§ÖZüşşö÷3[‰p‰OÉ\'‡Â¡ó] ùÚ=PâÜHËè\'‚Å¹•Q=íØ]@€ìNúf‡=LbÏä‘C]¯uÖÃ$NÚû @àr
+û—F˜ü¹µöÃíï‘‘ü·µöŸÖÚß]ñ5Â§ï ïÑÛ¯m„Iÿ‰½“¾§òÌú¹“NÆ?Ãæ»Œ
+Q¹cÚEô½•ûßß|>\'ò]k-~÷ïmGµ½|8NÈ÷€9fä¶B€ÀåÈú%~ôª¯~Ş$~ÿ¸ş´Í€' . "\0" . '³ÈÙØûÛõırâû­ôûPâæFwÌï_=(! @®_æG.#Şî²wrı5a†v »0.ÓI?Q÷¤¼u¢¾J¿ïd™	(Ç	ã¬gÜÒ#÷¥ôÃ]=LœŒŸ±’ÆDàrúÄ›Œ@‰ßz‹½“‰hh Gj¯µ­íŞÉk‡»îŸ4ìAkÕØh	¼K@€¼‹¯TãGOÆ{^W©ea²•HåêÏıÙ½Wv[kI`Z2mi–Øí¸ïd©r,ÇÈcN¾õ¸À#wÆ{4ıã¾I`Z2mi.3°?ºTØMŒ—)µ‰T Õ*~î|ûCã+/½`Ë=\'çÖÇÖ	<% @âòåÙ;qU×Îèº#°—€' . "\0" . 'ÙKR?{¼(Î›ì!¬;
+1uµ«À[\'ã…É®Ô:#0& @ÆÜ´:^àµÇÔ;	|-l‘Àb!¬(ĞOÆ÷çvõ§{iÖŠÕ4æeÈ²¥3ğ@”¿Şş/‚Å]–d’¬ûSúI\\.ÜC%§o`ì‡¼N˜¸’€' . "\0" . '¹R5Íå5íù“øNËÇÛë|½ßÄº!0( @á4[Z $~"<âİ\'±gâK—ÔàÏ g¨Ûæl&±—G˜Ø3™­JÆ3€' . "\0" . '™®$4@ß;‰ßñ‰e	”	
+cs	¹êa4ó	ôó\'=@âßwÍW\'#:A@€œ€n“Ë
+lï?Ùî™Ø;Y¶¤şò=m«ô“ñİ¡ê(ÕWF‘ù"…6Ítí¡®xT½+»ÒÉmàlrvlÿªıfÆ“øôÇÒ_u¾æUP@€,º)*°}‰VÜs{\'‡–ÀÆ²H–¬~	¼,°}ÌJJœ/(VË’dÉ²ôE¶{\'ñwJêr™ğE
+|õi«WØüV¸?o{&nb\\©‚ÅÆ*@ŠÜt—ˆË„ûIøO·Ã]öN–*áµ+@®]_³»ÀöÜÉ7·ó&öN®Sß%g"@–,›AØ¾@+sõÇ«¸±øÂ8zúähqÛ#°¯À6Lúa®Ø‚C]û:ëíbY¸–Àıóº<šşZõj6dªrİîw9o²;qİHİÚ›y=íóº¼8«^ıwŸ±' . "\0" . 'ÙT‡–øp»Ï$~Ç	x{\'Ë”n
+9ê`ÎØ¾Ö·ör"şìªL¾}2yÀÁ=<b³±g÷œ|ôJßƒ«°ÈæÈ"…2L\'
+DÄ\'ÂÅ¡®1Û¦Èl1ó
+Ü?š>î;q™ğ¼õJ™' . "\0" . 'I\'¶—èçMúS„cïÄİğ—-÷ï\'&@
+ÛT	$
+lßßÅU]‰à3t-@f¨‚1¸–@¿ßdûFar­™' . "\0" . '¹`QM‰ÀdÛÇÒÇÃû‰øÉ†i8Ï
+gÅ|Ÿ' . "\0" . '÷lÃ$ú‰70ÆŞ‰Ï‚dÁ¢2‹Ä¡®~¯ILÉ»á+¬' . "\0" . 'Y¬`†Kà¢=Lbz^˜µH‘È"…2L…îß¾÷›Äa.‡º&[d²‚¿xéæEa2É" “Â0xH`{‰pœ€»Dø!ºı¿$@ö7Õ#Çô½“*üxŒûÿ·"@·9Rîüè‘ô‰Ü$W×œ*°}Ç‰ğ	¥ 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . '’€ªKT ªlH 	¨º$@€@R¡ÊæH€' . "\0" . 'ÿ“­åÉ,Nê‰' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'IEND®B`‚')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 17:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 17:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 17:53:08 --> file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Admin.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(public/ttd/ttd_1.png): Failed to open stream: No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 92)
+ 2 APPPATH\Controllers\Admin.php(92): file_put_contents('public/ttd/ttd_1.png', '‰PNG
+
+' . "\0" . '' . "\0" . '' . "\0" . 'IHDR' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'È' . "\0" . '' . "\0" . '' . "\0" . 'Æ·â' . "\0" . '' . "\0" . '' . "\0" . 'sRGB' . "\0" . '®Îé' . "\0" . '' . "\0" . 'IDATx^íİË±ßH`Í,{`gˆÄ8
+–ƒC 3+ÒÀ8à™ÛŒ|}R·İ}¾•ËUƒZêş\\?Z­Ç‹¨ø¡¢& @` N¨ Ul @€€' . "\0" . 'q @€@•€' . "\0" . '©bÓˆ' . "\0" . 'ˆs€' . "\0" . 'ªH›F  @œ P% @ªØ4"@€' . "\0" . 'â @€' . "\0" . '*RÅ¦ç' . "\0" . 'T	*6 @@€8 @ J@€T±iD€' . "\0" . 'Ä9@€' . "\0" . 'U¤ŠM# Î¨ Ul @€€' . "\0" . 'q @€@•@ö' . "\0" . 'ùó²,–eù¸,Ëª5"@€@RÌòÛ‡ğø÷ªî_–å“ Iú/Á°	Ø-9@+$‚dı$»O#È(=@¢æqëÇg‚äŸ«‰Ë[ÿu3¯
+_yşú$ÏıkY–¿=„LÌNü @àáÿaoOƒ?.Ëòù™ÙHÙ*f"±N"Hüó!@ ½€' . "\0" . 'yşˆ‰K[/ı"HâÎ­¸ÌåG€' . "\0" . '”äå²Ç%­¿,ËòA’òß†A ğ†€' . "\0" . 'y(îĞúÇ²,xÃ±,¸›‘ø\'G€@²­Ô/İ©µn—µÖwnmÛ³­ 0¨€' . "\0" . 'Ù^¸˜Ä"ûs·ü>’ŸşC\\ó#@€À´di·I¹[Ë3$ûµ @`' . "\0" . 'ÒV¤¸´õş•;¶Ü­Õæ«5cŠ³’&q™Ë%­c\\í…' . "\0" . 'ÈñÅy)Lb6ò»ãg¸G@€œë¾“ß/Ëòß‡‰öx’İÚÈ¹ööN€ÀÉädàÕîËâ{<å·û~yøßÜ©u¿# p°€' . "\0" . '9tãî"8âCVñón­h6#@ /r_=Êå­$¹¯L€@…€' . "\0" . '©@;¸I	’x@ÑÛ~Æµ;Î çÙîİsI¬ÄmÀ‚d¯í	¸\\@€\\NşæŸ‰K[o’Ù€' . "\0" . ';ÈêÛYŞ»eF²ÍËV\\, @.ßy¸˜”IüíÕ(;mN€Àyä<Û#÷ü4H|äH]û"@ J@€T±İÚ¨<C¡O´Ç‰YİZ\'S@€ŒY÷§·şúÕ˜uÔkC¡Ë÷óúHùZb¬xÏÖØõÔ{C	¡ÊõbgŸïÙš£¶FA [Òmiª:&HªØ4"@ F@€Ô¨õß&‚$^—·<ÕŞ½ôÀdÈ²mî´ ÙLeCö
+½bcn¿~1FğÑ­¿cR¯	ô$ @zªÆù}Y¿Å3$ç{;©ÈÔå}qp%HbfâÖßœç€Qh Í„Cï ¬‘D ’¡K©ó® ×›÷xÄ§3ÏôX%}"Ğ™€' . "\0" . 'é¬ 7wGÜ\\' . "\0" . '‡\'0’€' . "\0" . '©Z×õ5‚¤|«ıËãK¯;º# 0„€' . "\0" . '¢L·t2ÖGâ#F˜üéñ¡Ä[:ã ô\' @ú«I=Šyÿ¸ĞO¶Ç?’ä\'ÀÎá—[ÅkRâaDA²Ğæf 3Uóº±”Ûc}$¾E"H®³w$İnJ1dG"HbÁ=şvëï%Ôiõ¤ŞNËo"@Ş-ËòÉŒÄ©A ‡€' . "\0" . 'ÉQç«FY^ÚX¾ÓîÒÖUòCàrz‚C–K[1Tk$	
+nˆ9HÎº_5ê²ØşõñaD3’«ä‡Àäää‡($Æ­¿q×V„HÌJü\\@€^ÀÁº_f$Ñm‹íƒOw	< Î‰;Ê­¿ñt» ¹£Ià' . "\0" . 'r' . "\0" . '¢]TDÄŸ¸ı·Ü¹U½3	¸V@€\\ëíhÏÄ¥­òÒÆ˜‘Äçvıè\\@€t^ dİ+¯‘_j7áG@€ŒS«L=-‹í‚$SÕu82\\ÉRuØ¥­Tå6ØÑÈhËÙ_A’³îFİ¹€' . "\0" . 'é¼@º÷À:Hâ®-o' . "\0" . 'v‚¸Q@€ÜˆïĞÕ‚¤šNCÇ	ã,íézòÒÆxMŠÉõş˜\\@€$?&~™‘Ä‰ñ¾-Ï‘LRXÃè[@€ô]½Û\'P‚$^‘3A²ÏÏÖv	]\\6H l 1#¨hº:–€' . "\0" . '«^z»O ¬‘DÄ7IÜµµÏÏÖ^ Në 1#ÉPqc¼D@€\\Âì Xlï¤º1‡€' . "\0" . '™£F±O I´Š…vŸÚİçgk?\'Bfri+şÏìúÔnæ³ÁØwİdL(P¾Û¯“/³’	‡iH ÇzÚÛØ$ñçƒOí]H½¿F@€\\ãì(ã	Äs$±6RşŒ7=&p²€' . "\0" . '9Øî‡(3’¸´e±}èRêüäUûœQ ¬˜‘ÌX]cª Ul%X/¶{ÏVÒ“À° ÎuñZ”˜’:?­& ÑnˆËZñÇ3$·•Àï wê;ö,qÇVübFâaÄYªjo
+7‰l@`³@‰§Ú7sÙpt2zõ¿7õëQÜúÛ[uôçPr(§øF ÖG"P,´;1¦ S–Õ :(²òA«Î
+£;m¤ÍOk[b&òùñ»‚d«šíº ]—Gç&ˆ…ö_ÖèÒÖ„Î4$’©ÚÆÚ‹€ZõR	ıh M|h$M|ß- @î®€ãøåiö¸¬õåÃúˆ3b2L©t4€õ‘Eiˆd¦jËDœ¡ŠIÆ @’Ú0‡(ë#ï–eù8\\ïu8…€' . "\0" . 'IQfƒX ÖGâí_­\\ÅI».@&-¬aM%Pf#ï—eùÉ«Q¦ªíĞƒ C—Oç“	”õ‘$^Ÿìèm¸¤·Šè·Öínû}ÛË\'	“`í–ÀEåÓº1‰Zù¸L@€\\Fí@N(3’8€÷kÆlÇOˆs‚Àëõ‘x¢]ÌQ×®G!@º.ÎØ-°~~$îØ²Ğ¾›Pƒ­d«”íŒ%°^h$cÕoˆŞ
+!Ê¤“ª"Hâ$Zh¯fÔğ9â¼ C Iù˜•;¶rÔıÔQ
+Syíœ@—ñÖßò§ËNêTÿ¤ÿé!3bFRÖIâ-3’3”\'ß§' . "\0" . '™¼À†G`ƒ€É$›|/ @œ„Àz±İ3$Î‰Md“¤ˆIüIª²ï¬' . "\0" . 'Ùo¦qÛoùYlÏPñŠ1
+
+4M$X¿gËs$‰
+¿e¨d‹’mğÂFçÀwÄIA€À^r×–×£ì•›l{2YA‡ÀE.m]İóaHÏÕÑ7ıÄb{Yp÷uÄşëuhÈ¡œvF ¥Àú=[^!Ÿè ‰Šm¨.ˆÙÈ‡eY¾>>Gâ) ßur—¼ã˜[ \\Úz÷&çjŞÑ	¼µ7rg”6ÆŒ$.my ñlñ‹÷/@.w8IbFß")ßkwik‚A€LPDC 0@<CòşqÄ][î¹®
+Á¨ûX_ÚŠî[#°ˆÑe2hát›À$&qi+~Ÿ|Øj¬ª
+±ê¥·fˆ ‰Ë[q×–gI©²' . "\0" . '¤PºI ‰@yEJÜ¹3ïÛê¸ğ¤ãâèÄeFR‚ÄÇ­:<H‡EÑ%ş/P‚$şCÜú+H::9HGÅĞ^°FÒáÉ!@:,Š. ğª@,¶—8z–äÆ“E€ÜˆïĞT”' . "\0" . 'ùüx×–K[Õ”õH½–ô!P^Ük$¾Û~aMÈ…ØE€À©‚äTŞïw.@.w8N(Ï’ÄßqiË‹O" \'ÁÚ-·”wnÅÌÄ-À\'”C€œ€j—t%°şäny|Wµ3dÔÊé751‰@±Ø^£÷¤' . "\0" . '9' . "\0" . 'Ñ.N \\ÖŠ0ñ¥ÄÊò	J8Í^ \\Ú*k%f%;K*@v‚Ùœ' . "\0" . ')JˆÄàÌH6–X€l„²)Ö³‘n¤' . "\0" . 'iÑÓ–' . "\0" . '‰Hââ:ZH‹¶H, @ßĞ	 Ğ" @Zô´%@€@b’¸ø†N€' . "\0" . 'Ò¢§-ÄÅ7t´=m	 X@€$.¾¡ @ E@€´èiK€' . "\0" . 'Ä$qñ' . "\0" . '-¤EO[$ ‰‹oèh -zÚ @ ±€' . "\0" . 'I\\|C\'@€@‹€' . "\0" . 'iÑÓ–' . "\0" . '‰Hââ:ZH‹¶H, @ßĞ	 Ğ" @Zô´%@€@b’¸ø†N€' . "\0" . 'Ò¢§-ÄÅ7t´=m	 X@€$.¾¡ @ E@€´èiK€' . "\0" . 'Ä$qñ' . "\0" . '-¤EO[$ ‰‹oèh -zÚ @ ±€' . "\0" . 'I\\|C\'@€@‹€' . "\0" . 'iÑÓ–' . "\0" . '‰Hââ:ZH‹¶H, @ßĞ	 Ğ" @Zô´%@€@b’¸ø†N€' . "\0" . 'Ò¢§-ÄÅ7t´=m	 X@€$.¾¡ @ E@€´èiK€' . "\0" . 'ÄÿŞJ3Ø‹hú' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'IEND®B`‚')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->simpan_pengguna()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 18:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 18:23:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin.php on line 165.
+ 1 APPPATH\Controllers\Admin.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 165)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 18:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 18:25:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin.php on line 165.
+ 1 APPPATH\Controllers\Admin.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 165)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 18:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 18:27:00 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin.php on line 165.
+ 1 APPPATH\Controllers\Admin.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 165)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 18:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 18:27:55 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin.php on line 165.
+ 1 APPPATH\Controllers\Admin.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 165)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 18:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 18:30:12 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin.php on line 165.
+ 1 APPPATH\Controllers\Admin.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 165)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 18:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 18:31:35 --> Value of type null is not callable
+in APPPATH\Controllers\Admin.php on line 165.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:32:27 --> Value of type null is not callable
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 18:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 18:33:00 --> Undefined array key ""
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 APPPATH\Controllers\Admin.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:33:22 --> unlink(ttd/000): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(ttd/000): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('ttd/000')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 18:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 18:33:56 --> unlink(ttd/000): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(ttd/000): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('ttd/000')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:34:52 --> unlink(000): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(000): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('000')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:35:00 --> unlink(000): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(000): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('000')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:35:01 --> unlink(000png): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(000png): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('000png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:35:02 --> unlink(000png): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(000png): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('000png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:35:02 --> unlink(000png): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(000png): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('000png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:35:07 --> unlink(000.png): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(000.png): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('000.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:35:07 --> unlink(000.png): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(000.png): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('000.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:35:08 --> unlink(000.png): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(000.png): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('000.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:35:08 --> unlink(000.png): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(000.png): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('000.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:37:06 --> unlink(/img000): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/img000): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('/img000')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:37:10 --> unlink(/img000): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/img000): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('/img000')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:37:10 --> unlink(/img000): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/img000): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('/img000')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:37:13 --> unlink(/img000): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/img000): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('/img000')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:37:14 --> unlink(/img/000): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/img/000): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('/img/000')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:37:30 --> unlink(ttd/000): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(ttd/000): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('ttd/000')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:37:31 --> unlink(ttd/000): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(ttd/000): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('ttd/000')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+CRITICAL - 2024-05-09 18:37:32 --> unlink(ttd/000): No such file or directory
+in APPPATH\Controllers\Admin.php on line 164.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(ttd/000): No such file or directory', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Controllers\\Admin.php', 164)
+ 2 APPPATH\Controllers\Admin.php(164): unlink('ttd/000')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('000')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 18:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 18:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-09 18:59:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\detail_admin_view.php on line 9.
+ 1 APPPATH\Views\admin\detail_admin_view.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\detail_admin_view.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\administrasi\\app\\Views\\admin\\detail_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/admin/detail_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(112): view('/admin/detail_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->detail_pengguna('ttd', 'Bahrupng')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\administrasi\\public\\index.php')
+INFO - 2024-05-09 19:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:22:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-09 19:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

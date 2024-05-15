@@ -32,6 +32,11 @@
                         <td>:</td>
                         <td><?= $detail['status']; ?></td>
                     </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Tanda Tangan</td>
+                        <td>:</td>
+                        <td><img style="width: 200px; height: 100px;" src="<?= base_url('ttd/' . $file_name . '.png'); ?>" class="img-fluid rounded-start" alt="..."></td>
+                    </tr>
                 </table>
                 <a href="/admin/pengguna" class="btn btn-success">Kembali</a>
             </div>

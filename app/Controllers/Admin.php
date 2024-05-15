@@ -3,6 +3,9 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use Predis\Command\Redis\EXISTS;
+
+use function PHPUnit\Framework\fileExists;
 
 class Admin extends BaseController
 {
@@ -79,8 +82,18 @@ class Admin extends BaseController
             'nama_lengkap' => $this->request->getVar('nama_lengkap'),
             'mapel' => $this->request->getVar('mapel'),
             'status' => $this->request->getVar('status'),
+
+            'ttd' => $this->request->getVar('signature'),
         ];
         $ModelUser->insert($data);
+
+        $file_name = strtolower(str_replace(' ', '_', $data['nama_lengkap'])) . '.png';
+        $file_path = 'ttd/' . $file_name;
+        $image_data = str_replace('data:image/png;base64,', '', $data['ttd']);
+        $image_data = str_replace(' ', '+', $image_data);
+        $image_decode = base64_decode($image_data);
+        file_put_contents($file_path, $image_decode);
+
         return redirect()->to('admin/pengguna');
     }
 
@@ -90,11 +103,14 @@ class Admin extends BaseController
         $user = session()->get('user');
         $detail = $ModelUser->where(['nik' => $nik])->first();
 
+        $file_name = str_replace(' ', '_', $detail['nama_lengkap']);
+
         $data = [
             'user' => $user['nama_lengkap'],
             'user_status' => $user['status'],
 
             'detail' => $detail,
+            'file_name' => $file_name,
         ];
         return view('/admin/detail_admin_view', $data);
     }
@@ -109,6 +125,7 @@ class Admin extends BaseController
         $status['status'] = $ModelUser->findAll();
 
         $detail = $ModelUser->find($nik);
+        $file_name = str_replace(' ', '_', $detail['nama_lengkap']);
 
         $data = [
             'user' => $user['nama_lengkap'],
@@ -118,6 +135,7 @@ class Admin extends BaseController
             'status' => $status['status'],
 
             'detail' => $detail,
+            'file_name' => $file_name,
         ];
         return view('/admin/edit_admin_view', $data);
     }
@@ -125,13 +143,26 @@ class Admin extends BaseController
     public function update()
     {
         $ModelUser = new \App\Models\User();
-        $user_pengguna = $ModelUser->findAll();
+        $user_pengguna = $ModelUser->find();
         $user = session()->get('user');
+
+        $file = $this->request->getVar('signature');
+        $new_file = $this->request->getVar('nama_lengkap');
+        $file_name = str_replace(' ', '_', $new_file);
+        $file_path = 'ttd/' . $file_name . '.png';
+
+        if (file_exists($file_path)) {
+            unlink($file_path);
+        }
+
+        $image_data = str_replace('data:image/png;base64,', '', $file);
+        $image_data = str_replace(' ', '+', $image_data);
+        $image_decode = base64_decode($image_data);
+        file_put_contents($file_path, $image_decode);
 
         $data = [
             'user' => $user['nama_lengkap'],
             'user_status' => $user['status'],
-
 
             'nik' => $this->request->getVar('nik'),
             'nip' => $this->request->getVar('nip'),
@@ -140,15 +171,30 @@ class Admin extends BaseController
             'nama_lengkap' => $this->request->getVar('nama_lengkap'),
             'mapel' => $this->request->getVar('mapel'),
             'status' => $this->request->getVar('status'),
+
+            'ttd' => $this->request->getVar('signature'),
         ];
         $ModelUser->save($data);
+
         return redirect()->to('admin/pengguna');
     }
 
     public function delete_pengguna($nik)
     {
         $ModelUser = new \App\Models\User();
+
+        $ttd = $ModelUser->find($nik);
+        // $file_name = strtolower(str_replace(' ', '_', $data['nama_lengkap'])) . '.png';
+
+        $ttd_name = str_replace(' ','_', $ttd['nama_lengkap']);
+        $file_path = 'ttd/' . $ttd_name . '.png';
+
+        if (file_exists($file_path)) {
+            unlink($file_path);
+        }
+
         $ModelUser->delete($nik);
+
         session()->setFlashdata('delete', "$nik berhasil dihapus");
         return redirect()->to('admin/pengguna');
     }

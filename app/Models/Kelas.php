@@ -4,15 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class User extends Model
+class Kelas extends Model
 {
-    protected $table            = 'user';
-    protected $primaryKey       = 'nik';
+    protected $table            = 'kelas';
+    protected $primaryKey       = 'id_kelas';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nik','nip','username','password','nama_lengkap','mapel','status','ttd'];
+    protected $allowedFields    = ['id_kelas','nama_kelas'];
 
     // Dates
     protected $useTimestamps = false;

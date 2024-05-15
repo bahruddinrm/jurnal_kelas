@@ -16,8 +16,8 @@
             mapel.disabled = false;
         } else {
             mapel.disabled = true;
-        }
-    }
+        };
+    };
 </script>
 
 <div class="row">
@@ -72,10 +72,18 @@
                         <div class="col-sm-12">
                             <select class="form-control" name="mapel" id="mapel" disabled>
                                 <option selected disabled>Pilih salah satu</option>
-                                <?php foreach ($id_mapel as $nm) : ?>
-                                    <option value="<?= $nm['id_mapel'] ?>"><?= $nm['id_mapel'] ?></option>
+                                <?php foreach ($id_mapel as $im) : ?>
+                                    <option value="<?= $im['id_mapel'] ?>"><?= $im['id_mapel'] ?></option>
                                 <?php endforeach ?>
                             </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="signature" class="col-md-12">Tanda Tangan<span class="required-symbol">*</span></label>
+                        <div class="col-md-12">
+                            <canvas id="signature-pad" width="400" height="200" style="border: 1px solid; cursor: crosshair;"></canvas><br>
+                            <input type="hidden" id="signature" name="signature">
+                            <a href="#" id="hapus_ttd" class="btn-sm btn-warning" style="cursor: pointer;">Hapus Tanda Tangan</a>
                         </div>
                     </div>
                     <div class="row">
@@ -92,5 +100,20 @@
     </div>
     <!-- Column -->
 </div>
+
+<script>
+    var canvas = document.getElementById('signature-pad');
+    var signaturePad = new SignaturePad(canvas);
+
+    document.getElementById('hapus_ttd').addEventListener('click', function(e) {
+        e.preventDefault();
+        signaturePad.clear();
+    });
+
+    document.querySelector('form').addEventListener('submit', function(event) {
+        var signatureInput = document.getElementById('signature');
+        signatureInput.value = signaturePad.toDataURL();
+    });
+</script>
 
 <?= $this->endSection(); ?>

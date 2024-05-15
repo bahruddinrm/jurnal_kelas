@@ -24,7 +24,7 @@
                         <tbody>
                             <?php foreach ($user_pengguna as $up) : ?>
                                 <tr>
-                                    <th scope="row"><?= $up['nik']; ?></th>
+                                    <td><?= $up['nik']; ?></td>
                                     <td><?= $up['nip']; ?></td>
                                     <td><?= $up['nama_lengkap']; ?></td>
                                     <td><?= $up['mapel']; ?></td>

@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.5.3/signature_pad.min.js"></script>
+    <!-- Signature -->
     <!-- Box Icon CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Favicon icon -->
@@ -62,7 +65,7 @@
 
                             <!-- Light Logo icon -->
 
-                            <h1 style="color: white; margin-top: 15px; font-weight: bold;"><?php echo($user_status); ?></h1>
+                            <h1 style="color: white; margin-top: 15px; font-weight: bold;"><?php echo ($user_status); ?></h1>
 
                         </b>
                 </div>
@@ -88,7 +91,7 @@
                         <!-- Profile -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo($user); ?></a>
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo ($user); ?></a>
                         </li>
                     </ul>
                 </div>
@@ -147,9 +150,9 @@
                 <!-- ============================================================== -->
                 <!-- Bread crumb and right sidebar toggle -->
                 <!-- ============================================================== -->
-                
+
                 <!-- < ?= $this->include('layout/breadcrumb'); ?> -->
-                
+
                 <!-- ============================================================== -->
                 <!-- End Bread crumb and right sidebar toggle -->
                 <!-- ============================================================== -->
