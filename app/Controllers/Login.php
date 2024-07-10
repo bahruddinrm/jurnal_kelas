@@ -12,6 +12,9 @@ class Login extends BaseController
     public function index()
     {
         $ModelUser = new \App\Models\User();
+        $ModelJabatan = new \App\Models\Jabatan();
+
+        $jabatan['jabatan'] = $ModelJabatan->findAll();
         $sign_in = $this->request->getPost('sign_in');
 
         if ($sign_in) {
@@ -66,7 +69,10 @@ class Login extends BaseController
                 $error = session()->setFlashdata('error', $err);
             }
         }
-        return view('login_view');
+        
+
+        
+        return view('login_view', $jabatan);
     }
 
     public function logout()

@@ -61,9 +61,12 @@
                         <div class="col-sm-12">
                             <select class="form-control" name="status" id="status" onchange="aktif()">
                                 <option selected disabled>Pilih salah satu</option>
-                                <option value="admin">Admin</option>
-                                <option value="guru">Guru</option>
-                                <option value="kepsek">Kepala Sekolah</option>
+                                <?php foreach($jabatan as $j): ?>
+                                    <option value="<?= $j['jabatan']?>"><?= $j['jabatan']; ?></option>
+                                    <?php endforeach ?>
+                                <!-- <option value="admin">Admin</option> -->
+                                <!-- <option value="guru">Guru</option> -->
+                                <!-- <option value="kepsek">Kepala Sekolah</option> -->
                             </select>
                         </div>
                     </div>
@@ -73,7 +76,7 @@
                             <select class="form-control" name="mapel" id="mapel" disabled>
                                 <option selected disabled>Pilih salah satu</option>
                                 <?php foreach ($id_mapel as $im) : ?>
-                                    <option value="<?= $im['id_mapel'] ?>"><?= $im['id_mapel'] ?></option>
+                                    <option value="<?= $im['id_mapel'] ?>"> <?= $im['id_mapel'] ?> </option>
                                 <?php endforeach ?>
                             </select>
                         </div>

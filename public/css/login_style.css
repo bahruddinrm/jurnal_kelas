@@ -18,7 +18,7 @@ body::before{
     content: '';
     position: absolute;
     inset: 0;
-    background: url(/images/bg_1.jpg);
+    background: url(/images/bg.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -60,7 +60,7 @@ body.signup .container::before{
     filter: hue-rotate(140deg);
 }
 
-@property --a{
+/* @property --a{
     syntax: '<angle>';
     inherits: false;
     initial-value: 0deg;
@@ -75,7 +75,7 @@ body.signup .container::before{
     {
         --a: 360deg
     }
-}
+} */
 
 .container span{
     position: absolute;
@@ -88,7 +88,7 @@ body.signup .container::before{
     content: '';
     position: absolute;
     inset: 5px;
-    background: url(/images/bg_1.jpg);
+    background: url(/images/bg.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -99,7 +99,7 @@ body.signup .container::before{
     content: '';
     position: absolute;
     inset: 5px;
-    background: url(/images/bg_1.jpg);
+    background: url(/images/bg.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -166,7 +166,7 @@ form .inputBox a::nth-child(2){
     text-decoration: underline;
 }
 
-form .inputBox input
+form .inputBox input, form .inputBox option
 {
     width: 100%;
     outline: none;

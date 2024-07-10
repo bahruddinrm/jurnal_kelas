@@ -46,8 +46,10 @@ class Admin extends BaseController
     {
         $ModelUser = new \App\Models\User();
         $ModelMapel = new \App\Models\Mapel();
+        $ModelJabatan = new \App\Models\Jabatan();
 
         $mapel['id_mapel'] = $ModelMapel->findAll();
+        $jabatan['jabatan'] = $ModelJabatan->findAll();
         // $status['status'] = $ModelUser->findAll();
         $user = session()->get('user');
         $user_pengguna = $ModelUser->findAll();
@@ -58,6 +60,7 @@ class Admin extends BaseController
             'user_status' => $user['status'],
 
             'id_mapel' => $mapel['id_mapel'],
+            'jabatan' => $jabatan['jabatan'],
             // 'status' => $status['status'],
         ];
 
@@ -81,7 +84,7 @@ class Admin extends BaseController
             'password' => $this->request->getVar('password'),
             'nama_lengkap' => $this->request->getVar('nama_lengkap'),
             'mapel' => $this->request->getVar('mapel'),
-            'status' => $this->request->getVar('status'),
+            'jabatan' => $this->request->getVar('jabatan'),
 
             'ttd' => $this->request->getVar('signature'),
         ];
@@ -170,7 +173,7 @@ class Admin extends BaseController
             'password' => $this->request->getVar('password'),
             'nama_lengkap' => $this->request->getVar('nama_lengkap'),
             'mapel' => $this->request->getVar('mapel'),
-            'status' => $this->request->getVar('status'),
+            'jabatan' => $this->request->getVar('jabatan'),
 
             'ttd' => $this->request->getVar('signature'),
         ];
@@ -186,7 +189,7 @@ class Admin extends BaseController
         $ttd = $ModelUser->find($nik);
         // $file_name = strtolower(str_replace(' ', '_', $data['nama_lengkap'])) . '.png';
 
-        $ttd_name = str_replace(' ','_', $ttd['nama_lengkap']);
+        $ttd_name = str_replace(' ', '_', $ttd['nama_lengkap']);
         $file_path = 'ttd/' . $ttd_name . '.png';
 
         if (file_exists($file_path)) {
@@ -262,5 +265,58 @@ class Admin extends BaseController
         $ModelMapel->delete($id_mapel);
         session()->setFlashdata('delete', "$id_mapel berhasil dihapus");
         return redirect()->to('admin/mapel');
+    }
+
+    public function kelas()
+    {
+        $ModelKelas = new \App\Models\Kelas();
+        $user = session()->get('user');
+
+        $kelas = $ModelKelas->findAll();
+
+        $data = [
+            'user' => $user['nama_lengkap'],
+            'user_status' => $user['status'],
+
+            'kelas' => $kelas,
+        ];
+        return view('/admin/kelas_admin_view', $data);
+    }
+
+    public function tambah_kelas()
+    {
+        $ModelKelas = new \App\Models\Kelas();
+        $ModelUser = new \App\Models\User();
+
+        $wali_kelas['nama_lengkap'] = $ModelUser->findAll();
+        $user = session()->get('user');
+
+        $data = [
+            'user' => $user['nama_lengkap'],
+            'user_status' => $user['status'],
+
+            'wali_kelas' => $wali_kelas['nama_lengkap']
+        ];
+        return view('/admin/input_kelas_admin_view', $data);
+    }
+
+    public function simpan_kelas()
+    {
+        $ModelKelas = new \App\Models\Kelas();
+        
+        $data = [
+            'nama_kelas' => $this->request->getVar('nama_kelas'),
+            'wali_kelas' => $this->request->getVar('wali_kelas'),
+        ];
+        $ModelKelas->insert($data);
+        return redirect()->to('admin/kelas');
+    }
+
+    public function delete_kelas($id_kelas)
+    {
+        $ModelKelas = new \App\Models\Kelas();
+        $ModelKelas->delete($id_kelas);
+        session()->setFlashdata('delete',"$id_kelas berhasil dihapus");
+        return redirect()->to('admin/kelas');
     }
 }

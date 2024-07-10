@@ -115,6 +115,8 @@
                         </li>
                         <li> <a class="waves-effect waves-dark" href="/admin/mapel" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Mapel</span></a>
                         </li>
+                        <li> <a class="waves-effect waves-dark" href="/admin/kelas" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Kelas</span></a>
+                        </li>
                         <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-emoticon"></i><span class="hide-menu">Icons</span></a> -->
                         <!-- </li> -->
                         <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-earth"></i><span class="hide-menu">Google Map</span></a> -->

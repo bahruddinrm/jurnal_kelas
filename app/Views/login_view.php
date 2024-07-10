@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Login & Registration Form</title>
+    <title>SMP Negeri 14 Pekalongan</title>
     <link rel="stylesheet" type="text/css" href="<?= base_url('css/login_style.css') ?>">
 </head>
 
@@ -29,9 +29,10 @@
             </div>
             <div class="inputBox">
                 <select class="status" name="status" id="status">
-                    <option value="Guru">Guru</option>
-                    <option value="Admin">Admin</option>
-                    <option value="Kepala Sekolah">Kepala Sekolah</option>
+                    <option selected disabled>Pilih Salah Satu</option>
+                    <?php foreach ($jabatan as $j) : ?>
+                        <option value="<?= $j['jabatan']; ?>"><?= $j['jabatan']; ?></option>
+                    <?php endforeach ?>
                 </select>
             </div>
 
