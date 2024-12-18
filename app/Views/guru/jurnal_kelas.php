@@ -1,12 +1,6 @@
 <?= $this->extend('layout/template_guru'); ?>
 <?= $this->section('content'); ?>
 
-<style>
-    .required-symbol {
-        color: red;
-    }
-</style>
-
 <div class="row">
     <div class="col-12">
         <div class="card">
@@ -18,8 +12,8 @@
                             <select class="form-control" name="pilih_kelas" id="pilih_kelas">
                                 <option selected disabled>Pilih Kelas</option>
                                 <?php foreach ($kelas as $nk) : ?>
-                                    <option value="<?= $nk['id_kelas']; ?>"><?= $nk['nama_kelas']; ?></option>
-                                <?php endforeach ?>
+                                    <option value="<?= $nk['id_kelas']; ?>" <?= ($nk['id_kelas'] == session()->get('kelas')) ? 'selected' : ''; ?>><?= $nk['nama_kelas']; ?>
+                                    <?php endforeach ?>
                             </select>
                         </div>
                     </div>
@@ -31,7 +25,7 @@
 
 <!-- < ?php if (isset($pilih_kelas)) : ?> -->
 <!-- < ?php endif ?> -->
- 
+
 <div class="row" id="jurnal">
 
     <!-- column -->
@@ -40,7 +34,10 @@
             <div class="card-block">
 
                 <h3 class="card-title" style="margin-bottom: 30px;">JURNAL KELAS <?= esc($nama_kelas) ?></h3>
-                <a href="/guru/tambah_jurnal" class="btn-sm btn-warning" title="isi jurnal kelas">Isi Jurnal Kelas</a>
+                <!-- <a href="/guru/tambah_jurnal" class="btn-sm btn-warning" title="isi jurnal kelas">Isi Jurnal Kelas</a> -->
+                <a href="/guru/tambah_jurnal" id="btn-isi-jurnal" class="btn-sm btn-warning" title="Isi Jurnal Kelas" disabled>
+                    Isi Jurnal Kelas
+                </a>
                 <div class="table-responsive">
                     <table class="table">
                         <thead>
@@ -74,7 +71,7 @@
                                     <td><?= $j['mapel']; ?></td>
                                     <td><?= $j['uraian_materi']; ?></td>
                                     <td><?= $j['media_pembelajaran']; ?></td>
-                                    <!-- < ?php endforeach ?>
+                                <!-- < ?php endforeach ?> 
                                 < ?php foreach ($jumlah_presensi as $jp) : ?>
                                     <td>< ?= $jp['hadir']; ?></td>
                                     <td>< ?= $jp['sakit']; ?></td>
@@ -83,10 +80,15 @@
                                     <td>< ?= $jp['jumlah']; ?></td>
                                     <td>< ?= $jp['nama_siswa_tidak_hadir']; ?></td> -->
                                     <td>
-                                        <a href="/guru/hapus_jurnal/<?= $j['jurnal_id']; ?>" title="delete" class="btn-sm btn-danger" onclick="return confirm('<?= $j['jurnal_id']; ?> akan terhapus secara permanen')"><i class='bx bx-message-alt-x'></i></a>
+                                        <button class="btn-sm btn-danger btn-delete"
+                                            data-id="<?= $j['jurnal_id']; ?>"
+                                            data-url="/guru/hapus_jurnal/<?= $j['jurnal_id']; ?>"
+                                            title="Hapus">
+                                            <i class='bx bx-message-alt-x'></i>
+                                        </button>
                                     </td>
-                                </tr>
-                            <?php endforeach ?>
+                                <!-- </tr>  -->
+                             <?php endforeach ?> 
                         </tbody>
                     </table>
                     <!-- < ?= $pager->links('user_pagination', 'user_pagination'); ?> -->
@@ -96,6 +98,70 @@
     </div>
 </div>
 
+<!-- SweetAlert ketika berhasil menginput jurnal -->
+<script>
+    // SweetAlert untuk pesan sukses
+    <?php if (session()->getFlashdata('success')) : ?>
+        Swal.fire({
+            icon: 'success',
+            title: 'Berhasil',
+            text: '<?= session()->getFlashdata('success'); ?>',
+        });
+    <?php endif; ?>
+
+    // SweetAlert untuk pesan error
+    <?php if (session()->getFlashdata('error')) : ?>
+        Swal.fire({
+            icon: 'error',
+            title: 'Gagal',
+            text: '<?= session()->getFlashdata('error'); ?>',
+        });
+    <?php endif; ?>
+</script>
+
+<!-- SweetAlert ketika ingin menghapus data -->
+<script>
+    // SweetAlert untuk konfirmasi penghapusan
+    document.addEventListener('DOMContentLoaded', function() {
+        const deleteButtons = document.querySelectorAll('.btn-delete');
+
+        deleteButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault(); // Mencegah aksi default tombol
+
+                const url = this.getAttribute('data-url'); // URL untuk hapus data
+                const id = this.getAttribute('data-id'); // ID data yang akan dihapus
+
+                Swal.fire({
+                    title: 'Apakah Anda yakin?',
+                    text: `Data akan dihapus secara permanen!`,
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Ya, Hapus!',
+                    cancelButtonText: 'Batal'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Redirect ke URL untuk menghapus data
+                        window.location.href = url;
+                    }
+                });
+            });
+        });
+    });
+
+    // SweetAlert untuk pesan flashdata
+    <?php if (session()->getFlashdata('delete')) : ?>
+        Swal.fire({
+            icon: 'success',
+            title: 'Berhasil',
+            text: '<?= session()->getFlashdata('delete'); ?>',
+        });
+    <?php endif; ?>
+</script>
+
+<!-- JavaScript untuk menampilkan jurnal sesuai dengan kelas yang dipilih -->
 <script>
     document.getElementById('pilih_kelas').addEventListener('change', function() {
         document.getElementById('form_pilih_kelas').submit();

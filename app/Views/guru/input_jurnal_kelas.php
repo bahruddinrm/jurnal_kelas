@@ -2,10 +2,6 @@
 <?= $this->section('content'); ?>
 
 <style>
-    .required-symbol {
-        color: red;
-    }
-
     .hidden {
         display: none;
     }
@@ -27,12 +23,12 @@
                     </div>
                     <div class="form-group">
                         <label class="col-md-12" for="hari_tanggal">Hari, Tanggal<span class="required-symbol">*</span></label>
-                        <div class="col-md-12">
+                        <div class="col-md-3">
                             <input type="date" class="form-control" id="hari_tanggal" name="hari_tanggal" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="jam_ke" class="col-md-12">Jam Ke</label>
+                        <label for="jam_ke" class="col-md-12">Jam Ke<span class="required-symbol">*</span></label>
                         <div class="col-sm-12">
                             <select class="form-control" name="jam_ke" id="jam_ke" required>
                                 <option value="" selected disabled>Pilih Jam Pelajaran Ke</option>

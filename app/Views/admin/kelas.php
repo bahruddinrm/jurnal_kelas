@@ -26,10 +26,11 @@
                                 <tr>
                                     <th scope="row"><?= $no++; ?></th>
                                     <td><?= $k['nama_kelas']; ?></td>
-                                    <!-- <td>< ?= $k['nama_lengkap']; ?></td> -->
                                     <td><?= isset($k['nama_lengkap']) ? $k['nama_lengkap'] : 'Tidak ada data'; ?></td>
                                     <td>
-                                        <a href="/admin/delete_kelas/<?= $k['id_kelas']; ?>" title="delete" class="btn-sm btn-danger" onclick="return confirm('<?= $k['nama_kelas']; ?> akan terhapus secara permanen')"><i class="bx bx-message-alt-x"></i></a>
+                                        <a href="#" class="btn-sm btn-danger" title="delete" onclick="confirmDelete(<?= $k['id_kelas']; ?>, '<?= $k['nama_kelas']; ?>')">
+                                            <i class='bx bx-message-alt-x'></i>
+                                        </a>
                                     </td>
                                 </tr>
                             <?php endforeach ?>
@@ -40,5 +41,56 @@
         </div>
     </div>
 </div>
+
+<script>
+    // SweetAlert untuk pesan sukses
+    <?php if (session()->getFlashdata('success')) : ?>
+        Swal.fire({
+            icon: 'success',
+            title: 'Berhasil',
+            text: '<?= session()->getFlashdata('success'); ?>',
+        });
+    <?php endif; ?>
+</script>
+
+<script>
+    function confirmDelete(id, name) {
+        Swal.fire({
+            title: 'Apakah Anda yakin?',
+            text: name + " akan terhapus secara permanen!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Hapus!',
+            cancelButtonText: 'Batal'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Redirect ke URL penghapusan dengan id
+                window.location.href = '/admin/delete_kelas/' + id;
+            }
+        });
+    }
+</script>
+
+<script>
+    // SweetAlert untuk pesan sukses
+    <?php if (session()->getFlashdata('success')) : ?>
+        Swal.fire({
+            icon: 'success',
+            title: 'Berhasil',
+            text: '<?= session()->getFlashdata('success'); ?>',
+        });
+    <?php endif; ?>
+
+    // SweetAlert untuk pesan error
+    <?php if (session()->getFlashdata('error')) : ?>
+        Swal.fire({
+            icon: 'error',
+            title: 'Gagal',
+            text: '<?= session()->getFlashdata('error'); ?>',
+        });
+    <?php endif; ?>
+</script>
 
 <?= $this->endSection(); ?>

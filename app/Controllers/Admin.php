@@ -87,6 +87,8 @@ class Admin extends BaseController
         $image_decode = base64_decode($image_data);
         file_put_contents($file_path, $image_decode);
 
+        session()->setFlashdata('success', 'Pengguna berhasil ditambahkan.');
+
         return redirect()->to('admin/pengguna');
     }
 
@@ -182,7 +184,7 @@ class Admin extends BaseController
 
         $ModelPengguna->delete($id_pengguna);
 
-        session()->setFlashdata('delete', "$id_pengguna berhasil dihapus");
+        session()->setFlashdata('success', 'Pengguna berhasil dihapus');
         return redirect()->to('admin/pengguna');
     }
 
@@ -232,6 +234,9 @@ class Admin extends BaseController
             'nama_mapel' => $this->request->getVar('nama_mapel'),
         ];
         $ModelMapel->insert($data);
+        
+        session()->setFlashdata('success', 'Mapel berhasil ditambahkan.');
+
         return redirect()->to('admin/mapel');
     }
 
@@ -239,7 +244,7 @@ class Admin extends BaseController
     {
         $ModelMapel = new \App\Models\Mapel();
         $ModelMapel->delete($id_mapel);
-        session()->setFlashdata('delete', "$id_mapel berhasil dihapus");
+        session()->setFlashdata('success', 'Mapel berhasil dihapus');
         return redirect()->to('admin/mapel');
     }
 
@@ -293,6 +298,9 @@ class Admin extends BaseController
             'wali_kelas' => $this->request->getVar('wali_kelas'),
         ];
         $ModelKelas->insert($data);
+                
+        session()->setFlashdata('success', 'Kelas berhasil ditambahkan.');
+
         return redirect()->to('admin/kelas');
     }
 
@@ -300,7 +308,7 @@ class Admin extends BaseController
     {
         $ModelKelas = new \App\Models\Kelas();
         $ModelKelas->delete($id_kelas);
-        session()->setFlashdata('delete', "$id_kelas berhasil dihapus");
+        session()->setFlashdata('success', 'Kelas berhasil dihapus');
         return redirect()->to('admin/kelas');
     }
 
@@ -359,6 +367,7 @@ class Admin extends BaseController
         ];
 
         $ModelSiswa->insert($data);
+        session()->setFlashdata('success', 'Siswa berhasil ditambahkan.');
         return redirect()->to('admin/siswa');
     }
 
@@ -366,7 +375,7 @@ class Admin extends BaseController
     {
         $ModelSiswa = new \App\Models\Siswa();
         $ModelSiswa->delete($id_siswa);
-        session()->setFlashdata('delete', "$id_siswa berhasil dihapus");
+        session()->setFlashdata('success', 'Siswa berhasil dihapus');
         return redirect()->to('admin/siswa');
     }
 
@@ -406,7 +415,7 @@ class Admin extends BaseController
         $data = [
             'user' => $user['nama_lengkap'],
             'user_jabatan' => $user['jabatan'],
-        
+
             'pembelajaran' => $pembelajaran,
             'pengguna' => $pengguna,
             'mapel' => $mapel,
@@ -416,7 +425,8 @@ class Admin extends BaseController
         return view('/admin/tambah_pembelajaran.php', $data);
     }
 
-    public function simpan_pembelajaran(){
+    public function simpan_pembelajaran()
+    {
         $ModelPembelajaran = new \App\Models\Pembelajaran();
 
         $data = [
@@ -426,13 +436,15 @@ class Admin extends BaseController
         ];
 
         $ModelPembelajaran->insert($data);
+        session()->setFlashdata('success', 'Pembelajaran berhasil ditambahkan.');
         return redirect()->to('admin/pembelajaran');
     }
 
-    public function delete_pembelajaran($id_pembelajaran){
+    public function delete_pembelajaran($id_pembelajaran)
+    {
         $ModelPembelajaran = new \App\Models\Pembelajaran();
         $ModelPembelajaran->delete($id_pembelajaran);
-        session()->setFlashdata('delete_pembelajaran', "$id_pembelajaran berhasil dihapus");
+        session()->setFlashdata('success', 'Pembelajaran berhasil dihapus');
         return redirect()->to('admin/pembelajaran');
     }
 }

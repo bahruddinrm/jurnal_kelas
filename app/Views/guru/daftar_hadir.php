@@ -66,6 +66,17 @@
 </div>
 
 <script>
+    // SweetAlert untuk pesan sukses
+    <?php if (session()->getFlashdata('success')) : ?>
+        Swal.fire({
+            icon: 'success',
+            title: 'Berhasil',
+            text: '<?= session()->getFlashdata('success'); ?>',
+        });
+    <?php endif; ?>
+</script>
+
+<script>
     document.getElementById('tanggal_dh').addEventListener('change', function() {
         document.getElementById('tanggal_dh').submit();
     })

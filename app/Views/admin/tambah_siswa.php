@@ -1,12 +1,6 @@
 <?= $this->extend('layout/template_admin'); ?>
 <?= $this->section('content'); ?>
 
-<style>
-    .required-symbol {
-        color: red;
-    }
-</style>
-
 <div class="row">
     <div class="col">
         <div class="card">

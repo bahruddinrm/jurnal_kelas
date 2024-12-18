@@ -1,12 +1,6 @@
 <?= $this->extend('layout/template_admin'); ?>
 <?= $this->section('content'); ?>
 
-<style>
-    .required-symbol {
-        color: red;
-    }
-</style>
-
 <script>
     function aktif() {
         var jabatan = document.getElementById("jabatan").value;
@@ -74,7 +68,7 @@
                             <button type="submit" class="btn btn-primary">Simpan</button>
                         </div>
                         <div class="col">
-                            <a href="/admin/guru" class="btn btn-danger float-right">Kembali</a>
+                            <a href="/admin/pengguna" class="btn btn-danger float-right">Kembali</a>
                         </div>
                     </div>
                 </form>

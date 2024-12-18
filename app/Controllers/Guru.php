@@ -100,10 +100,10 @@ class Guru extends BaseController
 
         // validasi
         $cekData = $ModelDH->where('hari_tanggal', $tanggal)
-                            ->where('nama_kelas', $kelas)
-                            ->first();
+            ->where('nama_kelas', $kelas)
+            ->first();
 
-        if ($cekData){
+        if ($cekData) {
             return redirect()->back()->with('error', 'Daftar hadir sudah diisi');
         }
 
@@ -119,7 +119,7 @@ class Guru extends BaseController
         }
 
         if ($ModelDH->insertBatch($data)) {
-            return redirect()->to('guru/daftar_hadir')->with('success', 'Data daftar hadir berhasil disimpan');
+            return redirect()->to('guru/daftar_hadir')->with('success', 'Daftar hadir berhasil disimpan');
         } else {
             return redirect()->back()->with('error', 'Gagal menyimpan data daftar hadir');
         }
@@ -174,11 +174,12 @@ class Guru extends BaseController
             'nama_kelas' => $kelas_string,
 
             'kelas' => $pembelajaran['nama_kelas'],
+            'pilih_kelas' => $pilih_kelas,
         ];
 
         return view('guru/jurnal_kelas', $data);
     }
-
+    
     public function tambah_jurnal()
     {
         $ModelPembelajaran = new \App\Models\Pembelajaran();
@@ -241,7 +242,14 @@ class Guru extends BaseController
 
             'jurnal' => $jurnal
         ];
-        $ModelJurnal->insert($data);
+        // $ModelJurnal->insert($data);
+
+        try {
+            $ModelJurnal->insert($data);
+            session()->setFlashdata('success', 'Jurnal kelas berhasil disimpan.');
+        } catch (\Exception $e) {
+            session()->setFlashdata('error', 'Terjadi kesalahan saat menyimpan jurnal kelas: ' . $e->getMessage());
+        }
 
         return redirect()->to('guru/jurnal_kelas');
         // return view('/guru/jurnal_kelas.php', $data);
@@ -250,8 +258,14 @@ class Guru extends BaseController
     public function hapus_jurnal($jurnal_id)
     {
         $ModelJurnal = new \App\Models\JurnalKelas();
-        $ModelJurnal->delete($jurnal_id);
-        session()->setFlashdata('delete', 'jurnal berhasil dihapus');
+
+        try {
+            $ModelJurnal->delete($jurnal_id);
+            session()->setFlashdata('delete', 'Data jurnal berhasil dihapus.');
+        } catch (\Exception $e) {
+            session()->setFlashdata('error', 'Gagal menghapus data jurnal: ' . $e->getMessage());
+        }
+
         return redirect()->to('guru/jurnal_kelas');
     }
 }

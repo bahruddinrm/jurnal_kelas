@@ -1,12 +1,6 @@
 <?= $this->extend('layout/template_admin'); ?>
 <?= $this->section('content'); ?>
 
-<style>
-    .required-symbol {
-        color: red;
-    }
-</style>
-
 <script>
     function upper_id() {
         var inputan = document.getElementById("id_kelas").value;
