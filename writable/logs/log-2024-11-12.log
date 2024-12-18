@@ -1,0 +1,1840 @@
+ERROR - 2024-11-12 07:43:16 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'jurnal_pembelaj...', 3306, '', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Login.php(17): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Login->index()
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Login.php(17): CodeIgniter\BaseModel->findAll()
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Login->index()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#11 {main}
+CRITICAL - 2024-11-12 07:43:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jabatan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Login.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+ERROR - 2024-11-12 07:43:31 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'jurnal_pembelaj...', 3306, '', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Login.php(17): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Login->index()
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Login.php(17): CodeIgniter\BaseModel->findAll()
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Login->index()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#11 {main}
+CRITICAL - 2024-11-12 07:43:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jabatan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Login.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+ERROR - 2024-11-12 07:43:48 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'jurnal_pembelaj...', 3306, '', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Login.php(17): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Login->index()
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Login.php(17): CodeIgniter\BaseModel->findAll()
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Login->index()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#11 {main}
+CRITICAL - 2024-11-12 07:43:48 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jabatan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Login.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+ERROR - 2024-11-12 07:44:09 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'jurnal_pembelaj...', 3306, '', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Login.php(17): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Login->index()
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Login.php(17): CodeIgniter\BaseModel->findAll()
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Login->index()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#11 {main}
+CRITICAL - 2024-11-12 07:44:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jabatan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Login.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+ERROR - 2024-11-12 07:44:37 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'jurnal_pembelaj...', 3306, '', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Login.php(17): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Login->index()
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Login.php(17): CodeIgniter\BaseModel->findAll()
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Login->index()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#11 {main}
+CRITICAL - 2024-11-12 07:44:37 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jabatan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Login.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 07:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 07:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:02:40 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 79.
+ 1 APPPATH\Controllers\Guru.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:02:42 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 79.
+ 1 APPPATH\Controllers\Guru.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:05:20 --> Too few arguments to function App\Models\Pembelajaran::pembelajaranJoinKelas(), 0 passed in D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php on line 70 and exactly 1 expected
+in APPPATH\Models\Pembelajaran.php on line 27.
+ 1 APPPATH\Controllers\Guru.php(70): App\Models\Pembelajaran->pembelajaranJoinKelas()
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:05:21 --> Too few arguments to function App\Models\Pembelajaran::pembelajaranJoinKelas(), 0 passed in D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php on line 70 and exactly 1 expected
+in APPPATH\Models\Pembelajaran.php on line 27.
+ 1 APPPATH\Controllers\Guru.php(70): App\Models\Pembelajaran->pembelajaranJoinKelas()
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 08:05:31 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(70): App\Models\Pembelajaran->pembelajaranJoinKelas(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 08:05:31 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `kelas` ON `kelas`.`id_kelas` = `pembelajaran`.`kelas`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+ORDER BY `kelas`.`nama_kelas` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Guru.php(70): App\Models\Pembelajaran->pembelajaranJoinKelas([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 08:05:32 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(70): App\Models\Pembelajaran->pembelajaranJoinKelas(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 08:05:32 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `kelas` ON `kelas`.`id_kelas` = `pembelajaran`.`kelas`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+ORDER BY `kelas`.`nama_kelas` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Guru.php(70): App\Models\Pembelajaran->pembelajaranJoinKelas([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 08:05:33 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(70): App\Models\Pembelajaran->pembelajaranJoinKelas(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 08:05:33 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `kelas` ON `kelas`.`id_kelas` = `pembelajaran`.`kelas`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+ORDER BY `kelas`.`nama_kelas` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Guru.php(70): App\Models\Pembelajaran->pembelajaranJoinKelas([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 08:10:57 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(73): App\Models\Pembelajaran->pembelajaranJoinKelas(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 08:10:57 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `kelas` ON `kelas`.`id_kelas` = `pembelajaran`.`kelas`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+ORDER BY `kelas`.`nama_kelas` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Guru.php(73): App\Models\Pembelajaran->pembelajaranJoinKelas([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 08:10:58 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(73): App\Models\Pembelajaran->pembelajaranJoinKelas(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 08:10:58 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `kelas` ON `kelas`.`id_kelas` = `pembelajaran`.`kelas`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+ORDER BY `kelas`.`nama_kelas` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Guru.php(73): App\Models\Pembelajaran->pembelajaranJoinKelas([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 08:10:58 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(73): App\Models\Pembelajaran->pembelajaranJoinKelas(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 08:10:58 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `kelas` ON `kelas`.`id_kelas` = `pembelajaran`.`kelas`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+ORDER BY `kelas`.`nama_kelas` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Guru.php(73): App\Models\Pembelajaran->pembelajaranJoinKelas([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 08:10:59 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(73): App\Models\Pembelajaran->pembelajaranJoinKelas(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 08:10:59 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `kelas` ON `kelas`.`id_kelas` = `pembelajaran`.`kelas`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+ORDER BY `kelas`.`nama_kelas` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Guru.php(73): App\Models\Pembelajaran->pembelajaranJoinKelas([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 08:10:59 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(73): App\Models\Pembelajaran->pembelajaranJoinKelas(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 08:10:59 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `kelas` ON `kelas`.`id_kelas` = `pembelajaran`.`kelas`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+ORDER BY `kelas`.`nama_kelas` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Guru.php(73): App\Models\Pembelajaran->pembelajaranJoinKelas([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:11:45 --> Undefined array key "id_pengguna"
+in APPPATH\Controllers\Guru.php on line 65.
+ 1 APPPATH\Controllers\Guru.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pengguna"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:11:47 --> Undefined array key "id_pengguna"
+in APPPATH\Controllers\Guru.php on line 65.
+ 1 APPPATH\Controllers\Guru.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pengguna"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:13:35 --> Undefined array key "id_pengguna"
+in APPPATH\Controllers\Guru.php on line 65.
+ 1 APPPATH\Controllers\Guru.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pengguna"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:13:37 --> Undefined array key "id_pengguna"
+in APPPATH\Controllers\Guru.php on line 65.
+ 1 APPPATH\Controllers\Guru.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pengguna"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:13:38 --> Undefined array key "id_pengguna"
+in APPPATH\Controllers\Guru.php on line 65.
+ 1 APPPATH\Controllers\Guru.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pengguna"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:13:38 --> Undefined array key "id_pengguna"
+in APPPATH\Controllers\Guru.php on line 65.
+ 1 APPPATH\Controllers\Guru.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pengguna"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:13:39 --> Undefined array key "id_pengguna"
+in APPPATH\Controllers\Guru.php on line 65.
+ 1 APPPATH\Controllers\Guru.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pengguna"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 08:16:10 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(73): App\Models\Pembelajaran->pembelajaranJoinKelas(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 08:16:10 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `kelas` ON `kelas`.`id_kelas` = `pembelajaran`.`kelas`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+ORDER BY `kelas`.`nama_kelas` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Guru.php(73): App\Models\Pembelajaran->pembelajaranJoinKelas([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 08:16:10 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(73): App\Models\Pembelajaran->pembelajaranJoinKelas(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 08:16:10 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `kelas` ON `kelas`.`id_kelas` = `pembelajaran`.`kelas`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+ORDER BY `kelas`.`nama_kelas` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembelajaran.php(34): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Guru.php(73): App\Models\Pembelajaran->pembelajaranJoinKelas([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:16:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:16:27 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 82.
+ 1 APPPATH\Controllers\Guru.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:16:28 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 82.
+ 1 APPPATH\Controllers\Guru.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:17:08 --> Undefined array key "id_pengguna"
+in APPPATH\Controllers\Guru.php on line 65.
+ 1 APPPATH\Controllers\Guru.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pengguna"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:17:09 --> Undefined array key "id_pengguna"
+in APPPATH\Controllers\Guru.php on line 65.
+ 1 APPPATH\Controllers\Guru.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pengguna"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:17:09 --> Undefined array key "id_pengguna"
+in APPPATH\Controllers\Guru.php on line 65.
+ 1 APPPATH\Controllers\Guru.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pengguna"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:17:17 --> Undefined array key "nama_l"
+in APPPATH\Controllers\Guru.php on line 65.
+ 1 APPPATH\Controllers\Guru.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_l"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:17:18 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 82.
+ 1 APPPATH\Controllers\Guru.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:17:19 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 82.
+ 1 APPPATH\Controllers\Guru.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:17:19 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 82.
+ 1 APPPATH\Controllers\Guru.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:17:20 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 82.
+ 1 APPPATH\Controllers\Guru.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:17:24 --> Undefined variable $kelas
+in APPPATH\Views\guru\isi_dh.php on line 14.
+ 1 APPPATH\Views\guru\isi_dh.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kelas', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\isi_dh.php', 14)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\isi_dh.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/isi_dh', [], true)
+ 5 APPPATH\Controllers\Guru.php(85): view('guru/isi_dh', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:17:24 --> Undefined variable $kelas
+in APPPATH\Views\guru\isi_dh.php on line 14.
+ 1 APPPATH\Views\guru\isi_dh.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kelas', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\isi_dh.php', 14)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\isi_dh.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/isi_dh', [], true)
+ 5 APPPATH\Controllers\Guru.php(85): view('guru/isi_dh', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:17:54 --> Undefined array key "kelas"
+in APPPATH\Controllers\Guru.php on line 82.
+ 1 APPPATH\Controllers\Guru.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:17:55 --> Undefined array key "kelas"
+in APPPATH\Controllers\Guru.php on line 82.
+ 1 APPPATH\Controllers\Guru.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:17:58 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 82.
+ 1 APPPATH\Controllers\Guru.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:17:59 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 82.
+ 1 APPPATH\Controllers\Guru.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:19:02 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 83.
+ 1 APPPATH\Controllers\Guru.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:19:03 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 83.
+ 1 APPPATH\Controllers\Guru.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:19:03 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 83.
+ 1 APPPATH\Controllers\Guru.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:19:03 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 83.
+ 1 APPPATH\Controllers\Guru.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:19:04 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 83.
+ 1 APPPATH\Controllers\Guru.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:19:04 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 83.
+ 1 APPPATH\Controllers\Guru.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:20:46 --> Undefined array key "id_kelas"
+in APPPATH\Views\guru\isi_dh.php on line 15.
+ 1 APPPATH\Views\guru\isi_dh.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\isi_dh.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\isi_dh.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/isi_dh', [], true)
+ 5 APPPATH\Controllers\Guru.php(85): view('guru/isi_dh', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:20:47 --> Undefined array key "id_kelas"
+in APPPATH\Views\guru\isi_dh.php on line 15.
+ 1 APPPATH\Views\guru\isi_dh.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\isi_dh.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\isi_dh.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/isi_dh', [], true)
+ 5 APPPATH\Controllers\Guru.php(85): view('guru/isi_dh', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:20:52 --> Undefined array key "id_kelas"
+in APPPATH\Views\guru\isi_dh.php on line 15.
+ 1 APPPATH\Views\guru\isi_dh.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\isi_dh.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\isi_dh.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/isi_dh', [], true)
+ 5 APPPATH\Controllers\Guru.php(85): view('guru/isi_dh', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:20:53 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 82.
+ 1 APPPATH\Controllers\Guru.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:20:53 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 82.
+ 1 APPPATH\Controllers\Guru.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:21:29 --> Undefined array key "id_kelas"
+in APPPATH\Views\guru\isi_dh.php on line 15.
+ 1 APPPATH\Views\guru\isi_dh.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\isi_dh.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\isi_dh.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/isi_dh', [], true)
+ 5 APPPATH\Controllers\Guru.php(85): view('guru/isi_dh', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:22:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:22:30 --> Undefined array key "id_kelas"
+in APPPATH\Views\guru\isi_dh.php on line 15.
+ 1 APPPATH\Views\guru\isi_dh.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\isi_dh.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\isi_dh.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/isi_dh', [], true)
+ 5 APPPATH\Controllers\Guru.php(85): view('guru/isi_dh', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:22:32 --> Undefined array key "id_kelas"
+in APPPATH\Views\guru\isi_dh.php on line 15.
+ 1 APPPATH\Views\guru\isi_dh.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\isi_dh.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\isi_dh.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/isi_dh', [], true)
+ 5 APPPATH\Controllers\Guru.php(85): view('guru/isi_dh', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->isi_dh()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:31:30 --> Cannot use object of type App\Models\Pembelajaran as array
+in APPPATH\Controllers\Guru.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->daftar_hadir()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:31:32 --> Cannot use object of type App\Models\Pembelajaran as array
+in APPPATH\Controllers\Guru.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->daftar_hadir()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:36:23 --> Undefined variable $nama_kelas
+in APPPATH\Views\guru\jurnal_kelas.php on line 20.
+ 1 APPPATH\Views\guru\jurnal_kelas.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_kelas', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(148): view('guru/jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:36:24 --> Undefined variable $nama_kelas
+in APPPATH\Views\guru\jurnal_kelas.php on line 20.
+ 1 APPPATH\Views\guru\jurnal_kelas.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_kelas', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(148): view('guru/jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:41:09 --> Undefined variable $nama_lengkap
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(178): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:41:10 --> Undefined variable $nama_lengkap
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(178): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:41:57 --> Undefined variable $nama_lengkap
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(176): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:42:08 --> Undefined variable $nama_lengkap
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_lengkap', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(176): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:43:30 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(177): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:43:31 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(177): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:44:22 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(179): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:44:23 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(179): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:44:23 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(179): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:45:12 --> Undefined array key "nama_lengkap"
+in APPPATH\Controllers\Guru.php on line 176.
+ 1 APPPATH\Controllers\Guru.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_lengkap"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 176)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:45:12 --> Undefined array key "nama_lengkap"
+in APPPATH\Controllers\Guru.php on line 176.
+ 1 APPPATH\Controllers\Guru.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_lengkap"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 176)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:45:31 --> Undefined array key "nama_lengkap"
+in APPPATH\Controllers\Guru.php on line 176.
+ 1 APPPATH\Controllers\Guru.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_lengkap"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 176)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:45:32 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(179): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:45:32 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(179): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:50:42 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(179): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:50:43 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(179): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:50:43 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(179): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:50:43 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(179): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:50:44 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(179): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:50:44 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(179): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 08:50:44 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 69.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(179): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 08:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 08:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 09:43:22 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 146.
+ 1 APPPATH\Controllers\Guru.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 09:43:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 09:43:24 --> Undefined array key "nama_kelas"
+in APPPATH\Controllers\Guru.php on line 146.
+ 1 APPPATH\Controllers\Guru.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 09:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:43:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 09:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 09:48:25 --> mysqli_sql_exception: Unknown column 'kelas.nama_kelas' in 'field list' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(563): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', NULL)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 09:48:25 --> Unknown column 'kelas.nama_kelas' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`, `mapel`.`nama_mapel`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `mapel` ON `mapel`.`id_mapel` = `pembelajaran`.`mapel`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+AND `kelas`.`nama_kelas` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', null)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 09:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 09:48:30 --> mysqli_sql_exception: Unknown column 'kelas.nama_kelas' in 'field list' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(563): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', NULL)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 09:48:30 --> Unknown column 'kelas.nama_kelas' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`, `mapel`.`nama_mapel`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `mapel` ON `mapel`.`id_mapel` = `pembelajaran`.`mapel`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+AND `kelas`.`nama_kelas` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', null)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 09:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 09:48:56 --> mysqli_sql_exception: Unknown column 'kelas.nama_kelas' in 'field list' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(563): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', NULL)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 09:48:56 --> Unknown column 'kelas.nama_kelas' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`, `mapel`.`nama_mapel`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `mapel` ON `mapel`.`id_mapel` = `pembelajaran`.`mapel`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+AND `kelas`.`id_kelas` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', null)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 09:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 09:48:57 --> mysqli_sql_exception: Unknown column 'kelas.nama_kelas' in 'field list' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(563): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', NULL)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 09:48:57 --> Unknown column 'kelas.nama_kelas' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`, `mapel`.`nama_mapel`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `mapel` ON `mapel`.`id_mapel` = `pembelajaran`.`mapel`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+AND `kelas`.`id_kelas` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', null)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 09:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 09:48:58 --> mysqli_sql_exception: Unknown column 'kelas.nama_kelas' in 'field list' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(563): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', NULL)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 09:48:58 --> Unknown column 'kelas.nama_kelas' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`, `mapel`.`nama_mapel`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `mapel` ON `mapel`.`id_mapel` = `pembelajaran`.`mapel`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+AND `kelas`.`id_kelas` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', null)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 09:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 09:48:59 --> mysqli_sql_exception: Unknown column 'kelas.nama_kelas' in 'field list' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(563): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', NULL)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 09:48:59 --> Unknown column 'kelas.nama_kelas' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`, `mapel`.`nama_mapel`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `mapel` ON `mapel`.`id_mapel` = `pembelajaran`.`mapel`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+AND `kelas`.`id_kelas` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', null)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 09:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 09:49:25 --> mysqli_sql_exception: Unknown column 'kelas.id_kelas' in 'where clause' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(563): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', NULL)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 09:49:25 --> Unknown column 'kelas.id_kelas' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `mapel`.`nama_mapel`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `mapel` ON `mapel`.`id_mapel` = `pembelajaran`.`mapel`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+AND `kelas`.`id_kelas` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', null)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 09:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 09:49:26 --> mysqli_sql_exception: Unknown column 'kelas.id_kelas' in 'where clause' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(563): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', NULL)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 09:49:26 --> Unknown column 'kelas.id_kelas' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `mapel`.`nama_mapel`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `mapel` ON `mapel`.`id_mapel` = `pembelajaran`.`mapel`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+AND `kelas`.`id_kelas` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', null)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 09:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 09:49:35 --> mysqli_sql_exception: Unknown column 'kelas.nama_kelas' in 'field list' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(563): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', NULL)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 09:49:35 --> Unknown column 'kelas.nama_kelas' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`, `mapel`.`nama_mapel`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `mapel` ON `mapel`.`id_mapel` = `pembelajaran`.`mapel`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+AND `kelas`.`id_kelas` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', null)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 09:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 09:58:49 --> mysqli_sql_exception: Unknown column 'kelas.nama_kelas' in 'field list' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(563): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', NULL)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 09:58:49 --> Unknown column 'kelas.nama_kelas' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `kelas`.`nama_kelas`, `mapel`.`nama_mapel`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `mapel` ON `mapel`.`id_mapel` = `pembelajaran`.`mapel`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+AND `kelas`.`id_kelas` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\Pembelajaran.php(46): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', null)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 10:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 10:00:22 --> mysqli_sql_exception: Unknown column 'pembelajaran.nama_kelas' in 'on clause' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `mapel`....', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mapel`....')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mapel`....')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `mapel`....', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(563): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(47): CodeIgniter\BaseModel->find()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', NULL)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 10:00:22 --> Unknown column 'pembelajaran.nama_kelas' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `mapel`.`nama_mapel`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `mapel` ON `mapel`.`id_mapel` = `pembelajaran`.`mapel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `pembelajaran`.`nama_kelas`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+AND `kelas`.`id_kelas` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\Pembelajaran.php(47): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', null)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 10:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 10:00:23 --> mysqli_sql_exception: Unknown column 'pembelajaran.nama_kelas' in 'on clause' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `mapel`....', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mapel`....')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mapel`....')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `mapel`....', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(563): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(47): CodeIgniter\BaseModel->find()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', NULL)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 10:00:23 --> Unknown column 'pembelajaran.nama_kelas' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `mapel`.`nama_mapel`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `mapel` ON `mapel`.`id_mapel` = `pembelajaran`.`mapel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `pembelajaran`.`nama_kelas`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+AND `kelas`.`id_kelas` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\Pembelajaran.php(47): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', null)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 10:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-12 10:00:36 --> mysqli_sql_exception: Unknown column 'kelas.id_kelas' in 'where clause' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `mapel`....', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mapel`....')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mapel`....')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `mapel`....', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(563): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(47): CodeIgniter\BaseModel->find()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', NULL)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-11-12 10:00:36 --> Unknown column 'kelas.id_kelas' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `mapel`.`nama_mapel`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `mapel` ON `mapel`.`id_mapel` = `pembelajaran`.`mapel`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:
+AND `kelas`.`id_kelas` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\Pembelajaran.php(47): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Guru.php(165): App\Models\Pembelajaran->getMapel('Salsabila Asofa', null)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 10:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:02:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-12 10:02:47 --> Undefined array key "status"
+in APPPATH\Controllers\Guru.php on line 192.
+ 1 APPPATH\Controllers\Guru.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 192)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-11-12 10:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-12 10:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

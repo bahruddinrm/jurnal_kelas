@@ -11,7 +11,7 @@ class Login extends BaseController
 {
     public function index()
     {
-        $ModelUser = new \App\Models\User();
+        $ModelUser = new \App\Models\Pengguna();
         $ModelJabatan = new \App\Models\Jabatan();
 
         $jabatan['jabatan'] = $ModelJabatan->findAll();
@@ -20,7 +20,7 @@ class Login extends BaseController
         if ($sign_in) {
             $username = $this->request->getPost('username');
             $password = $this->request->getPost('password');
-            $status = $this->request->getPost('status');
+            $jabatan = $this->request->getPost('jabatan');
 
             // error ketika username tidak terdaftar
             $user = $ModelUser->where('username', $username)->first();
@@ -36,30 +36,29 @@ class Login extends BaseController
                 }
             }
 
-            // error ketika status salah
+            // error ketika jabatan salah
             if (empty($err)) {
                 $data = $ModelUser->where('username', $username)->first();
-                if ($data['status'] != $status) {
-                    $err = "Anda bukan sebagai {$status}";
+                if ($data['jabatan'] != $jabatan) {
+                    $err = "Anda bukan sebagai {$jabatan}";
                 }
             }
 
             if (empty($err)) {
                 $datasesi = [
-                    'nik' => $data['nik'],
-                    'nip' => $data['nip'],
+                    // 'id_pengguna' => $data['id_pengguna'],
+                    'nip_nik' => $data['nip_nik'],
                     'username' => $data['username'],
                     'password' => $data['password'],
                     'nama_lengkap' => $data['nama_lengkap'],
-                    'mapel' => $data['mapel'],
-                    'status' => $data['status'],
+                    'jabatan' => $data['jabatan'],
                 ];
                 session()->set('user', $datasesi);
-                if ($datasesi['status'] == 'Admin'){
+                if ($datasesi['jabatan'] == 'Admin'){
                     return redirect()->to('/admin');
-                } elseif($datasesi['status'] == 'Guru'){
+                } elseif($datasesi['jabatan'] == 'Guru'){
                     return redirect()->to('/guru');
-                } elseif($datasesi['status'] == 'Kepala Sekolah'){
+                } elseif($datasesi['jabatan'] == 'Kepala Sekolah'){
                     return redirect()->to('/kepsek');
                 }
                 // return redirect()->to('/user');

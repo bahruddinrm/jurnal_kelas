@@ -12,7 +12,18 @@ class JurnalKelas extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['jurnal_id','kelas','hari_tanggal','jam_ke','mapel','uraian_materi','media_pembelajaran','hadir','sakit','ijin','alpa','jumlah','nama_siswa_tidak_hadir'];
+    protected $allowedFields    = ['jurnal_id','nama_kelas','hari_tanggal','jam_ke','nama_lengkap','mapel','uraian_materi','media_pembelajaran'];
+
+    public function getJurnalJoinKelasMapel($pilih_kelas)
+    {
+        return $this->select('jurnal_kelas.* , kelas.nama_kelas, mapel.nama_mapel')
+        ->join('kelas','jurnal_kelas.nama_kelas = kelas.id_kelas')
+        ->join('mapel','jurnal_kelas.mapel = mapel.id_mapel')
+        ->where('jurnal_kelas.nama_kelas', $pilih_kelas)
+        // ->groupBy('kelas.nama_kelas')
+        // ->orderBy('kelas.nama_kelas', 'ASC')
+        ->findAll();
+    }
 
     // Dates
     protected $useTimestamps = false;

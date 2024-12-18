@@ -28,7 +28,7 @@
                 <input type="password" placeholder="Password" name="password" id="password" value="<?php echo session()->getFlashdata('password') ?>" required>
             </div>
             <div class="inputBox">
-                <select class="status" name="status" id="status">
+                <select class="status" name="jabatan" id="jabatan">
                     <option selected disabled>Pilih Salah Satu</option>
                     <?php foreach ($jabatan as $j) : ?>
                         <option value="<?= $j['jabatan']; ?>"><?= $j['jabatan']; ?></option>

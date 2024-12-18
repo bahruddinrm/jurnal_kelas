@@ -1,0 +1,1648 @@
+INFO - 2024-12-03 14:29:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 14:30:38 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(197): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 14:30:38 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`hari_tanggal`, `jam_ke`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:hari_tanggal:, :jam_ke:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(197): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 14:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 14:30:38 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(197): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 14:30:38 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`hari_tanggal`, `jam_ke`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:hari_tanggal:, :jam_ke:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(197): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 14:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 14:38:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(197): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 14:38:01 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`hari_tanggal`, `jam_ke`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:hari_tanggal:, :jam_ke:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(197): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 14:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:54:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 14:54:04 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 14:54:04 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 14:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 14:59:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 14:59:07 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 14:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 14:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 14:59:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 14:59:49 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 15:01:57 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 15:01:57 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 15:02:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 15:02:01 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 15:03:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 15:03:55 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 15:05:53 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 15:05:53 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 15:06:11 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 15:06:11 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 15:06:21 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 15:06:21 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 15:06:27 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 15:06:27 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 15:07:09 --> mysqli_sql_exception: Column 'nama_kelas' cannot be null in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 15:07:09 --> Column 'nama_kelas' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 15:07:18 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 15:07:18 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 15:07:36 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 15:07:36 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 15:07:38 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 15:07:38 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 15:07:41 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 15:07:41 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 15:20:30 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 15:20:30 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 15:20:51 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 15:20:51 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:26:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 15:26:17 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_9` FOREIGN KEY (`mapel`) REFERENCES `mapel` (`id_mapel`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 15:26:17 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_9` FOREIGN KEY (`mapel`) REFERENCES `mapel` (`id_mapel`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 15:26:26 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_9` FOREIGN KEY (`mapel`) REFERENCES `mapel` (`id_mapel`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(198): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 15:26:26 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_9` FOREIGN KEY (`mapel`) REFERENCES `mapel` (`id_mapel`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(198): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:31:17 --> Undefined variable $jurnal
+in APPPATH\Controllers\Guru.php on line 143.
+ 1 APPPATH\Controllers\Guru.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jurnal', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 143)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:36:26 --> Call to undefined method App\Models\JurnalKelas::namaKelas
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(126): CodeIgniter\Model->__call('namaKelas', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:36:28 --> Call to undefined method App\Models\JurnalKelas::namaKelas
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(126): CodeIgniter\Model->__call('namaKelas', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:38:03 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Guru.php on line 126.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:38:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Guru.php on line 126.
+ 1 APPPATH\Controllers\Guru.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 126)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:40:01 --> Call to undefined method App\Models\JurnalKelas::nama_kelas
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(126): CodeIgniter\Model->__call('nama_kelas', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:40:02 --> Call to undefined method App\Models\JurnalKelas::nama_kelas
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(126): CodeIgniter\Model->__call('nama_kelas', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:40:12 --> Call to undefined method App\Models\JurnalKelas::nama_kelas
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(126): CodeIgniter\Model->__call('nama_kelas', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:40:13 --> Call to undefined method App\Models\JurnalKelas::nama_kelas
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(126): CodeIgniter\Model->__call('nama_kelas', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:40:14 --> Call to undefined method App\Models\JurnalKelas::nama_kelas
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(126): CodeIgniter\Model->__call('nama_kelas', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:40:16 --> Call to undefined method App\Models\JurnalKelas::nama_kelas
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(126): CodeIgniter\Model->__call('nama_kelas', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:43:32 --> Call to undefined method App\Models\JurnalKelas::nama_kelas
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(126): CodeIgniter\Model->__call('nama_kelas', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:43:33 --> Call to undefined method App\Models\JurnalKelas::nama_kelas
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(126): CodeIgniter\Model->__call('nama_kelas', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:46:26 --> Array to string conversion
+in APPPATH\Views\guru\jurnal_kelas.php on line 41.
+ 1 APPPATH\Views\guru\jurnal_kelas.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(151): view('guru/jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:46:30 --> Array to string conversion
+in APPPATH\Views\guru\jurnal_kelas.php on line 41.
+ 1 APPPATH\Views\guru\jurnal_kelas.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(151): view('guru/jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:46:31 --> Array to string conversion
+in APPPATH\Views\guru\jurnal_kelas.php on line 41.
+ 1 APPPATH\Views\guru\jurnal_kelas.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(151): view('guru/jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:46:37 --> Unmatched ')'
+in APPPATH\Views\guru\jurnal_kelas.php on line 41.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/jurnal_kelas', [], true)
+ 3 APPPATH\Controllers\Guru.php(151): view('guru/jurnal_kelas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:46:38 --> Array to string conversion
+in APPPATH\Views\guru\jurnal_kelas.php on line 41.
+ 1 APPPATH\Views\guru\jurnal_kelas.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(151): view('guru/jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:46:39 --> Array to string conversion
+in APPPATH\Views\guru\jurnal_kelas.php on line 41.
+ 1 APPPATH\Views\guru\jurnal_kelas.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(151): view('guru/jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:46:40 --> Array to string conversion
+in APPPATH\Views\guru\jurnal_kelas.php on line 41.
+ 1 APPPATH\Views\guru\jurnal_kelas.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(151): view('guru/jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:46:40 --> Array to string conversion
+in APPPATH\Views\guru\jurnal_kelas.php on line 41.
+ 1 APPPATH\Views\guru\jurnal_kelas.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(151): view('guru/jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:46:45 --> Array to string conversion
+in APPPATH\Views\guru\jurnal_kelas.php on line 41.
+ 1 APPPATH\Views\guru\jurnal_kelas.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(151): view('guru/jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:46:46 --> Array to string conversion
+in APPPATH\Views\guru\jurnal_kelas.php on line 41.
+ 1 APPPATH\Views\guru\jurnal_kelas.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(151): view('guru/jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:46:46 --> Array to string conversion
+in APPPATH\Views\guru\jurnal_kelas.php on line 41.
+ 1 APPPATH\Views\guru\jurnal_kelas.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('guru/jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(151): view('guru/jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:51:20 --> Undefined variable $nama_kelas
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 21.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_kelas', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 21)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(180): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:51:21 --> Undefined variable $nama_kelas
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 21.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_kelas', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 21)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(180): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:51:39 --> Undefined variable $nama_kelas
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 21.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_kelas', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 21)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(180): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:51:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:51:40 --> Undefined variable $nama_kelas
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 21.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_kelas', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 21)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(180): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:53:36 --> Undefined variable $nama_kelas
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 21.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_kelas', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 21)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(180): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:53:48 --> Undefined variable $nama_kelas
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 21.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_kelas', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 21)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(180): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:56:52 --> Undefined variable $pilih_kelas
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 25.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pilih_kelas', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(180): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 15:56:53 --> Undefined variable $pilih_kelas
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 25.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pilih_kelas', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(180): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 15:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 15:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 16:07:52 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(204): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 16:07:53 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_8` FOREIGN KEY (`nama_kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(204): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 16:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:15:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 16:15:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_9` FOREIGN KEY (`mapel`) REFERENCES `mapel` (`id_mapel`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(207): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 16:15:50 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_9` FOREIGN KEY (`mapel`) REFERENCES `mapel` (`id_mapel`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(207): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 16:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 16:47:16 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_9` FOREIGN KEY (`mapel`) REFERENCES `mapel` (`id_mapel`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(208): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 16:47:16 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_9` FOREIGN KEY (`mapel`) REFERENCES `mapel` (`id_mapel`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(208): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 16:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 16:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 17:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:06:06 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 63.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(187): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:06:06 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 63.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(187): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:06:07 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 63.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(187): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 17:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 17:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 17:07:54 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_10` FOREIGN KEY (`nama_lengkap`) REFERENCES `pengguna` (`id_pengguna`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(215): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 17:07:54 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_10` FOREIGN KEY (`nama_lengkap`) REFERENCES `pengguna` (`id_pengguna`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(215): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-03 17:13:31 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_10` FOREIGN KEY (`nama_lengkap`) REFERENCES `pengguna` (`id_pengguna`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ju...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(215): CodeIgniter\Model->insert(Array)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-03 17:13:31 --> Cannot add or update a child row: a foreign key constraint fails (`jurnal_pembelajaran`.`jurnal_kelas`, CONSTRAINT `fk_10` FOREIGN KEY (`nama_lengkap`) REFERENCES `pengguna` (`id_pengguna`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal_kelas` (`nama_kelas`, `hari_tanggal`, `jam_ke`, `nama_lengkap`, `mapel`, `uraian_materi`, `media_pembelajaran`) VALUES (:nama_kelas:, :hari_tanggal:, :jam_ke:, :nama_lengkap:, :mapel:, :uraian_materi:, :media_pembelajaran:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Guru.php(215): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->simpan_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:13:34 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 65.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:16:06 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 65.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:16:07 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 65.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:16:08 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 65.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:16:08 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 65.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:16:08 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 65.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:16:08 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 65.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:16:08 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 65.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:16:10 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 65.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 17:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 17:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:16:16 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 65.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:16:30 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 65.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:16:31 --> Undefined array key "id_mapel"
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 66.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mapel"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:16:32 --> Undefined array key "id_mapel"
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 66.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mapel"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:17:07 --> Undefined array key "mapel"
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 66.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mapel"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:17:08 --> Undefined array key "mapel"
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 66.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mapel"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:17:08 --> Undefined array key "mapel"
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 66.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mapel"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:17:08 --> Undefined array key "mapel"
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 66.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mapel"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:17:09 --> Undefined array key "mapel"
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 66.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mapel"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:17:09 --> Undefined array key "mapel"
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 66.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mapel"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:17:09 --> Undefined array key "mapel"
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 66.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mapel"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:17:09 --> Undefined array key "mapel"
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 66.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mapel"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:17:10 --> Undefined array key "mapel"
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 66.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mapel"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:17:19 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 66.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:17:20 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 66.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:17:20 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 66.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 17:17:20 --> Array to string conversion
+in APPPATH\Views\guru\input_jurnal_kelas.php on line 66.
+ 1 APPPATH\Views\guru\input_jurnal_kelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\input_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/input_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(191): view('/guru/input_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->tambah_jurnal()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-03 17:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

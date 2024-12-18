@@ -14,6 +14,13 @@ class Mapel extends Model
     protected $protectFields    = true;
     protected $allowedFields    = ['id_mapel','nama_mapel'];
 
+    public function getIdMapel($mapel_string)
+    {
+        return $this->select('id_mapel')
+        ->where('nama_mapel', $mapel_string)
+        ->findAll();
+    }
+
     // Dates
     protected $useTimestamps = false;
     protected $dateFormat    = 'datetime';

@@ -65,7 +65,7 @@
 
                             <!-- Light Logo icon -->
 
-                            <h1 style="color: white; margin-top: 15px; font-weight: bold;"><?php echo ($user_status); ?></h1>
+                            <h1 style="color: white; margin-top: 15px; font-weight: bold;"><?php echo ($user_jabatan); ?></h1>
 
                         </b>
                 </div>
@@ -111,11 +111,15 @@
                     <ul id="sidebarnav">
                         <li> <a class="waves-effect waves-dark" href="/admin" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="/admin/pengguna" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Pengguna</span></a>
+                        <li> <a class="waves-effect waves-dark" href="/admin/pengguna" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Pengguna</span></a>
                         </li>
                         <li> <a class="waves-effect waves-dark" href="/admin/mapel" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Mapel</span></a>
                         </li>
                         <li> <a class="waves-effect waves-dark" href="/admin/kelas" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Kelas</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="/admin/siswa" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Siswa</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="/admin/pembelajaran" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Pembelajaran</span></a>
                         </li>
                         <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-emoticon"></i><span class="hide-menu">Icons</span></a> -->
                         <!-- </li> -->

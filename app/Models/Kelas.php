@@ -12,7 +12,26 @@ class Kelas extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id_kelas','nama_kelas','wali_kelas'];
+    protected $allowedFields    = ['id_kelas', 'nama_kelas', 'wali_kelas'];
+
+    public function getNamaKelas($pilih_kelas)
+    {
+        return $this->select('nama_kelas')
+        ->where('id_kelas', $pilih_kelas)
+        ->findAll();
+    }
+
+    public function kelasJoinPengguna()
+    {
+        return $this->select('kelas.*, pengguna.nama_lengkap')
+        ->join('pengguna', 'kelas.wali_kelas = pengguna.id_pengguna')
+        ->findAll();
+    }
+
+    public function kelasUrutAbjad()
+    {
+        return $this->orderBy('nama_kelas', 'ASC')->findAll();
+    }
 
     // Dates
     protected $useTimestamps = false;

@@ -62,7 +62,7 @@
 
                             <!-- Light Logo icon -->
 
-                            <h1 style="color: white; margin-top: 15px; font-weight: bold;"><?php echo ($user_status); ?></h1>
+                            <h1 style="color: white; margin-top: 15px; font-weight: bold;"><?php echo ($user_jabatan); ?></h1>
 
                         </b>
                 </div>
@@ -108,9 +108,9 @@
                     <ul id="sidebarnav">
                         <li> <a class="waves-effect waves-dark" href="/guru" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="/guru/jurnal_kelas" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Jurnal Kelas</span></a>
+                        <li> <a class="waves-effect waves-dark" href="/guru/daftar_hadir" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Daftar Hadir</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Basic Table</span></a>
+                        <li> <a class="waves-effect waves-dark" href="/guru/jurnal_kelas" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Jurnal Kelas</span></a>
                         </li>
                     </ul>
                 </nav>

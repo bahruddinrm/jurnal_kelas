@@ -3,6 +3,9 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\Pembelajaran;
+use App\Models\Pengguna;
+use Config\App;
 use Predis\Command\Redis\EXISTS;
 
 use function PHPUnit\Framework\fileExists;
@@ -11,84 +14,71 @@ class Admin extends BaseController
 {
     public function index()
     {
-        $ModelUser = new \App\Models\User();
+        $ModelPengguna = new \App\Models\Pengguna();
         $user = session()->get('user');
-        $user_pengguna = $ModelUser->findAll();
+        $user_pengguna = $ModelPengguna->findAll();
 
         $data = [
             'user_pengguna' => $user_pengguna,
             'user' => $user['nama_lengkap'],
-            'user_status' => $user['status'],
+            'user_jabatan' => $user['jabatan'],
         ];
 
         return view('admin/dashboard_admin_view', $data);
     }
 
+    //Pengguna//
     public function pengguna()
     {
-        $ModelUser = new \App\Models\User();
+        $ModelPengguna = new \App\Models\Pengguna();
         $user = session()->get('user');
-        $user_pengguna = $ModelUser->findAll();
+        $user_pengguna = $ModelPengguna->findAll();
 
         $data = [
             'user_pengguna' => $user_pengguna,
             'user' => $user['nama_lengkap'],
-            'user_status' => $user['status'],
+            'user_jabatan' => $user['jabatan'],
 
-            'user_pagination' => $ModelUser->paginate(10, 'user_pagination'),
-            'pager' => $ModelUser->pager
+            'user_pagination' => $ModelPengguna->paginate(10, 'user_pagination'),
+            'pager' => $ModelPengguna->pager
         ];
 
-        return view('admin/pengguna_admin_view', $data);
+        return view('admin/pengguna', $data);
     }
 
     public function tambah_pengguna()
     {
-        $ModelUser = new \App\Models\User();
-        $ModelMapel = new \App\Models\Mapel();
+        $ModelPengguna = new \App\Models\Pengguna();
         $ModelJabatan = new \App\Models\Jabatan();
 
-        $mapel['id_mapel'] = $ModelMapel->findAll();
         $jabatan['jabatan'] = $ModelJabatan->findAll();
-        // $status['status'] = $ModelUser->findAll();
-        $user = session()->get('user');
-        $user_pengguna = $ModelUser->findAll();
 
+        $user = session()->get('user');
 
         $data = [
             'user' => $user['nama_lengkap'],
-            'user_status' => $user['status'],
+            'user_jabatan' => $user['jabatan'],
 
-            'id_mapel' => $mapel['id_mapel'],
             'jabatan' => $jabatan['jabatan'],
-            // 'status' => $status['status'],
         ];
 
-        return view('/admin/input_pengguna_admin_view', $data);
+        return view('/admin/tambah_pengguna', $data);
     }
 
     public function simpan_pengguna()
     {
-        $ModelUser = new \App\Models\User();
-        $user_pengguna = $ModelUser->findAll();
-        $user = session()->get('user');
+        $ModelPengguna = new \App\Models\Pengguna();
 
         $data = [
-            'user' => $user['nama_lengkap'],
-            'user_status' => $user['status'],
-
-
-            'nik' => $this->request->getVar('nik'),
-            'nip' => $this->request->getVar('nip'),
+            'nip_nik' => $this->request->getVar('nip_nik'),
+            'nama_lengkap' => $this->request->getVar('nama_lengkap'),
             'username' => $this->request->getVar('username'),
             'password' => $this->request->getVar('password'),
-            'nama_lengkap' => $this->request->getVar('nama_lengkap'),
-            'mapel' => $this->request->getVar('mapel'),
             'jabatan' => $this->request->getVar('jabatan'),
 
             'ttd' => $this->request->getVar('signature'),
         ];
-        $ModelUser->insert($data);
+        $ModelPengguna->insert($data);
 
         $file_name = strtolower(str_replace(' ', '_', $data['nama_lengkap'])) . '.png';
         $file_path = 'ttd/' . $file_name;
@@ -100,54 +90,53 @@ class Admin extends BaseController
         return redirect()->to('admin/pengguna');
     }
 
-    public function detail_pengguna($nik)
+    public function detail_pengguna($id_pengguna)
     {
-        $ModelUser = new \App\Models\User();
+        $ModelPengguna = new \App\Models\Pengguna();
         $user = session()->get('user');
-        $detail = $ModelUser->where(['nik' => $nik])->first();
+        $detail = $ModelPengguna->where(['id_pengguna' => $id_pengguna])->first();
 
         $file_name = str_replace(' ', '_', $detail['nama_lengkap']);
 
         $data = [
             'user' => $user['nama_lengkap'],
-            'user_status' => $user['status'],
+            'user_jabatan' => $user['jabatan'],
 
             'detail' => $detail,
             'file_name' => $file_name,
         ];
-        return view('/admin/detail_admin_view', $data);
+        return view('/admin/detail_pengguna', $data);
     }
 
-    public function edit_pengguna($nik)
+    public function edit_pengguna($id_pengguna)
     {
-        $ModelUser = new \App\Models\User();
-        $ModelMapel = new \App\Models\Mapel();
+        $ModelPengguna = new \App\Models\Pengguna();
+        $ModelJabatan = new \App\Models\Jabatan();
 
-        $mapel['id_mapel'] = $ModelMapel->findAll();
         $user = session()->get('user');
-        $status['status'] = $ModelUser->findAll();
+        $jabatan['jabatan'] = $ModelPengguna->findAll();
 
-        $detail = $ModelUser->find($nik);
+        $jenis_jabatan = $ModelJabatan->findAll();
+
+        $detail = $ModelPengguna->find($id_pengguna);
         $file_name = str_replace(' ', '_', $detail['nama_lengkap']);
 
         $data = [
             'user' => $user['nama_lengkap'],
-            'user_status' => $user['status'],
+            'user_jabatan' => $user['jabatan'],
 
-            'id_mapel' => $mapel['id_mapel'],
-            'status' => $status['status'],
+            'jabatan' => $jabatan['jabatan'],
+            'jenis_jabatan' => $jenis_jabatan,
 
             'detail' => $detail,
             'file_name' => $file_name,
         ];
-        return view('/admin/edit_admin_view', $data);
+        return view('/admin/edit_pengguna', $data);
     }
 
-    public function update()
+    public function update_pengguna($id_pengguna)
     {
-        $ModelUser = new \App\Models\User();
-        $user_pengguna = $ModelUser->find();
-        $user = session()->get('user');
+        $ModelPengguna = new \App\Models\Pengguna();
 
         $file = $this->request->getVar('signature');
         $new_file = $this->request->getVar('nama_lengkap');
@@ -164,29 +153,24 @@ class Admin extends BaseController
         file_put_contents($file_path, $image_decode);
 
         $data = [
-            'user' => $user['nama_lengkap'],
-            'user_status' => $user['status'],
-
-            'nik' => $this->request->getVar('nik'),
-            'nip' => $this->request->getVar('nip'),
+            'nip_nik' => $this->request->getVar('nip_nik'),
+            'nama_lengkap' => $this->request->getVar('nama_lengkap'),
             'username' => $this->request->getVar('username'),
             'password' => $this->request->getVar('password'),
-            'nama_lengkap' => $this->request->getVar('nama_lengkap'),
-            'mapel' => $this->request->getVar('mapel'),
             'jabatan' => $this->request->getVar('jabatan'),
 
             'ttd' => $this->request->getVar('signature'),
         ];
-        $ModelUser->save($data);
+        $ModelPengguna->update($id_pengguna, $data);
 
         return redirect()->to('admin/pengguna');
     }
 
-    public function delete_pengguna($nik)
+    public function delete_pengguna($id_pengguna)
     {
-        $ModelUser = new \App\Models\User();
+        $ModelPengguna = new \App\Models\Pengguna();
 
-        $ttd = $ModelUser->find($nik);
+        $ttd = $ModelPengguna->find($id_pengguna);
         // $file_name = strtolower(str_replace(' ', '_', $data['nama_lengkap'])) . '.png';
 
         $ttd_name = str_replace(' ', '_', $ttd['nama_lengkap']);
@@ -196,62 +180,54 @@ class Admin extends BaseController
             unlink($file_path);
         }
 
-        $ModelUser->delete($nik);
+        $ModelPengguna->delete($id_pengguna);
 
-        session()->setFlashdata('delete', "$nik berhasil dihapus");
+        session()->setFlashdata('delete', "$id_pengguna berhasil dihapus");
         return redirect()->to('admin/pengguna');
     }
 
+    //mapel//
     public function mapel()
     {
         $ModelMapel = new \App\Models\Mapel();
-        $ModelUser = new \App\Models\User();
+        $ModelPengguna = new \App\Models\Pengguna();
         $user = session()->get('user');
         $mapel = $ModelMapel->findAll();
-        $user_pengguna = $ModelUser->findAll();
+        $user_pengguna = $ModelPengguna->findAll();
 
         $data = [
             'user_pengguna' => $user_pengguna,
             'user' => $user['nama_lengkap'],
-            'user_status' => $user['status'],
+            'user_jabatan' => $user['jabatan'],
 
             'mapel' => $mapel,
         ];
 
-        return view('/admin/mapel_admin_view', $data);
+        return view('/admin/mapel', $data);
     }
 
     public function tambah_mapel()
     {
-        $ModelUser = new \App\Models\User();
         $ModelMapel = new \App\Models\Mapel();
 
         $mapel['id_mapel'] = $ModelMapel->findAll();
         $user = session()->get('user');
-        $user_pengguna = $ModelUser->findAll();
 
         $data = [
             'user' => $user['nama_lengkap'],
-            'user_status' => $user['status'],
+            'user_jabatan' => $user['jabatan'],
 
             'id_mapel' => $mapel['id_mapel'],
         ];
 
-        return view('/admin/input_mapel_admin_view', $data);
+        return view('/admin/tambah_mapel', $data);
     }
 
     public function simpan_mapel()
     {
-        $ModelUser = new \App\Models\User();
         $ModelMapel = new \App\Models\Mapel();
-        $user_pengguna = $ModelUser->findAll();
-        $user = session()->get('user');
 
         $data = [
-            'user' => $user['nama_lengkap'],
-            'user_status' => $user['status'],
-
-
             'id_mapel' => $this->request->getVar('id_mapel'),
             'nama_mapel' => $this->request->getVar('nama_mapel'),
         ];
@@ -267,43 +243,51 @@ class Admin extends BaseController
         return redirect()->to('admin/mapel');
     }
 
+    //kelas//
     public function kelas()
     {
         $ModelKelas = new \App\Models\Kelas();
-        $user = session()->get('user');
+        $ModelPengguna = new \App\Models\Pengguna();
 
-        $kelas = $ModelKelas->findAll();
+        $user = session()->get('user');
+        $pengguna = $ModelPengguna->findAll();
+
+        // $kelas = $ModelKelas->findAll();
+        $kelas = $ModelKelas->kelasJoinPengguna();
 
         $data = [
             'user' => $user['nama_lengkap'],
-            'user_status' => $user['status'],
+            'user_jabatan' => $user['jabatan'],
 
             'kelas' => $kelas,
+
+            'pengguna' => $pengguna,
         ];
-        return view('/admin/kelas_admin_view', $data);
+        return view('/admin/kelas', $data);
     }
 
     public function tambah_kelas()
     {
         $ModelKelas = new \App\Models\Kelas();
-        $ModelUser = new \App\Models\User();
+        $ModelPengguna = new \App\Models\Pengguna();
 
-        $wali_kelas['nama_lengkap'] = $ModelUser->findAll();
+        $guru = $ModelPengguna->where(['jabatan' => 'Guru'])->findAll();
+        $wali_kelas['nama_lengkap'] = $guru;
         $user = session()->get('user');
 
         $data = [
             'user' => $user['nama_lengkap'],
-            'user_status' => $user['status'],
+            'user_jabatan' => $user['jabatan'],
 
             'wali_kelas' => $wali_kelas['nama_lengkap']
         ];
-        return view('/admin/input_kelas_admin_view', $data);
+        return view('/admin/tambah_kelas', $data);
     }
 
     public function simpan_kelas()
     {
         $ModelKelas = new \App\Models\Kelas();
-        
+
         $data = [
             'nama_kelas' => $this->request->getVar('nama_kelas'),
             'wali_kelas' => $this->request->getVar('wali_kelas'),
@@ -316,7 +300,139 @@ class Admin extends BaseController
     {
         $ModelKelas = new \App\Models\Kelas();
         $ModelKelas->delete($id_kelas);
-        session()->setFlashdata('delete',"$id_kelas berhasil dihapus");
+        session()->setFlashdata('delete', "$id_kelas berhasil dihapus");
         return redirect()->to('admin/kelas');
+    }
+
+    //siswa//
+    public function siswa()
+    {
+        $ModelSiswa = new \App\Models\Siswa();
+        $ModelKelas = new \App\Models\Kelas();
+
+        $kelas = $ModelKelas->findAll();
+
+        $user = session()->get('user');
+        $siswa = $ModelSiswa->siswaJoinKelas();
+
+        $data = [
+            'user' => $user['nama_lengkap'],
+            'user_jabatan' => $user['jabatan'],
+
+            'kelas' => $kelas,
+
+            'siswa' => $siswa,
+        ];
+
+        return view('/admin/siswa', $data);
+    }
+
+    public function tambah_siswa()
+    {
+        $ModelSiswa = new \App\Models\Siswa();
+        $ModelKelas = new \App\Models\Kelas();
+
+        $siswa = $ModelSiswa->findAll();
+        $kelas = $ModelKelas->findAll();
+
+        $user = session()->get('user');
+
+        $data = [
+            'user' => $user['nama_lengkap'],
+            'user_jabatan' => $user['jabatan'],
+
+            'kelas' => $kelas,
+        ];
+
+        return view('/admin/tambah_siswa', $data);
+    }
+
+    public function simpan_siswa()
+    {
+        $ModelSiswa = new \App\Models\Siswa();
+
+        $data = [
+            'nisn' => $this->request->getVar('nisn'),
+            'nis' => $this->request->getVar('nis'),
+            'nama_siswa' => $this->request->getVar('nama_siswa'),
+            'kelas' => $this->request->getVar('kelas'),
+        ];
+
+        $ModelSiswa->insert($data);
+        return redirect()->to('admin/siswa');
+    }
+
+    public function delete_siswa($id_siswa)
+    {
+        $ModelSiswa = new \App\Models\Siswa();
+        $ModelSiswa->delete($id_siswa);
+        session()->setFlashdata('delete', "$id_siswa berhasil dihapus");
+        return redirect()->to('admin/siswa');
+    }
+
+    //Pembelajaran
+    public function pembelajaran()
+    {
+        $ModelPembelajaran = new \App\Models\Pembelajaran();
+
+        $user = session()->get('user');
+
+        $pembelajaran = $ModelPembelajaran->pembelajaranJoin();
+
+        $data = [
+            'user' => $user['nama_lengkap'],
+            'user_jabatan' => $user['jabatan'],
+
+            'pembelajaran' => $pembelajaran,
+        ];
+
+        return view('/admin/pembelajaran.php', $data);
+    }
+
+    public function tambah_pembelajaran()
+    {
+        $ModelPembelajaran = new \App\Models\Pembelajaran();
+        $ModelPengguna = new \App\Models\Pengguna();
+        $ModelMapel = new \App\Models\Mapel();
+        $ModelKelas = new \App\Models\Kelas();
+
+        $user = session()->get('user');
+
+        $pembelajaran = $ModelPembelajaran->findAll();
+        $pengguna = $ModelPengguna->findAll();
+        $mapel = $ModelMapel->findAll();
+        $kelas = $ModelKelas->findAll();
+
+        $data = [
+            'user' => $user['nama_lengkap'],
+            'user_jabatan' => $user['jabatan'],
+        
+            'pembelajaran' => $pembelajaran,
+            'pengguna' => $pengguna,
+            'mapel' => $mapel,
+            'kelas' => $kelas,
+        ];
+
+        return view('/admin/tambah_pembelajaran.php', $data);
+    }
+
+    public function simpan_pembelajaran(){
+        $ModelPembelajaran = new \App\Models\Pembelajaran();
+
+        $data = [
+            'pengguna' => $this->request->getVar('pengguna'),
+            'mapel' => $this->request->getVar('mapel'),
+            'kelas' => $this->request->getVar('kelas'),
+        ];
+
+        $ModelPembelajaran->insert($data);
+        return redirect()->to('admin/pembelajaran');
+    }
+
+    public function delete_pembelajaran($id_pembelajaran){
+        $ModelPembelajaran = new \App\Models\Pembelajaran();
+        $ModelPembelajaran->delete($id_pembelajaran);
+        session()->setFlashdata('delete_pembelajaran', "$id_pembelajaran berhasil dihapus");
+        return redirect()->to('admin/pembelajaran');
     }
 }

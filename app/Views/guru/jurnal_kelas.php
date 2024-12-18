@@ -17,16 +17,12 @@
                         <div class="col-sm-12">
                             <select class="form-control" name="pilih_kelas" id="pilih_kelas">
                                 <option selected disabled>Pilih Kelas</option>
-                                <?php foreach ($kelas as $k) : ?>
-                                    <option value="<?= $k['nama_kelas']; ?>"><?= $k['nama_kelas']; ?></option>
+                                <?php foreach ($kelas as $nk) : ?>
+                                    <option value="<?= $nk['id_kelas']; ?>"><?= $nk['nama_kelas']; ?></option>
                                 <?php endforeach ?>
                             </select>
                         </div>
                     </div>
-
-                    <!-- <button class="btn btn-primary" type="submit">tampilkan</button> -->
-
-
                 </form>
             </div>
         </div>
@@ -35,49 +31,57 @@
 
 <!-- < ?php if (isset($pilih_kelas)) : ?> -->
 <!-- < ?php endif ?> -->
-
+ 
 <div class="row" id="jurnal">
+
     <!-- column -->
     <div class="col-lg-12">
         <div class="card">
             <div class="card-block">
 
-                <h3 class="card-title" style="margin-bottom: 30px;">JURNAL KELAS <?= $pilih_kelas ?></h3>
+                <h3 class="card-title" style="margin-bottom: 30px;">JURNAL KELAS <?= esc($nama_kelas) ?></h3>
                 <a href="/guru/tambah_jurnal" class="btn-sm btn-warning" title="isi jurnal kelas">Isi Jurnal Kelas</a>
                 <div class="table-responsive">
                     <table class="table">
                         <thead>
                             <tr>
+                                <th scope="col">#</th>
                                 <th scope="col">KELAS</th>
                                 <th scope="col">HARI, TANGGAL</th>
                                 <th scope="col">JAM KE</th>
                                 <th scope="col">MAPEL</th>
                                 <th scope="col">URAIAN MATERI</th>
                                 <th scope="col">MEDIA PEMBELAJARAN</th>
-                                <th scope="col">HADIR</th>
+                                <!-- <th scope="col">HADIR</th>
                                 <th scope="col">SAKIT</th>
                                 <th scope="col">IJIN</th>
                                 <th scope="col">ALPA</th>
                                 <th scope="col">JUMLAH</th>
-                                <th scope="col">NAMA SISWA TIDAK HADIR</th>
+                                <th scope="col">NAMA SISWA TIDAK HADIR</th> -->
                                 <th scope="col">AKSI</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($jurnal as $j) : ?>
+                            <?php
+                            $no = 1;
+                            foreach ($jurnal as $j) :
+                            ?>
                                 <tr>
-                                    <td><?= $j['kelas']; ?></td>
+                                    <td><?= $no++; ?></td>
+                                    <td><?= $j['nama_kelas']; ?></td>
                                     <td><?= $j['hari_tanggal']; ?></td>
                                     <td><?= $j['jam_ke']; ?></td>
                                     <td><?= $j['mapel']; ?></td>
                                     <td><?= $j['uraian_materi']; ?></td>
                                     <td><?= $j['media_pembelajaran']; ?></td>
-                                    <td><?= $j['hadir']; ?></td>
-                                    <td><?= $j['sakit']; ?></td>
-                                    <td><?= $j['ijin']; ?></td>
-                                    <td><?= $j['alpa']; ?></td>
-                                    <td><?= $j['jumlah']; ?></td>
-                                    <td><?= $j['nama_siswa_tidak_hadir']; ?></td>
+                                    <!-- < ?php endforeach ?>
+                                < ?php foreach ($jumlah_presensi as $jp) : ?>
+                                    <td>< ?= $jp['hadir']; ?></td>
+                                    <td>< ?= $jp['sakit']; ?></td>
+                                    <td>< ?= $jp['ijin']; ?></td>
+                                    <td>< ?= $jp['alpa']; ?></td>
+                                    <td>< ?= $jp['jumlah']; ?></td>
+                                    <td>< ?= $jp['nama_siswa_tidak_hadir']; ?></td> -->
                                     <td>
                                         <a href="/guru/hapus_jurnal/<?= $j['jurnal_id']; ?>" title="delete" class="btn-sm btn-danger" onclick="return confirm('<?= $j['jurnal_id']; ?> akan terhapus secara permanen')"><i class='bx bx-message-alt-x'></i></a>
                                     </td>
