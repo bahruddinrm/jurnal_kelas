@@ -31,10 +31,10 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-
-<![endif]-->
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        
+    <![endif]-->
     <!-- SweetAlert CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <!-- SweetAlert JS -->
@@ -116,35 +116,57 @@
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
         <aside class="left-sidebar">
-            <!-- Sidebar scroll-->
             <div class="scroll-sidebar">
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-                        <li> <a class="waves-effect waves-dark" href="/admin" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
+                        <li>
+                            <a class="waves-effect waves-dark" href="/admin" aria-expanded="false">
+                                <i class="mdi mdi-gauge"></i>
+                                <span class="hide-menu">Dashboard</span>
+                            </a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="/admin/pengguna" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Pengguna</span></a>
+                        <li>
+                            <a class="waves-effect waves-dark" href="/admin/pengguna" aria-expanded="false">
+                                <i class="bx bx-user"></i>
+                                <span class="hide-menu">Pengguna</span>
+                            </a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="/admin/mapel" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Mapel</span></a>
+                        <li>
+                            <a class="waves-effect waves-dark" href="/admin/mapel" aria-expanded="false">
+                                <i class="bx bx-book"></i>
+                                <span class="hide-menu">Mapel</span>
+                            </a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="/admin/kelas" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Kelas</span></a>
+                        <li>
+                            <a class="waves-effect waves-dark" href="/admin/kelas" aria-expanded="false">
+                                <i class="bx bx-building"></i>
+                                <span class="hide-menu">Kelas</span>
+                            </a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="/admin/siswa" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Siswa</span></a>
+                        <li>
+                            <a class="waves-effect waves-dark" href="/admin/siswa" aria-expanded="false">
+                                <i class="bx bx-group"></i>
+                                <span class="hide-menu">Siswa</span>
+                            </a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="/admin/pembelajaran" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Pembelajaran</span></a>
+                        <li>
+                            <a class="waves-effect waves-dark" href="/admin/pembelajaran" aria-expanded="false">
+                                <i class="bx bx-chalkboard"></i>
+                                <span class="hide-menu">Pembelajaran</span>
+                            </a>
                         </li>
-                        <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-emoticon"></i><span class="hide-menu">Icons</span></a> -->
-                        <!-- </li> -->
-                        <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-earth"></i><span class="hide-menu">Google Map</span></a> -->
-                        <!-- </li> -->
-                        <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-book-open-variant"></i><span class="hide-menu">Blank Page</span></a> -->
-                        <!-- </li> -->
-                        <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-help-circle"></i><span class="hide-menu">Error 404</span></a> -->
-                        <!-- </li> -->
+                        <li>
+                            <a class="waves-effect waves-dark" href="/admin/data_sekolah" aria-expanded="false">
+                                <i class="bx bx-data"></i>
+                                <span class="hide-menu">Data Sekolah</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
+
             <!-- End Sidebar scroll-->
             <!-- Bottom points-->
             <div class="sidebar-footer">
@@ -232,6 +254,7 @@
     <script src="<?= base_url() ?>/template/assets/plugins/c3-master/c3.min.js"></script>
     <!-- Chart JS -->
     <script src="<?= base_url() ?>/template/lite/js/dashboard1.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
 </body>
 
 </html>

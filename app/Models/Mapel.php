@@ -21,6 +21,11 @@ class Mapel extends Model
         ->findAll();
     }
 
+    public function mapelUrutAbjad()
+    {
+        return $this->orderBy('nama_mapel', 'ASC')->findAll();
+    }
+
     // Dates
     protected $useTimestamps = false;
     protected $dateFormat    = 'datetime';

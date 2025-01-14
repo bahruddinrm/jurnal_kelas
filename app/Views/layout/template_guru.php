@@ -124,6 +124,12 @@
                         </li>
                         <li> <a class="waves-effect waves-dark" href="/guru/jurnal_kelas" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Jurnal Kelas</span></a>
                         </li>
+                        <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Cetak Jurnal</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="/guru/cetak_jurnal_guru">Cetak Jurnal Guru</a></li>
+                                <li><a href="/guru/cetak_jurnal_kelas">Cetak Jurnal Kelas</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->

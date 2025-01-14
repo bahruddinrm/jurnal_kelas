@@ -41,7 +41,7 @@
                             <?php endforeach ?>
                         </tbody>
                     </table>
-                    <!-- < ?= $pager->links('user_pagination', 'user_pagination'); ?> -->
+                    <!-- < ?= $pager->links('pengguna_pagination', 'pengguna_pagination'); ?> -->
                 </div>
             </div>
         </div>

@@ -1,0 +1,774 @@
+INFO - 2024-12-31 09:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 09:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-31 09:57:05 --> mysqli_sql_exception: Unknown column 'pengguna.nama' in 'where clause' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `kelas`....', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas`....')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas`....')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kelas`....', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Kelas.php(41): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(279): App\Models\Kelas->getKelasByWaliKelas('Salsabila Asofa')
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-31 09:57:05 --> Unknown column 'pengguna.nama' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kelas`.`nama_kelas`
+FROM `kelas`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `kelas`.`wali_kelas`
+WHERE `pengguna`.`nama` = :pengguna.nama:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Kelas.php(41): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Guru.php(279): App\Models\Kelas->getKelasByWaliKelas('Salsabila Asofa')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 09:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 09:57:13 --> Undefined array key "id_kelas"
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 15.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kelas"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(288): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 10:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 10:19:59 --> Undefined variable $nama_kelas
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 32.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_kelas', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(291): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 10:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 10:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 11:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:00:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:21:25 --> Undefined variable $pilih_bulan
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 60.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pilih_bulan', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 60)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(300): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 12:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:31:29 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:32:08 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:32:11 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:32:11 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:32:39 --> Cannot use object of type App\Models\Bulan as array
+in APPPATH\Controllers\Guru.php on line 278.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:32:40 --> Cannot use object of type App\Models\Bulan as array
+in APPPATH\Controllers\Guru.php on line 278.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:33:23 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:33:24 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:35:01 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:35:02 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:35:45 --> Undefined array key "nama_bulan"
+in APPPATH\Controllers\Guru.php on line 279.
+ 1 APPPATH\Controllers\Guru.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_bulan"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:35:46 --> Undefined array key "nama_bulan"
+in APPPATH\Controllers\Guru.php on line 279.
+ 1 APPPATH\Controllers\Guru.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_bulan"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Controllers\\Guru.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:36:13 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(303): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:36:14 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(303): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:36:34 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(303): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:36:35 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(303): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:37:52 --> Undefined array key "id_bulan"
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 29.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_bulan"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:37:53 --> Undefined array key "id_bulan"
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 29.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_bulan"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:38:11 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:38:12 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:38:20 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:38:21 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:39:32 --> Undefined array key "id_bulan"
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 29.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_bulan"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:41:10 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:41:11 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:45:22 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 28.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(304): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:45:23 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 28.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(304): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:46:26 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:46:27 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:47:24 --> Undefined variable $d
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 29.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $d', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:47:25 --> Undefined variable $d
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 29.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $d', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:47:35 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 53.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 12:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 12:47:36 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 53.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 14:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 14:24:48 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 15:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 15:54:37 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 15:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 15:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 15:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 15:54:54 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 15:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 15:55:46 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 15:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 15:55:47 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 51.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(302): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 15:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 15:58:44 --> Undefined variable $bulan
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 60.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bulan', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 60)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(299): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 15:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 15:58:46 --> Undefined variable $bulan
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 60.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bulan', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 60)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(299): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 15:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 15:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-31 15:59:01 --> Undefined variable $bulan
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 60.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bulan', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 60)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(299): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-31 15:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 15:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 16:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 16:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 16:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-31 16:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

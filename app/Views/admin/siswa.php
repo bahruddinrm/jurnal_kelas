@@ -40,6 +40,7 @@
                             <?php endforeach ?>
                         </tbody>
                     </table>
+                    <!-- < ?= $pager->links('siswa_pagination', 'siswa_pagination'); ?> -->
                 </div>
             </div>
         </div>

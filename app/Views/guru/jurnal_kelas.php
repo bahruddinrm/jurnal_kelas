@@ -49,6 +49,7 @@
                                 <th scope="col">MAPEL</th>
                                 <th scope="col">URAIAN MATERI</th>
                                 <th scope="col">MEDIA PEMBELAJARAN</th>
+                                <th scope="col">KETERANGAN</th>
                                 <!-- <th scope="col">HADIR</th>
                                 <th scope="col">SAKIT</th>
                                 <th scope="col">IJIN</th>
@@ -68,10 +69,11 @@
                                     <td><?= $j['nama_kelas']; ?></td>
                                     <td><?= $j['hari_tanggal']; ?></td>
                                     <td><?= $j['jam_ke']; ?></td>
-                                    <td><?= $j['mapel']; ?></td>
+                                    <td><?= $j['nama_mapel']; ?></td>
                                     <td><?= $j['uraian_materi']; ?></td>
                                     <td><?= $j['media_pembelajaran']; ?></td>
-                                <!-- < ?php endforeach ?> 
+                                    <td><?= $j['keterangan']; ?></td>
+                                    <!-- < ?php endforeach ?> 
                                 < ?php foreach ($jumlah_presensi as $jp) : ?>
                                     <td>< ?= $jp['hadir']; ?></td>
                                     <td>< ?= $jp['sakit']; ?></td>
@@ -87,16 +89,16 @@
                                             <i class='bx bx-message-alt-x'></i>
                                         </button>
                                     </td>
-                                <!-- </tr>  -->
-                             <?php endforeach ?> 
+                                    <!-- </tr>  -->
+                                <?php endforeach ?>
                         </tbody>
                     </table>
-                    <!-- < ?= $pager->links('user_pagination', 'user_pagination'); ?> -->
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 
 <!-- SweetAlert ketika berhasil menginput jurnal -->
 <script>

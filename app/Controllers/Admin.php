@@ -15,6 +15,10 @@ class Admin extends BaseController
     public function index()
     {
         $ModelPengguna = new \App\Models\Pengguna();
+        $ModelKelas = new \App\Models\Kelas();
+        $ModelMapel = new \App\Models\Mapel();
+        $ModelSiswa = new \App\Models\Siswa();
+
         $user = session()->get('user');
         $user_pengguna = $ModelPengguna->findAll();
 
@@ -22,6 +26,11 @@ class Admin extends BaseController
             'user_pengguna' => $user_pengguna,
             'user' => $user['nama_lengkap'],
             'user_jabatan' => $user['jabatan'],
+
+            'jumlah_pengguna' => $ModelPengguna->countAll(),
+            'jumlah_kelas' => $ModelKelas->countAll(),
+            'jumlah_mapel' => $ModelMapel->countAll(),
+            'jumlah_siswa' => $ModelSiswa->countAll(),
         ];
 
         return view('admin/dashboard_admin_view', $data);
@@ -39,7 +48,7 @@ class Admin extends BaseController
             'user' => $user['nama_lengkap'],
             'user_jabatan' => $user['jabatan'],
 
-            'user_pagination' => $ModelPengguna->paginate(10, 'user_pagination'),
+            'pengguna_pagination' => $ModelPengguna->paginate(1, 'pengguna_pagination'),
             'pager' => $ModelPengguna->pager
         ];
 
@@ -234,7 +243,7 @@ class Admin extends BaseController
             'nama_mapel' => $this->request->getVar('nama_mapel'),
         ];
         $ModelMapel->insert($data);
-        
+
         session()->setFlashdata('success', 'Mapel berhasil ditambahkan.');
 
         return redirect()->to('admin/mapel');
@@ -298,7 +307,7 @@ class Admin extends BaseController
             'wali_kelas' => $this->request->getVar('wali_kelas'),
         ];
         $ModelKelas->insert($data);
-                
+
         session()->setFlashdata('success', 'Kelas berhasil ditambahkan.');
 
         return redirect()->to('admin/kelas');
@@ -330,6 +339,8 @@ class Admin extends BaseController
             'kelas' => $kelas,
 
             'siswa' => $siswa,
+            // 'siswa_pagination' => $ModelSiswa->paginate(2, 'siswa_pagination'),
+            // 'pager' => $ModelSiswa->pager
         ];
 
         return view('/admin/siswa', $data);
@@ -341,7 +352,7 @@ class Admin extends BaseController
         $ModelKelas = new \App\Models\Kelas();
 
         $siswa = $ModelSiswa->findAll();
-        $kelas = $ModelKelas->findAll();
+        $kelas = $ModelKelas->kelasUrutAbjad();
 
         $user = session()->get('user');
 
@@ -408,9 +419,9 @@ class Admin extends BaseController
         $user = session()->get('user');
 
         $pembelajaran = $ModelPembelajaran->findAll();
-        $pengguna = $ModelPengguna->findAll();
-        $mapel = $ModelMapel->findAll();
-        $kelas = $ModelKelas->findAll();
+        $pengguna = $ModelPengguna->penggunaUrutAbjad();
+        $mapel = $ModelMapel->mapelUrutAbjad();
+        $kelas = $ModelKelas->kelasUrutAbjad();
 
         $data = [
             'user' => $user['nama_lengkap'],
@@ -446,5 +457,42 @@ class Admin extends BaseController
         $ModelPembelajaran->delete($id_pembelajaran);
         session()->setFlashdata('success', 'Pembelajaran berhasil dihapus');
         return redirect()->to('admin/pembelajaran');
+    }
+
+    public function data_sekolah()
+    {
+        $ModelSekolah = new \App\Models\Sekolah();
+
+        $user = session()->get('user');
+
+        $detail = $ModelSekolah->findAll();
+
+        $data = [
+            'user' => $user['nama_lengkap'],
+            'user_jabatan' => $user['jabatan'],
+
+            'detail' => $detail,
+        ];
+
+        return view('/admin/data_sekolah', $data);
+    }
+
+    public function simpan_data_sekolah()
+    {
+        $ModelSekolah = new \App\Models\Sekolah();
+
+        $id = $this->request->getVar('id');
+
+        $data = [
+            'nama_sekolah' => $this->request->getVar('nama_sekolah'),
+            'alamat_sekolah' => $this->request->getVar('alamat_sekolah'),
+            'kepala_sekolah' => $this->request->getVar('kepala_sekolah'),
+        ];
+
+        if ($ModelSekolah->update($id, $data)) { // Pastikan ID di parameter pertama
+            return redirect()->to('/admin/data_sekolah')->with('success', 'Data sekolah berhasil diperbarui.');
+        } else {
+            return redirect()->back()->withInput()->with('error', 'Gagal memperbarui data sekolah.');
+        }
     }
 }

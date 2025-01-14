@@ -1,0 +1,721 @@
+INFO - 2025-01-03 05:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 05:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 05:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 05:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 05:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 05:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 05:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 05:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 05:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 05:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 05:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 05:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 05:54:53 --> Call to undefined method App\Models\Pengguna::getNamaPengguna
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(285): CodeIgniter\Model->__call('getNamaPengguna', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 05:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 05:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 05:59:35 --> Call to undefined method App\Models\Pengguna::getNamaPengguna
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(285): CodeIgniter\Model->__call('getNamaPengguna', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 06:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 06:01:02 --> Call to undefined method App\Models\Pengguna::getNamaPengguna
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(285): CodeIgniter\Model->__call('getNamaPengguna', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 06:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 06:01:03 --> Call to undefined method App\Models\Pengguna::getNamaPengguna
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(285): CodeIgniter\Model->__call('getNamaPengguna', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 06:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 06:01:43 --> Call to undefined method App\Models\Pengguna::getNamaPengguna
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(285): CodeIgniter\Model->__call('getNamaPengguna', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 06:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 06:01:43 --> Call to undefined method App\Models\Pengguna::getNamaPengguna
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(285): CodeIgniter\Model->__call('getNamaPengguna', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 06:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 06:05:14 --> Undefined variable $nama_kelas
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 64.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_kelas', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(320): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 06:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 06:05:15 --> Undefined variable $nama_kelas
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 64.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_kelas', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(320): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 06:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 06:05:36 --> Undefined variable $jurnal
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 86.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jurnal', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 86)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(320): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 06:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 06:05:37 --> Undefined variable $jurnal
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 86.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jurnal', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 86)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(320): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 06:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 06:08:27 --> Undefined array key "nama_lengkap"
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 17.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_lengkap"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(320): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 06:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 06:08:28 --> Undefined array key "nama_lengkap"
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 17.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_lengkap"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(320): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 06:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-03 06:11:27 --> mysqli_sql_exception: Unknown column 'pengguna.nama_pengguna' in 'field list' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `penggun...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penggun...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penggun...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `penggun...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pengguna.php(21): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(296): App\Models\Pengguna->getPengguna('Rizka Ari Prati...')
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2025-01-03 06:11:27 --> Unknown column 'pengguna.nama_pengguna' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pengguna`.`nama_pengguna`, `pengguna`.`id_pengguna`
+FROM `pengguna`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pengguna.php(21): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Guru.php(296): App\Models\Pengguna->getPengguna('Rizka Ari Pratidibyana')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 06:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-03 06:11:36 --> mysqli_sql_exception: Unknown column 'pengguna.nama_pengguna' in 'field list' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `penggun...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `penggun...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `penggun...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `penggun...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pengguna.php(21): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(296): App\Models\Pengguna->getPengguna('Rizka Ari Prati...')
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2025-01-03 06:11:36 --> Unknown column 'pengguna.nama_pengguna' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pengguna`.`nama_pengguna`, `pengguna`.`id_pengguna`
+FROM `pengguna`
+WHERE `pengguna`.`nama_lengkap` = :pengguna.nama_lengkap:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pengguna.php(21): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Guru.php(296): App\Models\Pengguna->getPengguna('Rizka Ari Pratidibyana')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 06:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:16:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 06:44:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:25:04 --> Call to undefined method App\Models\JurnalKelas::getCetakJurnal
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(350): CodeIgniter\Model->__call('getCetakJurnal', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:25:49 --> Call to undefined method App\Models\JurnalKelas::getCetakJurnal
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Guru.php(350): CodeIgniter\Model->__call('getCetakJurnal', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:27:17 --> Undefined variable $pengguna
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 16.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengguna', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:27:18 --> Undefined variable $pengguna
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 16.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengguna', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:28:20 --> Undefined variable $pengguna
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 16.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengguna', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:28:21 --> Undefined variable $pengguna
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 16.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengguna', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:28:21 --> Undefined variable $pengguna
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 16.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengguna', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:28:29 --> Undefined variable $pengguna
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 16.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengguna', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:28:30 --> Undefined variable $pengguna
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 16.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengguna', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:28:47 --> Undefined variable $pengguna
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 16.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengguna', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:28:52 --> Undefined variable $pengguna
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 16.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengguna', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:28:53 --> Undefined variable $pengguna
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 16.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengguna', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:28:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:29:00 --> Undefined variable $pengguna
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 16.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengguna', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:29:15 --> Undefined variable $pengguna
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 16.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengguna', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:29:44 --> Undefined variable $nama_kelas
+in APPPATH\Views\guru\cetak_jurnal_guru.php on line 63.
+ 1 APPPATH\Views\guru\cetak_jurnal_guru.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_kelas', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_guru', [], true)
+ 5 APPPATH\Controllers\Guru.php(319): view('/guru/cetak_jurnal_guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_guru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:31:15 --> Array to string conversion
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 63.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:35:48 --> Undefined array key "mapel"
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 91.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mapel"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 91)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:38:16 --> Undefined array key "mapel"
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 91.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mapel"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 91)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:40:06 --> Undefined array key "mapel"
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 91.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mapel"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 91)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 08:40:15 --> Undefined array key "nama_lengkap"
+in APPPATH\Views\guru\cetak_jurnal_kelas.php on line 92.
+ 1 APPPATH\Views\guru\cetak_jurnal_kelas.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_lengkap"', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\guru\\cetak_jurnal_kelas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/guru/cetak_jurnal_kelas', [], true)
+ 5 APPPATH\Controllers\Guru.php(369): view('/guru/cetak_jurnal_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-03 08:44:26 --> mysqli_sql_exception: Unknown column 'jurnal_kelas.nama_lengkao' in 'on clause' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `jurnal_...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jurnal_...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jurnal_...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `jurnal_...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\JurnalKelas.php(67): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(350): App\Models\JurnalKelas->getCetakJurnalKelas('56', '1', '2025')
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2025-01-03 08:44:26 --> Unknown column 'jurnal_kelas.nama_lengkao' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `jurnal_kelas`.*, `kelas`.`nama_kelas`, `mapel`.`nama_mapel`, COUNT(CASE WHEN daftar_hadir.keterangan = "Hadir" THEN 1 END) AS jumlah_hadir, COUNT(CASE WHEN daftar_hadir.keterangan = "Ijin" THEN 1 END) AS jumlah_ijin, COUNT(CASE WHEN daftar_hadir.keterangan = "Alpa" THEN 1 END) AS jumlah_alpa, GROUP_CONCAT(siswa.nama_siswa SEPARATOR ", ") AS nama_siswa_absen, `pengguna`.`nama_lengkap`
+FROM `jurnal_kelas`
+JOIN `pengguna` ON `jurnal_kelas`.`nama_lengkao` = `pengguna`.`nama_lengkap`
+JOIN `mapel` ON `jurnal_kelas`.`mapel` = `mapel`.`id_mapel`
+JOIN `kelas` ON `jurnal_kelas`.`nama_kelas` = `kelas`.`id_kelas`
+LEFT JOIN `daftar_hadir` ON `jurnal_kelas`.`nama_kelas` = `daftar_hadir`.`nama_kelas` AND `jurnal_kelas`.`hari_tanggal` = `daftar_hadir`.`hari_tanggal`
+LEFT JOIN `siswa` ON `daftar_hadir`.`nama_siswa` = `siswa`.`id_siswa`
+WHERE `jurnal_kelas`.`nama_kelas` = :jurnal_kelas.nama_kelas:
+AND MONTH(jurnal_kelas.hari_tanggal) = :MONTH(jurnal_kelas.hari_tanggal):
+AND YEAR(jurnal_kelas.hari_tanggal) = :YEAR(jurnal_kelas.hari_tanggal):
+GROUP BY `jurnal_kelas`.`hari_tanggal`, `jurnal_kelas`.`jam_ke`
+ORDER BY `jurnal_kelas`.`hari_tanggal` DESC, `jurnal_kelas`.`jam_ke` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JurnalKelas.php(67): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Guru.php(350): App\Models\JurnalKelas->getCetakJurnalKelas('56', '1', '2025')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-03 08:45:31 --> mysqli_sql_exception: Unknown column 'pengguna.nama_lengkap' in 'field list' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `jurnal_...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jurnal_...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jurnal_...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `jurnal_...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\JurnalKelas.php(67): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(350): App\Models\JurnalKelas->getCetakJurnalKelas('56', '1', '2025')
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2025-01-03 08:45:31 --> Unknown column 'pengguna.nama_lengkap' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `jurnal_kelas`.*, `kelas`.`nama_kelas`, `mapel`.`nama_mapel`, COUNT(CASE WHEN daftar_hadir.keterangan = "Hadir" THEN 1 END) AS jumlah_hadir, COUNT(CASE WHEN daftar_hadir.keterangan = "Ijin" THEN 1 END) AS jumlah_ijin, COUNT(CASE WHEN daftar_hadir.keterangan = "Alpa" THEN 1 END) AS jumlah_alpa, GROUP_CONCAT(siswa.nama_siswa SEPARATOR ", ") AS nama_siswa_absen, `pengguna`.`nama_lengkap`
+FROM `jurnal_kelas`
+JOIN `mapel` ON `jurnal_kelas`.`mapel` = `mapel`.`id_mapel`
+JOIN `kelas` ON `jurnal_kelas`.`nama_kelas` = `kelas`.`id_kelas`
+LEFT JOIN `daftar_hadir` ON `jurnal_kelas`.`nama_kelas` = `daftar_hadir`.`nama_kelas` AND `jurnal_kelas`.`hari_tanggal` = `daftar_hadir`.`hari_tanggal`
+LEFT JOIN `siswa` ON `daftar_hadir`.`nama_siswa` = `siswa`.`id_siswa`
+WHERE `jurnal_kelas`.`nama_kelas` = :jurnal_kelas.nama_kelas:
+AND MONTH(jurnal_kelas.hari_tanggal) = :MONTH(jurnal_kelas.hari_tanggal):
+AND YEAR(jurnal_kelas.hari_tanggal) = :YEAR(jurnal_kelas.hari_tanggal):
+GROUP BY `jurnal_kelas`.`hari_tanggal`, `jurnal_kelas`.`jam_ke`
+ORDER BY `jurnal_kelas`.`hari_tanggal` DESC, `jurnal_kelas`.`jam_ke` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JurnalKelas.php(67): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Guru.php(350): App\Models\JurnalKelas->getCetakJurnalKelas('56', '1', '2025')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->cetak_jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 08:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 08:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 10:38:32 --> Undefined variable $jumlah_pengguna
+in APPPATH\Views\admin\dashboard_admin_view.php on line 16.
+ 1 APPPATH\Views\admin\dashboard_admin_view.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlah_pengguna', 'D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\admin\\dashboard_admin_view.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\app\\Views\\admin\\dashboard_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/dashboard_admin_view', [], true)
+ 5 APPPATH\Controllers\Admin.php(27): view('admin/dashboard_admin_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 10:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 10:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-03 11:10:54 --> syntax error, unexpected token ";", expecting variable or "{" or "$"
+in APPPATH\Views\admin\dashboard_admin_view.php on line 56.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/dashboard_admin_view', [], true)
+ 3 APPPATH\Controllers\Admin.php(36): view('admin/dashboard_admin_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2025-01-03 11:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-03 11:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

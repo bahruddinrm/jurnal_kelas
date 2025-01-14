@@ -39,15 +39,6 @@
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <!-- <label for="jabatan" class="col-sm-3 col-form-label">Jabatan<span class="required-symbol">*</span></label>
-                        <div class="col-sm-9">
-                            <select class="form-control" name="jabatan" id="jabatan" onchange="aktif()">
-                                <option selected disabled>< ?= $detail['jabatan']; ?></option>
-                                < ?php foreach ($jenis_jabatan as $j): ?>
-                                    <option value="< ?= $j['jabatan'] ?>">< ?= $j['jabatan']; ?></option>
-                                < ?php endforeach ?>
-                            </select>
-                        </div> -->
                         <label for="jabatan" class="col-sm-3 col-form-label">Jabatan<span class="required-symbol">*</span></label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" id="jabatan" name="jabatan" value="<?= $detail['jabatan']; ?>" readonly>

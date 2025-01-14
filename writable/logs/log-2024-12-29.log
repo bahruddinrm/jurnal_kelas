@@ -1,0 +1,365 @@
+INFO - 2024-12-29 07:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:28:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-29 07:30:16 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`jurnal_pembelajaran`.`kelas`, CONSTRAINT `fk_1` FOREIGN KEY (`wali_kelas`) REFERENCES `pengguna` (`id_pengguna`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pe...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Admin.php(185): CodeIgniter\BaseModel->delete(Array)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('13')
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#12 {main}
+CRITICAL - 2024-12-29 07:30:16 --> Cannot delete or update a parent row: a foreign key constraint fails (`jurnal_pembelajaran`.`kelas`, CONSTRAINT `fk_1` FOREIGN KEY (`wali_kelas`) REFERENCES `pengguna` (`id_pengguna`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pengguna`
+WHERE `id_pengguna` IN :id_pengguna:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Admin.php(185): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('13')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-29 07:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-29 07:30:45 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`jurnal_pembelajaran`.`kelas`, CONSTRAINT `fk_1` FOREIGN KEY (`wali_kelas`) REFERENCES `pengguna` (`id_pengguna`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pe...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Admin.php(185): CodeIgniter\BaseModel->delete(Array)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('13')
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#12 {main}
+CRITICAL - 2024-12-29 07:30:45 --> Cannot delete or update a parent row: a foreign key constraint fails (`jurnal_pembelajaran`.`kelas`, CONSTRAINT `fk_1` FOREIGN KEY (`wali_kelas`) REFERENCES `pengguna` (`id_pengguna`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pengguna`
+WHERE `id_pengguna` IN :id_pengguna:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Admin.php(185): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('13')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-29 07:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-29 07:31:37 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`jurnal_pembelajaran`.`kelas`, CONSTRAINT `fk_1` FOREIGN KEY (`wali_kelas`) REFERENCES `pengguna` (`id_pengguna`) ON DELETE NO ACTION ON UPDATE NO ACTION) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pe...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Admin.php(185): CodeIgniter\BaseModel->delete(Array)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('13')
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#12 {main}
+CRITICAL - 2024-12-29 07:31:37 --> Cannot delete or update a parent row: a foreign key constraint fails (`jurnal_pembelajaran`.`kelas`, CONSTRAINT `fk_1` FOREIGN KEY (`wali_kelas`) REFERENCES `pengguna` (`id_pengguna`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pengguna`
+WHERE `id_pengguna` IN :id_pengguna:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Admin.php(185): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_pengguna('13')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-29 07:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-29 07:33:33 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`jurnal_pembelajaran`.`siswa`, CONSTRAINT `fk_2` FOREIGN KEY (`kelas`) REFERENCES `kelas` (`id_kelas`)) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ke...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ke...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ke...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ke...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Admin.php(310): CodeIgniter\BaseModel->delete(Array)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Admin->delete_kelas('59')
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#12 {main}
+CRITICAL - 2024-12-29 07:33:33 --> Cannot delete or update a parent row: a foreign key constraint fails (`jurnal_pembelajaran`.`siswa`, CONSTRAINT `fk_2` FOREIGN KEY (`kelas`) REFERENCES `kelas` (`id_kelas`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `kelas`
+WHERE `id_kelas` IN :id_kelas:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Admin.php(310): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_kelas('59')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-29 07:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-29 07:35:08 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`jurnal_pembelajaran`.`siswa`, CONSTRAINT `fk_2` FOREIGN KEY (`kelas`) REFERENCES `kelas` (`id_kelas`) ON DELETE NO ACTION ON UPDATE NO ACTION) in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ke...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ke...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ke...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ke...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Admin.php(310): CodeIgniter\BaseModel->delete(Array)
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Admin->delete_kelas('59')
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#12 {main}
+CRITICAL - 2024-12-29 07:35:08 --> Cannot delete or update a parent row: a foreign key constraint fails (`jurnal_pembelajaran`.`siswa`, CONSTRAINT `fk_2` FOREIGN KEY (`kelas`) REFERENCES `kelas` (`id_kelas`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `kelas`
+WHERE `id_kelas` IN :id_kelas:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Admin.php(310): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->delete_kelas('59')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-29 07:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-29 07:36:51 --> mysqli_sql_exception: Unknown column 'pembelajaran.pengguna' in 'on clause' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(25): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Admin.php(391): App\Models\Pembelajaran->pembelajaranJoin()
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Admin->pembelajaran()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-29 07:36:51 --> Unknown column 'pembelajaran.pengguna' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `mapel`.`nama_mapel`, `kelas`.`nama_kelas`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `mapel` ON `mapel`.`id_mapel` = `pembelajaran`.`mapel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `pembelajaran`.`kelas`
+ORDER BY `kelas`.`nama_kelas` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembelajaran.php(25): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Admin.php(391): App\Models\Pembelajaran->pembelajaranJoin()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->pembelajaran()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-29 07:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-29 07:36:59 --> mysqli_sql_exception: Unknown column 'pembelajaran.pengguna' in 'on clause' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pembela...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembela...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembela...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembela...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\Pembelajaran.php(25): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Admin.php(391): App\Models\Pembelajaran->pembelajaranJoin()
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Admin->pembelajaran()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-29 07:36:59 --> Unknown column 'pembelajaran.pengguna' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pembelajaran`.*, `pengguna`.`nama_lengkap`, `mapel`.`nama_mapel`, `kelas`.`nama_kelas`
+FROM `pembelajaran`
+JOIN `pengguna` ON `pengguna`.`id_pengguna` = `pembelajaran`.`pengguna`
+JOIN `mapel` ON `mapel`.`id_mapel` = `pembelajaran`.`mapel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `pembelajaran`.`kelas`
+ORDER BY `kelas`.`nama_kelas` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembelajaran.php(25): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Admin.php(391): App\Models\Pembelajaran->pembelajaranJoin()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->pembelajaran()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-29 07:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:39:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-29 07:40:28 --> view(): Argument #2 ($data) must be of type array, null given, called in D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Login.php on line 74
+in SYSTEMPATH\Common.php on line 1178.
+ 1 APPPATH\Controllers\Login.php(74): view('login_view', null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-29 07:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-29 07:42:22 --> mysqli_sql_exception: Unknown column 'jurnal_kelas.nama_kelas' in 'where clause' in D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `jurnal_...', 0)
+#1 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jurnal_...')
+#2 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jurnal_...')
+#3 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `jurnal_...', Array, false)
+#4 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Models\JurnalKelas.php(25): CodeIgniter\BaseModel->findAll()
+#7 D:\Udin\SMP 1\web\jurnal_pembelajaran\app\Controllers\Guru.php(159): App\Models\JurnalKelas->getJurnalJoinKelasMapel(NULL)
+#8 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+#9 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#10 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Udin\SMP 1\web\jurnal_pembelajaran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Udin\SMP 1\web\jurnal_pembelajaran\system\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\w...')
+#13 {main}
+CRITICAL - 2024-12-29 07:42:22 --> Unknown column 'jurnal_kelas.nama_kelas' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `jurnal_kelas`.*, `kelas`.`nama_kelas`, `mapel`.`nama_mapel`
+FROM `jurnal_kelas`
+JOIN `kelas` ON `jurnal_kelas`.`nama_kelas` = `kelas`.`id_kelas`
+JOIN `mapel` ON `jurnal_kelas`.`mapel` = `mapel`.`id_mapel`
+WHERE `jurnal_kelas`.`nama_kelas` IS NULL
+ORDER BY `jurnal_kelas`.`hari_tanggal` DESC, `jurnal_kelas`.`jam_ke` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JurnalKelas.php(25): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Guru.php(159): App\Models\JurnalKelas->getJurnalJoinKelasMapel(null)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Guru->jurnal_kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Udin\\SMP 1\\web\\jurnal_pembelajaran\\public\\index.php')
+INFO - 2024-12-29 07:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 07:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 08:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 09:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 09:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-29 09:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

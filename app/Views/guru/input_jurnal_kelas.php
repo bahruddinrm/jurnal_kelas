@@ -44,6 +44,7 @@
                                 <option value="5-7">5-7</option>
                                 <option value="6-7">6-7</option>
                                 <option value="6-8">6-8</option>
+                                <option value="7-8">7-8</option>
                             </select>
                         </div>
                     </div>
@@ -83,7 +84,19 @@
                             <input type="text" class="form-control" id="media_pembelajaran" name="media_pembelajaran" required>
                         </div>
                     </div>
-
+                    <div class="form-group">
+                        <label class="col-md-12">Keterangan<span class="required-symbol">*</span></label>
+                        <div class="col-md-12 d-flex align-items-center">
+                            <div class="form-check mr-3">
+                                <input class="form-check-input" type="radio" name="keterangan" id="keterangan_selesai" value="Selesai" required>
+                                <label class="form-check-label" for="keterangan_selesai">Selesai</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="keterangan" id="keterangan_belum" value="Belum Selesai" required>
+                                <label class="form-check-label" for="keterangan_belum">Belum Selesai</label>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col">
                             <button type="submit" class="btn btn-primary">Simpan</button>

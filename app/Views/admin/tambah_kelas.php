@@ -32,12 +32,6 @@
             <div class="card-block">
                 <h2 style="margin-bottom: 20px; margin-left: 14px;">Input Kelas</h2>
                 <form class="form-horizontal form-material" action="/admin/simpan_kelas" method="post">
-                    <!-- <div class="form-group">
-                        <label class="col-md-12" for="id_kelas">ID Kelas<span class="required-symbol">*</span></label>
-                        <div class="col-md-12">
-                            <input type="text" class="form-control" id="id_kelas" name="id_kelas" oninput="upper_id()" required>
-                        </div>
-                    </div> -->
                     <div class="form-group">
                         <label for="nama_kelas" class="col-md-12">Nama Kelas<span class="required-symbol">*</span></label>
                         <div class="col-md-12">

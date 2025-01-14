@@ -16,7 +16,7 @@ class Pengguna extends Model
 
     public function getPengguna($nama_lengkap)
     {
-        return $this->select('pengguna.id_pengguna')
+        return $this->select('pengguna.nama_lengkap, pengguna.id_pengguna')
         ->where('pengguna.nama_lengkap', $nama_lengkap)
         ->findAll();
     }
@@ -26,6 +26,11 @@ class Pengguna extends Model
         return $this->select('id_pengguna')
         ->where('nama_lengkap', $nama_string)
         ->findAll();
+    }
+
+    public function penggunaUrutAbjad()
+    {
+        return $this->orderBy('nama_lengkap','ASC')->findAll();
     }
 
     // Dates

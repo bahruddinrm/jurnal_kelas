@@ -26,6 +26,7 @@ class Siswa extends Model
         return $this->select('siswa.* , kelas.nama_kelas')
                     ->join('kelas', 'siswa.kelas = kelas.id_kelas')
                     ->where('siswa.kelas',$dh_kelas)
+                    ->orderBy('nama_siswa', 'ASC')
                     ->findAll();
     }
 

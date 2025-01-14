@@ -11,6 +11,8 @@ use CodeIgniter\Model;
 use Config\App;
 use PhpParser\Node\Expr\FuncCall;
 use Symfony\Contracts\Service\ServiceProviderInterface;
+use Dompdf\Dompdf;
+use Dompdf\Options;
 
 class Guru extends BaseController
 {
@@ -59,7 +61,6 @@ class Guru extends BaseController
         $ModelSiswa = new \App\Models\Siswa();
 
         $user = session()->get('user');
-
 
         $dh_kelas = $this->request->getPost('dh_kelas');
         session()->set('dh_kelas', $dh_kelas);
@@ -179,7 +180,7 @@ class Guru extends BaseController
 
         return view('guru/jurnal_kelas', $data);
     }
-    
+
     public function tambah_jurnal()
     {
         $ModelPembelajaran = new \App\Models\Pembelajaran();
@@ -239,6 +240,7 @@ class Guru extends BaseController
             'mapel' => $this->request->getVar('mapel'),
             'uraian_materi' => $this->request->getVar('uraian_materi'),
             'media_pembelajaran' => $this->request->getVar('media_pembelajaran'),
+            'keterangan' => $this->request->getVar('keterangan'),
 
             'jurnal' => $jurnal
         ];
@@ -267,5 +269,201 @@ class Guru extends BaseController
         }
 
         return redirect()->to('guru/jurnal_kelas');
+    }
+
+    public function cetak_jurnal_guru()
+    {
+        $ModelPengguna = new \App\Models\Pengguna();
+        $ModelBulan = new \App\Models\Bulan();
+        $ModelJurnal = new \App\Models\JurnalKelas();
+
+        $user = session()->get('user');
+
+        $pilih_pengguna = $this->request->getPost('pilih_pengguna');
+        $pilih_bulan = $this->request->getPost('pilih_bulan');
+        $pilih_tahun = $this->request->getPost('pilih_tahun');
+
+        $nama_pengguna = $ModelPengguna->findAll();
+        $nama_bulan = $ModelBulan->getNamaBulan($pilih_bulan);
+
+        $pengguna = array_column($nama_pengguna, 'nama_lengkap');
+        $nama_string = implode(",", $pengguna);
+        $bulan = array_column($nama_bulan, 'nama_bulan');
+        $bulan_string = implode(",", $bulan);
+
+        session()->set('pilih_bulan', $pilih_bulan);
+        session()->set('pilih_pengguna', $pilih_pengguna);
+        session()->set('pilih_tahun', $pilih_tahun);
+        session()->set('bulan_string', $bulan_string);
+        session()->set('tahun_string', $pilih_tahun);
+
+        $nama_lengkap = $user['nama_lengkap'];
+        $pengguna = $ModelPengguna->getPengguna($nama_lengkap);
+        $bulan = $ModelBulan->findAll();
+
+        // $jurnal = $ModelJurnal->getJurnalJoinKelasMapel($pilih_kelas);
+        $jurnal = $ModelJurnal->getCetakJurnalGuru($pilih_pengguna, $pilih_bulan, $pilih_tahun);
+        session()->set('jurnal', $jurnal);
+
+        foreach ($jurnal as &$j) {
+            $englishDay = date('l', strtotime($j['hari_tanggal']));
+            $j['hari_tanggal'] = DateHelper::hariIndonesia($englishDay) . ',' . date(' d/m/Y', strtotime($j['hari_tanggal']));
+        }
+
+        $data = [
+            'user' => $user['nama_lengkap'],
+            'user_jabatan' => $user['jabatan'],
+
+            'pengguna' => $pengguna,
+            'nama_pengguna' => $pengguna,
+            'nama_bulan' => $bulan_string,
+            'bulan' => $bulan,
+
+            'jurnal' => $jurnal,
+        ];
+
+        return view('/guru/cetak_jurnal_guru', $data);
+    }
+
+    public function downloadJurnalGuru()
+    {
+        $ModelSekolah = new \App\Models\Sekolah();
+
+        $kepala_sekolah = $ModelSekolah->findAll();
+
+        $user = session()->get('user');
+        $bulan = session()->get('bulan_string');
+        $tahun = session()->get('tahun_string');
+
+        $nama_lengkap = $user['nama_lengkap'];
+        $nip = $user['nip_nik'];
+        $namaKS = array_column($kepala_sekolah, 'kepala_sekolah');
+        $namaKSString = implode(",", $namaKS);
+        $nipKS = array_column($kepala_sekolah, 'nip');
+        $nip_string = implode(",", $nipKS);
+
+        $getJurnal = session()->get('jurnal');
+
+        $data = [
+            'wali_kelas' => $nama_lengkap,
+            'kepala_sekolah' => $namaKSString,
+            'nip_ks' => $nip_string,
+            'nip' => $nip,
+            'jurnal' => $getJurnal,
+            'bulan' => $bulan,
+            'tahun' => $tahun,
+        ];
+
+        $html = view('/guru/pdf_jurnal_guru', $data);
+
+        // Konfigurasi Dompdf
+        $options = new Options();
+        $options->set('isHtml5ParserEnabled', true);
+        $options->set('isRemoteEnabled', true);
+        $dompdf = new Dompdf($options);
+
+        $dompdf->loadHtml($html);
+        $dompdf->setPaper('A4', 'landscape');
+        $dompdf->render();
+
+        // Unduh file PDF
+        $dompdf->stream("jurnal_guru.pdf", ["Attachment" => 1]);
+    }
+
+    public function cetak_jurnal_kelas()
+    {
+        $ModelKelas = new \App\Models\Kelas();
+        $ModelBulan = new \App\Models\Bulan();
+        $ModelJurnal = new \App\Models\JurnalKelas();
+
+        $user = session()->get('user');
+
+        $pilih_kelas = $this->request->getPost('pilih_kelas');
+        $pilih_bulan = $this->request->getPost('pilih_bulan');
+        $pilih_tahun = $this->request->getPost('pilih_tahun');
+
+        $nama_kelas = $ModelKelas->getNamaKelas($pilih_kelas);
+        $nama_bulan = $ModelBulan->getNamaBulan($pilih_bulan);
+
+        $kelas = array_column($nama_kelas, 'nama_kelas');
+        $kelas_string = implode(",", $kelas);
+        $bulan = array_column($nama_bulan, 'nama_bulan');
+        $bulan_string = implode(",", $bulan);
+
+        session()->set('pilih_bulan', $pilih_bulan);
+        session()->set('pilih_kelas', $pilih_kelas);
+        session()->set('pilih_tahun', $pilih_tahun);
+
+        $nama_lengkap = $user['nama_lengkap'];
+        $kelas = $ModelKelas->getKelasByWaliKelas($nama_lengkap);
+        $bulan = $ModelBulan->findAll();
+
+        // $jurnal = $ModelJurnal->getJurnalJoinKelasMapel($pilih_kelas);
+        $jurnal = $ModelJurnal->getCetakJurnalKelas($pilih_kelas, $pilih_bulan, $pilih_tahun);
+        session()->set('jurnal_kelas', $jurnal);
+
+        foreach ($jurnal as &$j) {
+            $englishDay = date('l', strtotime($j['hari_tanggal']));
+            $j['hari_tanggal'] = DateHelper::hariIndonesia($englishDay) . ',' . date(' d/m/Y', strtotime($j['hari_tanggal']));
+        }
+
+        $data = [
+            'user' => $user['nama_lengkap'],
+            'user_jabatan' => $user['jabatan'],
+
+            'kelas' => $kelas,
+            'nama_kelas' => $kelas_string,
+            'nama_bulan' => $bulan_string,
+            'bulan' => $bulan,
+
+            'jurnal' => $jurnal,
+        ];
+
+        return view('/guru/cetak_jurnal_kelas', $data);
+    }
+
+    public function downloadJurnalKelas()
+    {
+        $ModelSekolah = new \App\Models\Sekolah();
+
+        $kepala_sekolah = $ModelSekolah->findAll();
+
+        $user = session()->get('user');
+        $kelas = session()->get('pilih_kelas');
+        $bulan = session()->get('pilih_bulan');
+        
+        $nama_lengkap = $user['nama_lengkap'];
+        $nip = $user['nip_nik'];
+        $namaKS = array_column($kepala_sekolah, 'kepala_sekolah');
+        $namaKSString = implode(",", $namaKS);
+        $nipKS = array_column($kepala_sekolah, 'nip');
+        $nip_string = implode(",", $nipKS);
+        
+        $getJurnal = session()->get('jurnal_kelas');
+        
+        $data = [
+            'bulan' => $bulan,
+            'kelas' => $kelas,
+            'kepala_sekolah' => $namaKSString,
+            'nip_ks' => $nip_string,
+            'jurnal' => $getJurnal,
+            'wali_kelas' => $nama_lengkap,
+            'nip' => $nip,
+        ];
+
+        $html = view('/guru/pdf_jurnal_kelas', $data);
+
+        // Konfigurasi Dompdf
+        $options = new Options();
+        $options->set('isHtml5ParserEnabled', true);
+        $options->set('isRemoteEnabled', true);
+        $dompdf = new Dompdf($options);
+
+        $dompdf->loadHtml($html);
+        $dompdf->setPaper('A4', 'landscape');
+        $dompdf->render();
+
+        // Unduh file PDF
+        $dompdf->stream("jurnal_kelas.pdf", ["Attachment" => 1]);
     }
 }

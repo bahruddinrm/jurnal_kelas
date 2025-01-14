@@ -33,6 +33,14 @@ class Kelas extends Model
         return $this->orderBy('nama_kelas', 'ASC')->findAll();
     }
 
+    public function getKelasByWaliKelas($nama_lengkap)
+    {
+        return $this->select('kelas.*')
+        ->join('pengguna', 'pengguna.id_pengguna = kelas.wali_kelas')
+        ->where('pengguna.nama_lengkap', $nama_lengkap)
+        ->findAll();
+    }
+
     // Dates
     protected $useTimestamps = false;
     protected $dateFormat    = 'datetime';

@@ -21,8 +21,8 @@
                 <form action="/guru/daftar_hadir" method="post" id="tanggal_dh">
                     <div class="form-group">
                         <label for="tanggal_dh" class="col-sm-12">Pilih Tanggal<span class="required-symbol">*</span></label>
-                        <div class="col-sm-12">
-                            <input type="date" class="form-control" name="tanggal_dh" id="tanggal_dh">
+                        <div class="col-sm-3">
+                            <input type="date" class="form-control" name="tanggal_dh" id="tanggal_dh" value="<?= $tanggal_dh; ?>" <?= ($tanggal_dh == session()->get('tanggal_dh')) ? 'selected' : ''; ?>>
                         </div>
                     </div>
                 </form>

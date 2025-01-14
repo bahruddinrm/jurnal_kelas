@@ -11,9 +11,9 @@
                         <div class="col-sm-12">
                             <select class="form-control" name="dh_kelas" id="dh_kelas">
                                 <option selected disabled>Pilih Kelas</option>
-                                <?php foreach ($kelas as $k) : ?>
-                                    <option value="<?= $k['id_kelas']; ?>"><?= $k['nama_kelas']; ?></option>
-                                <?php endforeach ?>
+                                <?php foreach ($kelas as $nk) : ?>
+                                    <option value="<?= $nk['id_kelas']; ?>" <?= ($nk['id_kelas'] == session()->get('dh_kelas')) ? 'selected' : ''; ?>><?= $nk['nama_kelas']; ?>
+                                    <?php endforeach ?>
                             </select>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
 
                 <form action="/guru/simpan_dh" method="post" id="form_tambah_dh">
                     <label for="hari_tanggal" class="col-sm-12">Pilih Tanggal<span class="required-symbol">*</span></label>
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <input type="date" class="form-control" name="hari_tanggal" id="hari_tanggal" required>
 
                     </div>

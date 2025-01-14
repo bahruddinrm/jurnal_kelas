@@ -9,74 +9,75 @@ use App\Controllers\BaseController;
 
 class Login extends BaseController
 {
-    public function index()
+        public function index()
     {
         $ModelUser = new \App\Models\Pengguna();
         $ModelJabatan = new \App\Models\Jabatan();
 
-        $jabatan['jabatan'] = $ModelJabatan->findAll();
+        $listJabatan['jabatan'] = $ModelJabatan->findAll(); // Data jabatan dari database
+        $err = null; // Inisialisasi error
         $sign_in = $this->request->getPost('sign_in');
 
         if ($sign_in) {
             $username = $this->request->getPost('username');
             $password = $this->request->getPost('password');
-            $jabatan = $this->request->getPost('jabatan');
+            $inputJabatan = $this->request->getPost('jabatan');
 
-            // error ketika username tidak terdaftar
+            // Validasi username
             $user = $ModelUser->where('username', $username)->first();
             if (!$user) {
                 $err = "Username tidak terdaftar";
             }
 
-            // error ketika password salah
-            if (empty($err)) {
-                $data = $ModelUser->where('username', $username)->first();
-                if ($data['password'] != $password) {
-                    $err = "Password salah";
-                }
+            // Validasi password
+            if (empty($err) && $user['password'] != $password) {
+                $err = "Password salah";
             }
 
-            // error ketika jabatan salah
-            if (empty($err)) {
-                $data = $ModelUser->where('username', $username)->first();
-                if ($data['jabatan'] != $jabatan) {
-                    $err = "Anda bukan sebagai {$jabatan}";
-                }
+            // Validasi jabatan
+            if (empty($err) && $user['jabatan'] != $inputJabatan) {
+                $err = "Anda bukan sebagai {$inputJabatan}";
             }
 
+            // Jika tidak ada error, set session
             if (empty($err)) {
                 $datasesi = [
-                    // 'id_pengguna' => $data['id_pengguna'],
-                    'nip_nik' => $data['nip_nik'],
-                    'username' => $data['username'],
-                    'password' => $data['password'],
-                    'nama_lengkap' => $data['nama_lengkap'],
-                    'jabatan' => $data['jabatan'],
+                    'nip_nik' => $user['nip_nik'],
+                    'username' => $user['username'],
+                    'password' => $user['password'],
+                    'nama_lengkap' => $user['nama_lengkap'],
+                    'jabatan' => $user['jabatan'],
                 ];
                 session()->set('user', $datasesi);
-                if ($datasesi['jabatan'] == 'Admin'){
+
+                // Redirect berdasarkan jabatan
+                if ($datasesi['jabatan'] == 'Admin') {
                     return redirect()->to('/admin');
-                } elseif($datasesi['jabatan'] == 'Guru'){
+                } elseif ($datasesi['jabatan'] == 'Guru') {
                     return redirect()->to('/guru');
-                } elseif($datasesi['jabatan'] == 'Kepala Sekolah'){
+                } elseif ($datasesi['jabatan'] == 'Kepala Sekolah') {
                     return redirect()->to('/kepsek');
                 }
-                // return redirect()->to('/user');
             }
 
+            // Jika ada error, redirect dengan flashdata
             if ($err) {
-                $error = session()->setFlashdata('error', $err);
+                return redirect()->to('/login')->with('error', $err)->with('username', $username)->with('password', $password);
             }
         }
-        
 
-        
-        return view('login_view', $jabatan);
+        // Load view dengan data jabatan
+        return view('login_view', [
+            'jabatan' => $listJabatan['jabatan'],
+            'username' => session()->getFlashdata('username'),
+            'password' => session()->getFlashdata('password'),
+            'error' => session()->getFlashdata('error')
+        ]);
     }
 
     public function logout()
     {
         session()->destroy();
-        return redirect()->to('/login');
+        return redirect()->to('/');
     }
 }
