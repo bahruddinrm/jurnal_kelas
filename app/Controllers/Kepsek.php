@@ -57,7 +57,7 @@ class Kepsek extends BaseController
         session()->set('bulan_string', $bulan_string);
         session()->set('tahun_string', $pilih_tahun);
 
-        $pengguna = $ModelPengguna->penggunaUrutAbjad();
+        $pengguna = $ModelPengguna->penggunaAdminGuru();
         $bulan = $ModelBulan->findAll();
 
         $jurnal = $ModelJurnal->getCetakJurnalGuru($pilih_pengguna, $pilih_bulan, $pilih_tahun);

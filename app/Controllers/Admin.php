@@ -487,6 +487,7 @@ class Admin extends BaseController
             'nama_sekolah' => $this->request->getVar('nama_sekolah'),
             'alamat_sekolah' => $this->request->getVar('alamat_sekolah'),
             'kepala_sekolah' => $this->request->getVar('kepala_sekolah'),
+            'nip' => $this->request->getVar('nip'),
         ];
 
         if ($ModelSekolah->update($id, $data)) { // Pastikan ID di parameter pertama

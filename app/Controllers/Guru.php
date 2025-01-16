@@ -18,12 +18,23 @@ class Guru extends BaseController
 {
     public function index()
     {
+        $ModelPengguna = new \App\Models\Pengguna();
+        $ModelKelas = new \App\Models\Kelas();
+        $ModelMapel = new \App\Models\Mapel();
+        $ModelSiswa = new \App\Models\Siswa();
+
         $user = session()->get('user');
+        $user_pengguna = $ModelPengguna->findAll();
 
         $data = [
-
+            'user_pengguna' => $user_pengguna,
             'user' => $user['nama_lengkap'],
             'user_jabatan' => $user['jabatan'],
+
+            'jumlah_pengguna' => $ModelPengguna->countAll(),
+            'jumlah_kelas' => $ModelKelas->countAll(),
+            'jumlah_mapel' => $ModelMapel->countAll(),
+            'jumlah_siswa' => $ModelSiswa->countAll(),
         ];
 
         return view('guru/dashboard_guru_view', $data);
@@ -341,12 +352,15 @@ class Guru extends BaseController
         $namaKSString = implode(",", $namaKS);
         $nipKS = array_column($kepala_sekolah, 'nip');
         $nip_string = implode(",", $nipKS);
+        $nama_sekolah = array_column($kepala_sekolah, 'nama_sekolah');
+        $nama_sekolah_string = implode(",", $nama_sekolah);
 
         $getJurnal = session()->get('jurnal');
 
         $data = [
             'wali_kelas' => $nama_lengkap,
             'kepala_sekolah' => $namaKSString,
+            'nama_sekolah' => $nama_sekolah_string,
             'nip_ks' => $nip_string,
             'nip' => $nip,
             'jurnal' => $getJurnal,
@@ -431,16 +445,16 @@ class Guru extends BaseController
         $user = session()->get('user');
         $kelas = session()->get('pilih_kelas');
         $bulan = session()->get('pilih_bulan');
-        
+
         $nama_lengkap = $user['nama_lengkap'];
         $nip = $user['nip_nik'];
         $namaKS = array_column($kepala_sekolah, 'kepala_sekolah');
         $namaKSString = implode(",", $namaKS);
         $nipKS = array_column($kepala_sekolah, 'nip');
         $nip_string = implode(",", $nipKS);
-        
+
         $getJurnal = session()->get('jurnal_kelas');
-        
+
         $data = [
             'bulan' => $bulan,
             'kelas' => $kelas,

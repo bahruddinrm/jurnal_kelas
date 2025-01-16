@@ -113,7 +113,7 @@
                     <ul id="sidebarnav">
                         <li> <a class="waves-effect waves-dark" href="/kepsek" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Lihat Jurnal</span></a>
+                        <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-book-open-page-variant"></i><span class="hide-menu">Lihat Jurnal</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="/kepsek/lihat_jurnal_guru">Lihat Jurnal Guru</a></li>
                                 <li><a href="/kepsek/lihat_jurnal_kelas">Lihat Jurnal Kelas</a></li>

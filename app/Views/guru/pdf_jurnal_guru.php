@@ -117,7 +117,7 @@
     <div class="footer">
         <div class="left">
             <p>Mengetahui,</p>
-            <p>Kepala SMPN 1 Pekalongan</p>
+            <p><?= esc($nama_sekolah) ?></p>
             <div class="signature">
                 <p><strong><?= esc($kepala_sekolah); ?></strong></p>
                 <p><?= esc($nip_ks); ?></p>

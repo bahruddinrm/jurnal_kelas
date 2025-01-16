@@ -60,7 +60,7 @@
         <div class="card">
             <div class="card-block">
 
-                <h3 class="card-title" style="margin-bottom: 30px;">CETAK JURNAL KELAS <?= esc($nama_bulan); ?> </h3>
+                <h3 class="card-title" style="margin-bottom: 30px;">CETAK JURNAL GURU BULAN <?= esc($nama_bulan); ?> </h3>
 
                 <div class="table-responsive">
                     <table class="table">

@@ -9,7 +9,7 @@ use App\Controllers\BaseController;
 
 class Login extends BaseController
 {
-        public function index()
+    public function index()
     {
         $ModelUser = new \App\Models\Pengguna();
         $ModelJabatan = new \App\Models\Jabatan();
@@ -61,8 +61,11 @@ class Login extends BaseController
             }
 
             // Jika ada error, redirect dengan flashdata
+            // if ($err) {
+            //     return redirect()->to('/login')->with('error', $err)->with('username', $username)->with('password', $password);
+            // }
             if ($err) {
-                return redirect()->to('/login')->with('error', $err)->with('username', $username)->with('password', $password);
+                return redirect()->to('/')->with('error', $err)->withInput();
             }
         }
 

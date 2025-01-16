@@ -13,7 +13,7 @@
             <div class="card-block">
 
                 <h2 style="margin-bottom: 20px;">Edit Pengguna</h2>
-                <form action="/admin/update_pengguna " method="post">
+                <form action="<?= base_url('admin/update_pengguna/' . $detail['id_pengguna']) ?>" method="post">
                     <div class="row mb-3">
                         <label for="nip_nik" class="col-sm-3 col-form-label">NIP / NIK<span class="required-symbol">*</span></label>
                         <div class="col-sm-9">
@@ -72,7 +72,7 @@
                             <button type="submit" class="btn btn-primary">Simpan</button>
                         </div>
                         <div class="col">
-                            <a href="/admin/guru" class="btn btn-danger float-right">Batal</a>
+                            <a href="/admin/pengguna" class="btn btn-danger float-right">Batal</a>
                         </div>
                     </div>
 

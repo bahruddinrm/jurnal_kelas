@@ -48,6 +48,16 @@
 </style>
 
 <div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-block">
+                <h1>Selamat Datang, <?php echo ($user) ?></h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
     <div class="col-xl-3 col-md-6">
         <div class="card">
             <div class="card-block">
@@ -65,8 +75,10 @@
                     <div class="col-9">
                         <p class="text-white m-b-0">Jumlah Pengguna</p>
                     </div>
+                    <div class="col-3 text-right">
+                        <i class="fa fa-user text-white f-16"></i>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -88,7 +100,7 @@
                         <p class="text-white m-b-0">Jumlah Kelas</p>
                     </div>
                     <div class="col-3 text-right">
-                        <i class="fa fa-line-chart text-white f-16"></i>
+                        <i class="fa fa-building text-white f-16"></i>
                     </div>
                 </div>
             </div>
@@ -112,7 +124,7 @@
                         <p class="text-white m-b-0">Jumlah Siswa</p>
                     </div>
                     <div class="col-3 text-right">
-                        <i class="fa fa-line-chart text-white f-16"></i>
+                        <i class="fa fa-graduation-cap text-white f-16"></i>
                     </div>
                 </div>
             </div>
@@ -136,14 +148,12 @@
                         <p class="text-white m-b-0">Jumlah Mapel</p>
                     </div>
                     <div class="col-3 text-right">
-                        <i class="fa fa-line-chart text-white f-16"></i>
+                        <i class="fa fa-book text-white f-16"></i>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
 
 <?= $this->endSection(); ?>

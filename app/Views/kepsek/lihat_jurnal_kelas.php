@@ -59,7 +59,7 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-block">
-                <h3 class="card-title" style="margin-bottom: 30px;">CETAK JURNAL KELAS <?= esc($nama_kelas); ?> </h3>
+                <h3 class="card-title" style="margin-bottom: 30px;">JURNAL KELAS <?= esc($nama_kelas); ?> </h3>
                 <div class="table-responsive">
                     <table class="table">
                         <thead>

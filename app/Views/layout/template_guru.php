@@ -120,11 +120,11 @@
                     <ul id="sidebarnav">
                         <li> <a class="waves-effect waves-dark" href="/guru" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="/guru/daftar_hadir" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Daftar Hadir</span></a>
+                        <li> <a class="waves-effect waves-dark" href="/guru/daftar_hadir" aria-expanded="false"><i class="mdi mdi-checkbox-marked"></i><span class="hide-menu">Daftar Hadir</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="/guru/jurnal_kelas" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Jurnal Kelas</span></a>
+                        <li> <a class="waves-effect waves-dark" href="/guru/jurnal_kelas" aria-expanded="false"><i class="mdi mdi-book-open-page-variant"></i><span class="hide-menu">Jurnal Kelas</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Cetak Jurnal</span></a>
+                        <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-printer"></i><span class="hide-menu">Cetak Jurnal</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="/guru/cetak_jurnal_guru">Cetak Jurnal Guru</a></li>
                                 <li><a href="/guru/cetak_jurnal_kelas">Cetak Jurnal Kelas</a></li>

@@ -33,6 +33,14 @@ class Pengguna extends Model
         return $this->orderBy('nama_lengkap','ASC')->findAll();
     }
 
+    public function penggunaAdminGuru()
+    {
+        return $this->select('pengguna.*')
+        ->where('pengguna.jabatan', 'Guru')
+        ->orderBy('nama_lengkap', 'ASC')
+        ->findAll();
+    }
+
     // Dates
     protected $useTimestamps = false;
     protected $dateFormat    = 'datetime';
