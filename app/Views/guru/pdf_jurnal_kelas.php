@@ -58,10 +58,6 @@
             text-align: right;
         }
 
-        .signature {
-            margin-top: 60px;
-        }
-
         .signature p {
             margin: 0;
         }
@@ -76,7 +72,7 @@
         </p>
         <!-- <p>Bulan: < ?= esc($bulan); ?> < ?= esc($tahun); ?>
         </p> -->
-        <p>Nama Guru: < ?= esc($wali_kelas); ?>
+        <p>Nama Guru: < ?=esc($wali_kelas); ?>
         </p>
     </div>
 
@@ -121,6 +117,7 @@
             <p>Mengetahui,</p>
             <p>Kepala SMPN 1 Pekalongan</p>
             <div class="signature">
+                <img style="width: 200px; height: 100px;" src="<?= base_url('ttd/' . $ttd_ks_string); ?>" alt="tanda tangan <?= $kepala_sekolah; ?>">
                 <p><strong><?= esc($kepala_sekolah); ?></strong></p>
                 <p><?= esc($nip_ks); ?></p>
             </div>
@@ -130,6 +127,7 @@
             <p>Pekalongan, <?= date('d-m-Y'); ?></p>
             <p>Wali Kelas</p>
             <div class="signature">
+                <img style="width: 200px; height: 100px;" src="<?= base_url('ttd/' . $ttd_wali_kelas); ?>" alt="tanda tangan <?= $wali_kelas; ?>">
                 <p><strong><?= esc($wali_kelas); ?></strong></p>
                 <p><?= esc($nip); ?></p>
             </div>

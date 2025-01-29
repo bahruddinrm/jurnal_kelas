@@ -78,26 +78,42 @@ class Admin extends BaseController
     {
         $ModelPengguna = new \App\Models\Pengguna();
 
-        $data = [
-            'nip_nik' => $this->request->getVar('nip_nik'),
-            'nama_lengkap' => $this->request->getVar('nama_lengkap'),
-            'username' => $this->request->getVar('username'),
-            'password' => $this->request->getVar('password'),
-            'jabatan' => $this->request->getVar('jabatan'),
+        // Ambil data dari input form
+        $nip_nik = $this->request->getVar('nip_nik');
+        $nama_lengkap = $this->request->getVar('nama_lengkap');
+        $username = $this->request->getVar('username');
+        $password = $this->request->getVar('password');
+        $jabatan = $this->request->getVar('jabatan');
 
-            'ttd' => $this->request->getVar('signature'),
+        // Tangani file upload
+        $signatureFile = $this->request->getFile('signature_file');
+        $signatureFileName = '';
+
+        if ($signatureFile && $signatureFile->isValid() && !$signatureFile->hasMoved()) {
+            // Buat nama file baru berdasarkan nama pengguna
+            $signatureFileName = strtolower(str_replace(' ', '_', $nama_lengkap)) . '.png';
+
+            // Pindahkan file ke direktori `public/ttd`
+            $signatureFile->move('ttd', $signatureFileName);
+        }
+
+        // Data untuk disimpan ke database
+        $data = [
+            'nip_nik' => $nip_nik,
+            'nama_lengkap' => $nama_lengkap,
+            'username' => $username,
+            'password' => $password,
+            'jabatan' => $jabatan,
+            'ttd' => $signatureFileName, // Simpan nama file di database
         ];
+
+        // Simpan ke database
         $ModelPengguna->insert($data);
 
-        $file_name = strtolower(str_replace(' ', '_', $data['nama_lengkap'])) . '.png';
-        $file_path = 'ttd/' . $file_name;
-        $image_data = str_replace('data:image/png;base64,', '', $data['ttd']);
-        $image_data = str_replace(' ', '+', $image_data);
-        $image_decode = base64_decode($image_data);
-        file_put_contents($file_path, $image_decode);
-
+        // Set pesan sukses
         session()->setFlashdata('success', 'Pengguna berhasil ditambahkan.');
 
+        // Redirect ke halaman pengguna
         return redirect()->to('admin/pengguna');
     }
 
@@ -148,32 +164,46 @@ class Admin extends BaseController
     public function update_pengguna($id_pengguna)
     {
         $ModelPengguna = new \App\Models\Pengguna();
+        $pengguna_lama = $ModelPengguna->find($id_pengguna);
 
-        $file = $this->request->getVar('signature');
-        $new_file = $this->request->getVar('nama_lengkap');
-        $file_name = str_replace(' ', '_', $new_file);
-        $file_path = 'ttd/' . $file_name . '.png';
+        // Ambil data inputan form
+        $nama_lengkap = $this->request->getVar('nama_lengkap');
+        $nip_nik = $this->request->getVar('nip_nik');
+        $username = $this->request->getVar('username');
+        $password = $this->request->getVar('password');
+        $jabatan = $this->request->getVar('jabatan');
 
-        if (file_exists($file_path)) {
-            unlink($file_path);
+        // Cek jika file tanda tangan baru diunggah
+        $file = $this->request->getFile('signature_file');
+        if ($file && $file->isValid() && !$file->hasMoved()) {
+            // Hapus file tanda tangan lama jika ada
+            $old_file_path = 'ttd/' . $pengguna_lama['ttd'];
+            if (file_exists($old_file_path)) {
+                unlink($old_file_path);
+            }
+
+            // Simpan file tanda tangan baru
+            $new_file_name = strtolower(str_replace(' ', '_', $nama_lengkap)) . '.png';
+            $file->move('ttd', $new_file_name);
+            $signature_path = $new_file_name;
+        } else {
+            // Jika tidak ada file baru, gunakan file tanda tangan lama
+            $signature_path = $pengguna_lama['ttd'];
         }
 
-        $image_data = str_replace('data:image/png;base64,', '', $file);
-        $image_data = str_replace(' ', '+', $image_data);
-        $image_decode = base64_decode($image_data);
-        file_put_contents($file_path, $image_decode);
-
+        // Update data pengguna
         $data = [
-            'nip_nik' => $this->request->getVar('nip_nik'),
-            'nama_lengkap' => $this->request->getVar('nama_lengkap'),
-            'username' => $this->request->getVar('username'),
-            'password' => $this->request->getVar('password'),
-            'jabatan' => $this->request->getVar('jabatan'),
-
-            'ttd' => $this->request->getVar('signature'),
+            'nip_nik' => $nip_nik,
+            'nama_lengkap' => $nama_lengkap,
+            'username' => $username,
+            'password' => $password,
+            'jabatan' => $jabatan,
+            'ttd' => $signature_path, // Gunakan file lama atau baru
         ];
+
         $ModelPengguna->update($id_pengguna, $data);
 
+        session()->setFlashdata('success', 'Data pengguna berhasil diperbarui.');
         return redirect()->to('admin/pengguna');
     }
 
@@ -182,7 +212,6 @@ class Admin extends BaseController
         $ModelPengguna = new \App\Models\Pengguna();
 
         $ttd = $ModelPengguna->find($id_pengguna);
-        // $file_name = strtolower(str_replace(' ', '_', $data['nama_lengkap'])) . '.png';
 
         $ttd_name = str_replace(' ', '_', $ttd['nama_lengkap']);
         $file_path = 'ttd/' . $ttd_name . '.png';
@@ -266,7 +295,6 @@ class Admin extends BaseController
         $user = session()->get('user');
         $pengguna = $ModelPengguna->findAll();
 
-        // $kelas = $ModelKelas->findAll();
         $kelas = $ModelKelas->kelasJoinPengguna();
 
         $data = [
@@ -462,8 +490,18 @@ class Admin extends BaseController
     public function data_sekolah()
     {
         $ModelSekolah = new \App\Models\Sekolah();
+        $ModelPengguna = new \App\Models\Pengguna();
 
         $user = session()->get('user');
+        $data_ks = $ModelPengguna->getKepalaSekolah();
+
+        $nama_ks = array_column($data_ks, 'nama_lengkap');
+        $nama_ks_string = implode(",", $nama_ks);
+
+        $nip_ks = array_column($data_ks, 'nip_nik');
+        $nip_ks_string = implode(",", $nip_ks);
+
+        $ttd_ks = str_replace(' ', '_', $nama_ks_string);
 
         $detail = $ModelSekolah->findAll();
 
@@ -472,6 +510,9 @@ class Admin extends BaseController
             'user_jabatan' => $user['jabatan'],
 
             'detail' => $detail,
+            'nama_ks' => $nama_ks_string,
+            'nip_ks' => $nip_ks_string,
+            'ttd_ks' => $ttd_ks,
         ];
 
         return view('/admin/data_sekolah', $data);

@@ -58,10 +58,6 @@
             text-align: right;
         }
 
-        .signature {
-            margin-top: 60px;
-        }
-
         .signature p {
             margin: 0;
         }
@@ -72,9 +68,9 @@
 
     <div class="header">
         <h3>JURNAL GURU</h3>
-        <p>Bulan: <?=esc($bulan); ?> <?=esc($tahun); ?>
+        <p>Bulan: <?= esc($bulan); ?> <?= esc($tahun); ?>
         </p>
-        <p>Nama Guru: <?=esc($wali_kelas); ?>
+        <p>Nama Guru: <?= esc($guru_mapel); ?>
         </p>
     </div>
 
@@ -119,6 +115,7 @@
             <p>Mengetahui,</p>
             <p><?= esc($nama_sekolah) ?></p>
             <div class="signature">
+                <img style="width: 200px; height: 100px;" src="<?= base_url('ttd/' . $ttd_ks_string); ?>" alt="tanda tangan <?= $kepala_sekolah; ?>">
                 <p><strong><?= esc($kepala_sekolah); ?></strong></p>
                 <p><?= esc($nip_ks); ?></p>
             </div>
@@ -128,12 +125,17 @@
             <p>Pekalongan, <?= date('d-m-Y'); ?></p>
             <p>Guru Pengajar</p>
             <div class="signature">
-                <p><strong><?= esc($wali_kelas); ?></strong></p>
+                <img style="width: 200px; height: 100px;" src="<?= base_url('ttd/' . $ttd_guru_mapel); ?>" alt="tanda tangan <?= $guru_mapel; ?>">
+                <p><strong><?= esc($guru_mapel); ?></strong></p>
                 <p><?= esc($nip); ?></p>
             </div>
         </div>
     </div>
 
 </body>
+
+<script>
+    window.print()
+</script>
 
 </html>

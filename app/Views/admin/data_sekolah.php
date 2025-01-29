@@ -29,13 +29,13 @@
                         <div class="row mb-3">
                             <label for="kepala_sekolah" class="col-sm-3 col-form-label">Kepala Sekolah<span class="required-symbol">*</span></label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" id="kepala_sekolah" name="kepala_sekolah" value="<?= $sekolah['kepala_sekolah']; ?>">
+                                <input type="text" class="form-control" id="kepala_sekolah" name="kepala_sekolah" value="<?= $nama_ks; ?>" readonly>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="nip" class="col-sm-3 col-form-label">NIP<span class="required-symbol">*</span></label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" id="nip" name="nip" value="<?= $sekolah['nip']; ?>">
+                                <input type="text" class="form-control" id="nip" name="nip" value="<?= $nip_ks; ?>" readonly>
                             </div>
                         </div>
                     <?php endforeach; ?>

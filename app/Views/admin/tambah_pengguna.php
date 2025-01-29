@@ -19,7 +19,7 @@
         <div class="card">
             <div class="card-block">
                 <h2 style="margin-bottom: 20px; margin-left: 14px;">Input Pengguna</h2>
-                <form class="form-horizontal form-material" action="/admin/simpan_pengguna" method="post">
+                <form class="form-horizontal form-material" action="/admin/simpan_pengguna" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label class="col-md-12" for="nip_nik">NIP / NIK<span class="required-symbol">*</span></label>
                         <div class="col-md-12">
@@ -56,11 +56,10 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="signature" class="col-md-12">Tanda Tangan<span class="required-symbol">*</span></label>
+                        <label for="signature_file" class="col-md-12">Tanda Tangan<span class="required-symbol">*</span></label>
                         <div class="col-md-12">
-                            <canvas id="signature-pad" width="400" height="200" style="border: 1px solid; cursor: crosshair;"></canvas><br>
-                            <input type="hidden" id="signature" name="signature">
-                            <a href="#" id="hapus_ttd" class="btn-sm btn-warning" style="cursor: pointer;">Hapus Tanda Tangan</a>
+                            <input type="file" class="form-control" id="signature_file" name="signature_file" accept="image/png" required>
+                            <small class="form-text text-muted">Unggah file tanda tangan dalam format PNG.</small>
                         </div>
                     </div>
                     <div class="row">
@@ -75,10 +74,9 @@
             </div>
         </div>
     </div>
-    <!-- Column -->
 </div>
 
-<script>
+<!-- <script>
     var canvas = document.getElementById('signature-pad');
     var signaturePad = new SignaturePad(canvas);
 
@@ -91,6 +89,6 @@
         var signatureInput = document.getElementById('signature');
         signatureInput.value = signaturePad.toDataURL();
     });
-</script>
+</script> -->
 
 <?= $this->endSection(); ?>

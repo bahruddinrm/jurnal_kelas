@@ -137,14 +137,6 @@ class Guru extends BaseController
         }
     }
 
-    // public function hapus_dh($id_daftar_hadir)
-    // {
-    //     $ModelDH = new \App\Models\DaftarHadir();
-    //     $ModelDH->delete($id_daftar_hadir);
-    //     session()->setFlashdata('delete', 'Daftar Hadir Berhasil Dihapus');
-    //     return redirect()->to('guru/daftar_hadir');
-    // }
-
     // Jurnal kelas
     public function jurnal_kelas()
     {
@@ -339,8 +331,10 @@ class Guru extends BaseController
     public function downloadJurnalGuru()
     {
         $ModelSekolah = new \App\Models\Sekolah();
+        $ModelPengguna = new \App\Models\Pengguna();
 
-        $kepala_sekolah = $ModelSekolah->findAll();
+        $sekolah = $ModelSekolah->findAll();
+        $kepala_sekolah = $ModelPengguna->getKepalaSekolah();
 
         $user = session()->get('user');
         $bulan = session()->get('bulan_string');
@@ -348,17 +342,22 @@ class Guru extends BaseController
 
         $nama_lengkap = $user['nama_lengkap'];
         $nip = $user['nip_nik'];
-        $namaKS = array_column($kepala_sekolah, 'kepala_sekolah');
+        $namaKS = array_column($kepala_sekolah, 'nama_lengkap');
         $namaKSString = implode(",", $namaKS);
-        $nipKS = array_column($kepala_sekolah, 'nip');
+        $nipKS = array_column($kepala_sekolah, 'nip_nik');
         $nip_string = implode(",", $nipKS);
-        $nama_sekolah = array_column($kepala_sekolah, 'nama_sekolah');
+        $nama_sekolah = array_column($sekolah, 'nama_sekolah');
         $nama_sekolah_string = implode(",", $nama_sekolah);
+
+        $ttd_ks = array_column($kepala_sekolah, 'ttd');
+        $ttd_ks_string = implode(",", $ttd_ks);
+
+        $ttd_guru_mapel = strtolower(str_replace(' ','_', $nama_lengkap . '.png'));
 
         $getJurnal = session()->get('jurnal');
 
         $data = [
-            'wali_kelas' => $nama_lengkap,
+            'guru_mapel' => $nama_lengkap,
             'kepala_sekolah' => $namaKSString,
             'nama_sekolah' => $nama_sekolah_string,
             'nip_ks' => $nip_string,
@@ -366,22 +365,27 @@ class Guru extends BaseController
             'jurnal' => $getJurnal,
             'bulan' => $bulan,
             'tahun' => $tahun,
+
+            'ttd_ks_string' => $ttd_ks_string,
+            'ttd_guru_mapel' => $ttd_guru_mapel,
         ];
 
-        $html = view('/guru/pdf_jurnal_guru', $data);
+        return view('/guru/pdf_jurnal_guru', $data);
 
-        // Konfigurasi Dompdf
-        $options = new Options();
-        $options->set('isHtml5ParserEnabled', true);
-        $options->set('isRemoteEnabled', true);
-        $dompdf = new Dompdf($options);
+        // $html = view('/guru/pdf_jurnal_guru', $data);
 
-        $dompdf->loadHtml($html);
-        $dompdf->setPaper('A4', 'landscape');
-        $dompdf->render();
+        // // Konfigurasi Dompdf
+        // $options = new Options();
+        // $options->set('isHtml5ParserEnabled', true);
+        // $options->set('isRemoteEnabled', true);
+        // $dompdf = new Dompdf($options);
 
-        // Unduh file PDF
-        $dompdf->stream("jurnal_guru.pdf", ["Attachment" => 1]);
+        // $dompdf->loadHtml($html);
+        // $dompdf->setPaper('A4', 'landscape');
+        // $dompdf->render();
+
+        // // Unduh file PDF
+        // $dompdf->stream("jurnal_guru.pdf", ["Attachment" => 1]);
     }
 
     public function cetak_jurnal_kelas()
@@ -439,8 +443,10 @@ class Guru extends BaseController
     public function downloadJurnalKelas()
     {
         $ModelSekolah = new \App\Models\Sekolah();
+        $ModelPengguna = new \App\Models\Pengguna();
 
-        $kepala_sekolah = $ModelSekolah->findAll();
+        $sekolah = $ModelSekolah->findAll();
+        $kepala_sekolah = $ModelPengguna->getKepalaSekolah();
 
         $user = session()->get('user');
         $kelas = session()->get('pilih_kelas');
@@ -448,10 +454,15 @@ class Guru extends BaseController
 
         $nama_lengkap = $user['nama_lengkap'];
         $nip = $user['nip_nik'];
-        $namaKS = array_column($kepala_sekolah, 'kepala_sekolah');
+        $namaKS = array_column($sekolah, 'kepala_sekolah');
         $namaKSString = implode(",", $namaKS);
-        $nipKS = array_column($kepala_sekolah, 'nip');
+        $nipKS = array_column($sekolah, 'nip');
         $nip_string = implode(",", $nipKS);
+
+        $ttd_ks = array_column($kepala_sekolah, 'ttd');
+        $ttd_ks_string = implode(",", $ttd_ks);
+
+        $ttd_wali_kelas = strtolower(str_replace(' ','_', $nama_lengkap . '.png'));
 
         $getJurnal = session()->get('jurnal_kelas');
 
@@ -463,21 +474,26 @@ class Guru extends BaseController
             'jurnal' => $getJurnal,
             'wali_kelas' => $nama_lengkap,
             'nip' => $nip,
+
+            'ttd_ks_string' => $ttd_ks_string,
+            'ttd_wali_kelas' => $ttd_wali_kelas,
         ];
 
-        $html = view('/guru/pdf_jurnal_kelas', $data);
+        return view('/guru/pdf_jurnal_kelas', $data);
 
-        // Konfigurasi Dompdf
-        $options = new Options();
-        $options->set('isHtml5ParserEnabled', true);
-        $options->set('isRemoteEnabled', true);
-        $dompdf = new Dompdf($options);
+        // $html = view('/guru/pdf_jurnal_kelas', $data);
 
-        $dompdf->loadHtml($html);
-        $dompdf->setPaper('A4', 'landscape');
-        $dompdf->render();
+        // // Konfigurasi Dompdf
+        // $options = new Options();
+        // $options->set('isHtml5ParserEnabled', true);
+        // $options->set('isRemoteEnabled', true);
+        // $dompdf = new Dompdf($options);
 
-        // Unduh file PDF
-        $dompdf->stream("jurnal_kelas.pdf", ["Attachment" => 1]);
+        // $dompdf->loadHtml($html);
+        // $dompdf->setPaper('A4', 'landscape');
+        // $dompdf->render();
+
+        // // Unduh file PDF
+        // $dompdf->stream("jurnal_kelas.pdf", ["Attachment" => 1]);
     }
 }

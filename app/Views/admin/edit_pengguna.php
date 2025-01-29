@@ -13,7 +13,8 @@
             <div class="card-block">
 
                 <h2 style="margin-bottom: 20px;">Edit Pengguna</h2>
-                <form action="<?= base_url('admin/update_pengguna/' . $detail['id_pengguna']) ?>" method="post">
+                <form action="<?= base_url('admin/update_pengguna/' . $detail['id_pengguna']) ?>" method="post" enctype="multipart/form-data">
+                    <?= csrf_field(); ?>
                     <div class="row mb-3">
                         <label for="nip_nik" class="col-sm-3 col-form-label">NIP / NIK<span class="required-symbol">*</span></label>
                         <div class="col-sm-9">
@@ -45,27 +46,16 @@
                         </div>
                     </div>
                     <div class="row mb-3">
-
-                        <label for="ttd" class="col-sm-3 col-form-label">Tanda Tangan<span class="required-symbol">*</span></label>
-                        <img class="col-sm-2" id="signature_img" style="width: 100px; height: 50px;" src="<?= base_url('ttd/' . $file_name . '.png'); ?>" alt="...">
-
-                        <div class="col-sm">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <canvas id="signature-pad" width="400" height="200" style="border: 1px solid; cursor: crosshair;"></canvas><br>
-                                    <input type="hidden" id="signature" name="signature">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <a href="#" id="hapus_ttd" class="btn-sm btn-warning" style="cursor: pointer;">Hapus Tanda Tangan</a>
-                                </div>
-                                <div class="col-sm-4" style="margin-left: 60px;">
-                                    <a href="#" onclick="simpan_ttd()" id="simpan_ttd" class="btn-sm btn-success" style="cursor: pointer;">Simpan Tanda Tangan</a>
-                                </div>
-                            </div>
+                        <label for="signature_file" class="col-sm-3 col-form-label">Tanda Tangan</label>
+                        <div class="col-sm-9">
+                            <?php if (!empty($detail['ttd']) && file_exists('ttd/' . $detail['ttd'])): ?>
+                                <img id="signature-preview" src="<?= base_url('ttd/' . $detail['ttd']); ?>" alt="Tanda Tangan" style="width: 150px; height: 75px; margin-bottom: 10px;">
+                            <?php else: ?>
+                                <p><em>Belum ada tanda tangan.</em></p>
+                            <?php endif; ?>
+                            <input type="file" class="form-control" id="signature_file" name="signature_file" accept="image/png">
+                            <small class="form-text text-muted">Unggah file PNG. Biarkan kosong jika tidak ingin mengubah tanda tangan.</small>
                         </div>
-
                     </div>
                     <div class="row">
                         <div class="col">
@@ -75,37 +65,11 @@
                             <a href="/admin/pengguna" class="btn btn-danger float-right">Batal</a>
                         </div>
                     </div>
-
                 </form>
 
             </div>
         </div>
     </div>
-    <!-- Column -->
 </div>
-
-<script>
-    var canvas = document.getElementById('signature-pad');
-    var signaturePad = new SignaturePad(canvas);
-
-    document.getElementById('hapus_ttd').addEventListener('click', function(e) {
-        e.preventDefault();
-        signaturePad.clear();
-    });
-
-    document.querySelector('form').addEventListener('submit', function(event) {
-        var signatureInput = document.getElementById('signature');
-        signatureInput.value = signaturePad.toDataURL();
-    });
-
-    function simpan_ttd() {
-        var canvasData = signaturePad.toDataURL();
-        var img = document.getElementById('signature_img');
-
-        img.src = canvasData;
-    };
-</script>
-
-
 
 <?= $this->endSection(); ?>

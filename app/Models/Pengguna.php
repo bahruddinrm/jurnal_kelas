@@ -41,6 +41,13 @@ class Pengguna extends Model
         ->findAll();
     }
 
+    public function getKepalaSekolah()
+    {
+        return $this->select('pengguna.*')
+        ->where('pengguna.jabatan', 'Kepala Sekolah')
+        ->findAll();
+    }
+
     // Dates
     protected $useTimestamps = false;
     protected $dateFormat    = 'datetime';
