@@ -36,7 +36,7 @@
                                 <th scope="col">SAKIT</th>
                                 <th scope="col">IJIN</th>
                                 <th scope="col">ALPA</th>
-                                <!-- <th scope="col">AKSI</th> -->
+                                <th scope="col">AKSI</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -51,14 +51,17 @@
                                     <td><?= $jh['sakit'] ?></td>
                                     <td><?= $jh['ijin'] ?></td>
                                     <td><?= $jh['alpa'] ?></td>
-                                    <!-- <td>
-                                        <a href="/guru/hapus_dh/< ?= $jh['id_daftar_hadir']; ?>" title="delete" class="btn-sm btn-danger" onclick="return confirm('Daftar hadir tanggal < ?= $jh['hari_tanggal']; ?> akan terhapus secara permanen')"><i class='bx bx-message-alt-x'></i></a>
-                                    </td> -->
+                                    <td>
+                                        <form id="deleteForm" action="/guru/hapus_dh" method="post">
+                                            <input type="hidden" name="id_kelas" value="<?= $jh['id_kelas']; ?>" id="delete_id_kelas">
+                                            <input type="hidden" name="tanggal_dh" value="<?= $tanggal_dh; ?>" id="delete_tanggal_dh">
+                                            <button type="submit" class="btn btn-danger" onclick="confirmDelete('<?= esc($jh['nama_kelas']); ?>', '<?= esc($tanggal_dh); ?>')"><i class='bx bx-message-alt-x'></i></button>
+                                        </form>
+                                    </td>
                                 </tr>
                             <?php endforeach ?>
                         </tbody>
                     </table>
-                    <!-- < ?= $pager->links('user_pagination', 'user_pagination'); ?> -->
                 </div>
             </div>
         </div>
@@ -74,6 +77,51 @@
             text: '<?= session()->getFlashdata('success'); ?>',
         });
     <?php endif; ?>
+</script>
+
+<script>
+    function confirmDelete(namaKelas, tanggalDh) {
+        Swal.fire({
+            title: 'Apakah Anda yakin?',
+            text: `Anda akan menghapus daftar hadir untuk kelas ${namaKelas} pada tanggal ${tanggalDh}`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Hapus',
+            cancelButtonText: 'Batal',
+            reverseButtons: true
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Jika 'Hapus' dipilih, kirim form untuk menghapus
+                document.getElementById('deleteForm').submit();
+            }
+        });
+    }
+
+    document.getElementById('tanggal_dh').addEventListener('change', function() {
+        document.getElementById('tanggal_dh').submit();
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var tanggal_dh = document.getElementById("tanggal_dh");
+        var daftar_hadir = document.getElementById("daftar_hadir");
+
+        tanggal_dh.addEventListener('change', function() {
+            if (this.value) {
+                daftar_hadir.classList.remove("hidden");
+            } else {
+                daftar_hadir.classList.add("hidden");
+            }
+        });
+
+        // Mencegah form submit langsung, agar hanya terkirim setelah konfirmasi
+        const deleteButton = document.querySelector('.btn-danger');
+        deleteButton.addEventListener('click', function(event) {
+            event.preventDefault();  // Mencegah pengiriman form langsung
+            const namaKelas = this.closest('form').querySelector('input[name="nama_kelas"]').value;
+            const tanggalDh = this.closest('form').querySelector('input[name="tanggal_dh"]').value;
+            confirmDelete(namaKelas, tanggalDh);
+        });
+    });
 </script>
 
 <script>

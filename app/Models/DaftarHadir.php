@@ -25,7 +25,7 @@ class DaftarHadir extends Model
 
     public function jumlahHadir($tanggal_dh)
     {
-        return $this->select("kelas.nama_kelas, daftar_hadir.id_daftar_hadir, daftar_hadir.hari_tanggal,
+        return $this->select("kelas.id_kelas, kelas.nama_kelas, daftar_hadir.id_daftar_hadir, daftar_hadir.hari_tanggal,
                 SUM(CASE WHEN daftar_hadir.keterangan = 'Hadir' THEN 1 ELSE 0 END) as hadir,
                 SUM(CASE WHEN daftar_hadir.keterangan = 'Ijin' THEN 1 ELSE 0 END) as ijin,
                 SUM(CASE WHEN daftar_hadir.keterangan = 'Sakit' THEN 1 ELSE 0 END) as sakit,

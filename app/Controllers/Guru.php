@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Helpers\DateHelper;
+use App\Models\DaftarHadir;
 use App\Models\JurnalKelas;
 use App\Models\Kelas;
 use CodeIgniter\HTTP\Exceptions\RedirectException;
@@ -135,6 +136,29 @@ class Guru extends BaseController
         } else {
             return redirect()->back()->with('error', 'Gagal menyimpan data daftar hadir');
         }
+    }
+
+    protected $daftarHadirModel;
+
+    public function __construct()
+    {
+        $this->daftarHadirModel = new DaftarHadir();
+    }
+
+    public function hapus_dh()
+    {
+        $nama_kelas = $this->request->getPost('id_kelas');
+        $tanggal_dh = $this->request->getPost('tanggal_dh');
+
+        if (!$nama_kelas || !$tanggal_dh) {
+            return redirect()->back()->with('error', 'Gagal menghapus daftar hadir, data tidak lengkap.');
+        }
+
+        $this->daftarHadirModel->where('nama_kelas', $nama_kelas)
+            ->where('hari_tanggal', $tanggal_dh)
+            ->delete();
+
+        return redirect()->back()->with('success', 'Daftar hadir berhasil dihapus.');
     }
 
     // Jurnal kelas
@@ -352,7 +376,7 @@ class Guru extends BaseController
         $ttd_ks = array_column($kepala_sekolah, 'ttd');
         $ttd_ks_string = implode(",", $ttd_ks);
 
-        $ttd_guru_mapel = strtolower(str_replace(' ','_', $nama_lengkap . '.png'));
+        $ttd_guru_mapel = strtolower(str_replace(' ', '_', $nama_lengkap . '.png'));
 
         $getJurnal = session()->get('jurnal');
 
@@ -462,7 +486,7 @@ class Guru extends BaseController
         $ttd_ks = array_column($kepala_sekolah, 'ttd');
         $ttd_ks_string = implode(",", $ttd_ks);
 
-        $ttd_wali_kelas = strtolower(str_replace(' ','_', $nama_lengkap . '.png'));
+        $ttd_wali_kelas = strtolower(str_replace(' ', '_', $nama_lengkap . '.png'));
 
         $getJurnal = session()->get('jurnal_kelas');
 
