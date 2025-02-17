@@ -122,7 +122,7 @@
                         </li>
                         <li> <a class="waves-effect waves-dark" href="/guru/daftar_hadir" aria-expanded="false"><i class="mdi mdi-checkbox-marked"></i><span class="hide-menu">Daftar Hadir</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="/guru/jurnal_kelas" aria-expanded="false"><i class="mdi mdi-book-open-page-variant"></i><span class="hide-menu">Jurnal Kelas</span></a>
+                        <li> <a class="waves-effect waves-dark" href="/guru/jurnal_kelas" aria-expanded="false"><i class="mdi mdi-book-open-page-variant"></i><span class="hide-menu">Jurnal Pembelajaran</span></a>
                         </li>
                         <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-printer"></i><span class="hide-menu">Cetak Jurnal</span></a>
                             <ul aria-expanded="false" class="collapse">

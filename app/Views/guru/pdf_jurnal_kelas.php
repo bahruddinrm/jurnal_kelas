@@ -84,9 +84,10 @@
                 <th>Jam Ke</th>
                 <th>Mapel</th>
                 <th>Guru Mapel</th>
-                <th>Hadir</th>
-                <th>Ijin</th>
-                <th>Alpa</th>
+                <th>Jumlah Hadir</th>
+                <th>Jumlah Sakit</th>
+                <th>Jumlah Ijin</th>
+                <th>Jumlah Alpa</th>
                 <th>Nama Siswa Tidak Hadir</th>
                 <th>Uraian Materi</th>
                 <th>Keterangan</th>
@@ -102,6 +103,7 @@
                     <td><?= esc($j['mapel']); ?></td>
                     <td><?= esc($j['nama_lengkap']); ?></td>
                     <td><?= esc($j['jumlah_hadir']); ?></td>
+                    <td><?= esc($j['jumlah_sakit']); ?></td>
                     <td><?= esc($j['jumlah_ijin']); ?></td>
                     <td><?= esc($j['jumlah_alpa']); ?></td>
                     <td><?= esc($j['nama_siswa_absen']); ?></td>

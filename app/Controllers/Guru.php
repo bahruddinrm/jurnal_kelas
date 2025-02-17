@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Helpers\DateHelper;
 use App\Models\DaftarHadir;
-use App\Models\JurnalKelas;
+use App\Models\Jurnal;
 use App\Models\Kelas;
 use CodeIgniter\HTTP\Exceptions\RedirectException;
 use CodeIgniter\Model;
@@ -166,7 +166,7 @@ class Guru extends BaseController
     {
         $ModelKelas = new \App\Models\Kelas();
         $ModelPembelajaran = new \App\Models\Pembelajaran();
-        $ModelJurnal = new \App\Models\JurnalKelas();
+        $ModelJurnal = new \App\Models\Jurnal();
 
         $user = session()->get('user');
         $pilih_kelas = $this->request->getPost('pilih_kelas');
@@ -251,7 +251,7 @@ class Guru extends BaseController
 
     public function simpan_jurnal()
     {
-        $ModelJurnal = new \App\Models\JurnalKelas();
+        $ModelJurnal = new \App\Models\Jurnal();
         $jurnal = $ModelJurnal->findAll();
 
         $user = session()->get('user');
@@ -284,12 +284,12 @@ class Guru extends BaseController
         // return view('/guru/jurnal_kelas.php', $data);
     }
 
-    public function hapus_jurnal($jurnal_id)
+    public function hapus_jurnal($id_jurnal)
     {
-        $ModelJurnal = new \App\Models\JurnalKelas();
+        $ModelJurnal = new \App\Models\Jurnal();
 
         try {
-            $ModelJurnal->delete($jurnal_id);
+            $ModelJurnal->delete($id_jurnal);
             session()->setFlashdata('delete', 'Data jurnal berhasil dihapus.');
         } catch (\Exception $e) {
             session()->setFlashdata('error', 'Gagal menghapus data jurnal: ' . $e->getMessage());
@@ -302,7 +302,7 @@ class Guru extends BaseController
     {
         $ModelPengguna = new \App\Models\Pengguna();
         $ModelBulan = new \App\Models\Bulan();
-        $ModelJurnal = new \App\Models\JurnalKelas();
+        $ModelJurnal = new \App\Models\Jurnal();
 
         $user = session()->get('user');
 
@@ -416,7 +416,7 @@ class Guru extends BaseController
     {
         $ModelKelas = new \App\Models\Kelas();
         $ModelBulan = new \App\Models\Bulan();
-        $ModelJurnal = new \App\Models\JurnalKelas();
+        $ModelJurnal = new \App\Models\Jurnal();
 
         $user = session()->get('user');
 

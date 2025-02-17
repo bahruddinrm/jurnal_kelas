@@ -82,6 +82,7 @@
                 <th>Jam Ke</th>
                 <th>Kelas</th>
                 <th>Jumlah Hadir</th>
+                <th>Jumlah Sakit</th>
                 <th>Jumlah Ijin</th>
                 <th>Jumlah Alpa</th>
                 <th>Nama Siswa Tidak Hadir</th>
@@ -99,6 +100,7 @@
                     <td><?= esc($j['jam_ke']); ?></td>
                     <td><?= esc($j['nama_kelas']); ?></td>
                     <td><?= esc($j['jumlah_hadir']); ?></td>
+                    <td><?= esc($j['jumlah_sakit']); ?></td>
                     <td><?= esc($j['jumlah_ijin']); ?></td>
                     <td><?= esc($j['jumlah_alpa']); ?></td>
                     <td><?= esc($j['nama_siswa_absen']); ?></td>

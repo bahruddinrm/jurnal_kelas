@@ -83,8 +83,8 @@
                                     <td>< ?= $jp['nama_siswa_tidak_hadir']; ?></td> -->
                                     <td>
                                         <button class="btn-sm btn-danger btn-delete"
-                                            data-id="<?= $j['jurnal_id']; ?>"
-                                            data-url="/guru/hapus_jurnal/<?= $j['jurnal_id']; ?>"
+                                            data-id="<?= $j['id_jurnal']; ?>"
+                                            data-url="/guru/hapus_jurnal/<?= $j['id_jurnal']; ?>"
                                             title="Hapus">
                                             <i class='bx bx-message-alt-x'></i>
                                         </button>

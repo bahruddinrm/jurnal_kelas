@@ -35,7 +35,7 @@ class Kepsek extends BaseController
     {
         $ModelPengguna = new \App\Models\Pengguna();
         $ModelBulan = new \App\Models\Bulan();
-        $ModelJurnal = new \App\Models\JurnalKelas();
+        $ModelJurnal = new \App\Models\Jurnal();
 
         $user = session()->get('user');
 
@@ -87,7 +87,7 @@ class Kepsek extends BaseController
     {
         $ModelKelas = new \App\Models\Kelas();
         $ModelBulan = new \App\Models\Bulan();
-        $ModelJurnal = new \App\Models\JurnalKelas();
+        $ModelJurnal = new \App\Models\Jurnal();
 
         $user = session()->get('user');
 
