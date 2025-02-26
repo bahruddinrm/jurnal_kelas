@@ -23,20 +23,15 @@
     </div>
 </div>
 
-<!-- < ?php if (isset($pilih_kelas)) : ?> -->
-<!-- < ?php endif ?> -->
-
 <div class="row" id="jurnal">
 
-    <!-- column -->
     <div class="col-lg-12">
         <div class="card">
             <div class="card-block">
 
-                <h3 class="card-title" style="margin-bottom: 30px;">JURNAL KELAS <?= esc($nama_kelas) ?></h3>
-                <!-- <a href="/guru/tambah_jurnal" class="btn-sm btn-warning" title="isi jurnal kelas">Isi Jurnal Kelas</a> -->
+                <h3 class="card-title" style="margin-bottom: 30px;">JURNAL PEMBELAJARAN <?= esc($nama_kelas) ?></h3>
                 <a href="/guru/tambah_jurnal" id="btn-isi-jurnal" class="btn-sm btn-warning" title="Isi Jurnal Kelas" disabled>
-                    Isi Jurnal Kelas
+                    Isi Jurnal Pembelajaran
                 </a>
                 <div class="table-responsive">
                     <table class="table">
@@ -50,12 +45,6 @@
                                 <th scope="col">URAIAN MATERI</th>
                                 <th scope="col">MEDIA PEMBELAJARAN</th>
                                 <th scope="col">KETERANGAN</th>
-                                <!-- <th scope="col">HADIR</th>
-                                <th scope="col">SAKIT</th>
-                                <th scope="col">IJIN</th>
-                                <th scope="col">ALPA</th>
-                                <th scope="col">JUMLAH</th>
-                                <th scope="col">NAMA SISWA TIDAK HADIR</th> -->
                                 <th scope="col">AKSI</th>
                             </tr>
                         </thead>
@@ -73,14 +62,6 @@
                                     <td><?= $j['uraian_materi']; ?></td>
                                     <td><?= $j['media_pembelajaran']; ?></td>
                                     <td><?= $j['keterangan']; ?></td>
-                                    <!-- < ?php endforeach ?> 
-                                < ?php foreach ($jumlah_presensi as $jp) : ?>
-                                    <td>< ?= $jp['hadir']; ?></td>
-                                    <td>< ?= $jp['sakit']; ?></td>
-                                    <td>< ?= $jp['ijin']; ?></td>
-                                    <td>< ?= $jp['alpa']; ?></td>
-                                    <td>< ?= $jp['jumlah']; ?></td>
-                                    <td>< ?= $jp['nama_siswa_tidak_hadir']; ?></td> -->
                                     <td>
                                         <button class="btn-sm btn-danger btn-delete"
                                             data-id="<?= $j['id_jurnal']; ?>"
@@ -89,7 +70,6 @@
                                             <i class='bx bx-message-alt-x'></i>
                                         </button>
                                     </td>
-                                    <!-- </tr>  -->
                                 <?php endforeach ?>
                         </tbody>
                     </table>

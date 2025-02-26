@@ -14,7 +14,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-block">
-                    <h2 style="margin-bottom: 20px; margin-left: 14px;">Jurnal Kelas <?= esc($nama_kelas) ?></h2>
+                    <h2 style="margin-bottom: 20px; margin-left: 14px;">Jurnal Pembelajaran Kelas <?= esc($nama_kelas) ?></h2>
                     <div class="form-group" hidden>
                         <label for="nama_kelas" class="col-md-12">kelas<span class="required-symbol">*</span></label>
                         <div class="col-md-12">

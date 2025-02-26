@@ -70,6 +70,7 @@
                                 <th scope="col">MAPEL</th>
                                 <th scope="col">GURU YANG MENGAJAR</th>
                                 <th scope="col">JUMLAH HADIR</th>
+                                <th scope="col">JUMLAH SAKIT</th>
                                 <th scope="col">JUMLAH IJIN</th>
                                 <th scope="col">JUMLAH ALPA</th>
                                 <th scope="col">NAMA SISWA TIDAK HADIR</th>
@@ -89,6 +90,7 @@
                                     <td><?= $j['nama_mapel']; ?></td>
                                     <td><?= $j['nama_lengkap']; ?></td>
                                     <td><?= $j['jumlah_hadir']; ?></td>
+                                    <td><?= $j['jumlah_sakit']; ?></td>
                                     <td><?= $j['jumlah_ijin']; ?></td>
                                     <td><?= $j['jumlah_alpa']; ?></td>
                                     <td><?= $j['nama_siswa_absen']; ?></td>

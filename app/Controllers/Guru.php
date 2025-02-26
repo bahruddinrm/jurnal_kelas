@@ -180,10 +180,8 @@ class Guru extends BaseController
 
         $jumlah_presensi = session()->get('jumlah_presensi');
 
-        //*
         $nama_lengkap = $user['nama_lengkap'];
         $pembelajaran['nama_kelas'] = $ModelPembelajaran->pembelajaranJoinKelas($nama_lengkap);
-        //*
 
         $jurnal = $ModelJurnal->getJurnalJoinKelasMapel($pilih_kelas);
 
@@ -271,7 +269,6 @@ class Guru extends BaseController
 
             'jurnal' => $jurnal
         ];
-        // $ModelJurnal->insert($data);
 
         try {
             $ModelJurnal->insert($data);
@@ -281,7 +278,6 @@ class Guru extends BaseController
         }
 
         return redirect()->to('guru/jurnal_kelas');
-        // return view('/guru/jurnal_kelas.php', $data);
     }
 
     public function hapus_jurnal($id_jurnal)
